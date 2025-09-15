@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "accessibilite",
+    "title": "Accessibilité",
+    "shortDescription": "Lorem nonem qui non doles acest solorporis.",
+    "longDescription": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "icon": "/img/icon-image.png"
+  },
+  {
+    "slug": "inclusion",
+    "title": "Inclusion",
+    "shortDescription": "Peratem que lam alisqua spelenimilla.",
+    "longDescription": "Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con. Donsendella is ex ellum quam net ulleneculpa ad moditae.",
+    "icon": "/img/icon-image.png"
+  },
+  {
+    "slug": "eco",
+    "title": "Éco-conception",
+    "shortDescription": "Alis illandis sitaeri beatiorit delique.",
+    "longDescription": "Alis illandis sitaeri beatiorit aut delique nectis moloreperi blabore ptatur aut aut qui dolorro. Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con.",
+    "icon": "/img/icon-image.png"
+  },
+  {
+    "slug": "architecture",
+    "title": "Architecture",
+    "shortDescription": "Peratem que lam alisqua spelenimilla.",
+    "longDescription": "Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con. Donsendella is ex ellum quam net ulleneculpa ad moditae.",
+    "icon": "/img/icon-image.png"
+  },
+  {
+    "slug": "si-plateforme",
+    "title": "SI Plateforme",
+    "shortDescription": "Lorem nonem qui non doles acest solorporis.",
+    "longDescription": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "icon": "/img/icon-image.png"
+  },
+  {
+    "slug": "ia",
+    "title": "Intelligence Artificielle",
+    "shortDescription": "Alis illandis sitaeri beatiorit delique.",
+    "longDescription": "Alis illandis sitaeri beatiorit aut delique nectis moloreperi blabore ptatur aut aut qui dolorro. Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con.",
+    "icon": "/img/icon-image.png"
+  }
+]

@@ -1,0 +1,482 @@
+/* -----------------------
+   Fonts face
+-------------------------- */
+/* Thin */
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Thin.woff2") format("woff2"),
+    url("../fonts/Marianne-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Thin_Italic.woff2") format("woff2"),
+    url("../fonts/Marianne-Thin_Italic.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Light.woff2") format("woff2"),
+    url("../fonts/Marianne-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Light_Italic.woff2") format("woff2"),
+    url("../fonts/Marianne-Light_Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Regular.woff2") format("woff2"),
+    url("../fonts/Marianne-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Regular_Italic.woff2") format("woff2"),
+    url("../fonts/Marianne-Regular_Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Medium.woff2") format("woff2"),
+    url("../fonts/Marianne-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Medium_Italic.woff2") format("woff2"),
+    url("../fonts/Marianne-Medium_Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Bold.woff2") format("woff2"),
+    url("../fonts/Marianne-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-Bold_Italic.woff2") format("woff2"),
+    url("../fonts/Marianne-Bold_Italic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Marianne-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Marianne";
+  src: url("../fonts/Marianne-ExtraBold_Italic.woff2") format("woff2"),
+    url("../fonts/Marianne-ExtraBold_Italic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+/* -----------------------
+   Variables (faciles à modifier)
+-------------------------- */
+:root {
+  --color-primary: #0053a4; /* Bleu FT */
+  --color-secondary: white; /* Fond clair */
+  --color-text: #1a1a1a; /* Texte principal */
+  --color-link: #0053a4;
+  --color-accent: #0072ce; /* Accent/hover */
+  --font-main: "Marianne", "Segoe UI", Roboto, sans-serif;
+  --spacing: 1rem;
+  --max-width: 960px;
+}
+
+/* -----------------------
+   Reset + base
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1;
+}
+html,
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  /* background: white; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  padding: var(--spacing);
+  background-color: var(--color-secondary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* -----------------------
+   Containers
+-------------------------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing);
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+/* -----------------------
+   Headings & Typography
+-------------------------- */
+h1,
+h2,
+h3 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+small {
+  color: #666;
+}
+
+/* -----------------------
+   Navigation
+-------------------------- */
+nav {
+  background: var(--color-primary);
+  color: white;
+  padding: 0.75rem var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+nav a {
+  color: white;
+  margin-right: 1rem;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------
+   Project Cards
+-------------------------- */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+  align-items: stretch; /* 🔥 pour que les cartes aient la même hauteur */
+}
+.project-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 🔥 pour répartir contenu + bouton */
+  height: 100%; /* 🔥 permet d'étirer la carte */
+}
+
+.project-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  color: #0053a4;
+}
+
+.project-card p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.project-card .tag {
+  display: inline-block;
+  background: #e6f0fa;
+  color: #0053a4;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  margin: 0.125rem 0.25rem 0 0;
+}
+
+.project-card .button {
+  margin-top: 1rem;
+  align-self: stretch;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: #0053a4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.project-card .button:hover {
+  background-color: #003c7d;
+}
+/* -----------------------
+   Footer
+-------------------------- */
+footer {
+  background: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #333;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.footer-content .icon {
+  height: 28px;
+  width: auto;
+  vertical-align: middle;
+  opacity: 0.85;
+}
+
+.footer-content p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* -----------------------
+   Responsive
+-------------------------- */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  nav {
+    padding: 0.5rem;
+  }
+
+  .container {
+    padding: 0.5rem;
+  }
+}
+
+/* -----------------------
+   Navbar France Travail
+-------------------------- */
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid #eaeaea;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.navbar-logo img {
+  height: 80px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: var(--color-primary);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.navbar-links li a:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* i18n */
+
+.lang-button {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* -----------------------
+         Theme Grid
+-------------------------- */
+
+#themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s ease;
+  height: 100%;
+}
+
+.theme-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.theme-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.theme-card h2 {
+  font-size: 1.1rem;
+  color: #0053a4;
+  margin-bottom: 0.5rem;
+}
+
+.theme-card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* -----------------------
+         Construction banner
+-------------------------- */
+
+.construction-banner {
+  background-color: #fff3cd;
+  color: #856404;
+  text-align: center;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ffeeba;
+  font-weight: 500;
+}

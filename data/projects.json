@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Projet 1",
+    "repo": "https://github.com/france-travail",
+    "category": "accessibilite",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["FALC", "emploi", "accessibilité"],
+    "logo": "/img/icon-image.png",
+    "maintainers": ["antoine.r"],
+    "lastUpdate": "2025-08-10",
+    "status": "maintenu",
+    "external": false
+  },
+  {
+    "name": "Projet 2",
+    "repo": "https://github.com/france-travail",
+    "category": "accessibilite",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["audio", "text-to-speech", "emploi"],
+    "logo": "/img/icon-image.png",
+    "lastUpdate": "2025-07-02",
+    "status": "POC",
+    "external": false
+  },
+  {
+    "name": "Projet 3",
+    "repo": "https://github.com/france-travail",
+    "category": "accessibilite",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["open source", "lecteur d’écran", "accessibilité"],
+    "maintainers": ["antoine.r"],
+    "logo": "/img/icon-image.png",
+    "status": "contribution",
+    "external": true
+  },
+  {
+    "name": "Projet 4",
+    "repo": "https://github.com/france-travail",
+    "category": "inclusion",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["UI", "inclusion", "accessibilité"],
+    "logo": "/img/icon-image.png",
+    "status": "maintenu",
+    "external": false
+  },
+  {
+    "name": "Projet 5",
+    "repo": "https://github.com/france-travail",
+    "category": "inclusion",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["traduction", "multilingue", "usager"],
+    "status": "POC",
+    "external": false,
+    "logo": "/img/icon-image.png"
+  },
+  {
+    "name": "Projet 6",
+    "repo": "https://github.com/france-travail",
+    "category": "eco",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["écoconception", "api", "impact"],
+    "status": "maintenu",
+    "external": false,
+    "logo": "/img/icon-image.png"
+  },
+  {
+    "name": "Projet 7",
+    "repo": "https://github.com/france-travail",
+    "category": "eco",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["design system", "sobriété", "accessibilité"],
+    "logo": "/img/icon-image.png",
+    "status": "maintenu",
+    "external": false
+  },
+  {
+    "name": "Projet 8",
+    "repo": "https://github.com/france-travail",
+    "category": "eco",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["CI/CD", "carbone", "sobriété"],
+    "logo": "/img/icon-image.png",
+    "status": "archivé",
+    "external": false
+  },
+  {
+    "name": "Projet 9",
+    "repo": "https://github.com/france-travail",
+    "category": "architecture",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["architecture", "template", "standardisation"],
+    "status": "maintenu",
+    "logo": "/img/icon-image.png",
+    "external": false
+  },
+  {
+    "name": "Projet 10",
+    "repo": "https://github.com/france-travail",
+    "category": "architecture",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["sécurité", "middleware", "architecture"],
+    "status": "maintenu",
+    "logo": "/img/icon-image.png",
+    "external": false
+  },
+  {
+    "name": "Projet 11",
+    "repo": "https://github.com/france-travail",
+    "category": "si-plateforme",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["LPE", "interopérabilité", "API"],
+    "logo": "/img/icon-image.png",
+    "status": "maintenu",
+    "external": false
+  },
+  {
+    "name": "Projet 12",
+    "repo": "https://github.com/france-travail",
+    "category": "si-plateforme",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["sandbox", "tests", "intégration"],
+    "status": "POC",
+    "logo": "/img/icon-image.png",
+    "external": false
+  },
+  {
+    "name": "Projet 13",
+    "repo": "https://github.com/france-travail",
+    "category": "si-plateforme",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["validation", "jsonschema", "interopérabilité"],
+    "status": "maintenu",
+    "logo": "/img/icon-image.png",
+    "external": false
+  },
+  {
+    "name": "Projet 14",
+    "repo": "https://github.com/france-travail",
+    "category": "ia",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["IA", "matching", "LLM"],
+    "status": "POC",
+    "logo": "/img/icon-image.png",
+    "external": false
+  },
+  {
+    "name": "Projet 15",
+    "repo": "https://github.com/france-travail",
+    "category": "ia",
+    "description": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
+    "tags": ["anonymisation", "NLP", "RGPD"],
+    "status": "archivé",
+    "logo": "/img/icon-image.png",
+    "external": false
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "france-travail.github.io",
+  "version": "1.0.0",
+  "description": "Site vitrine des projets open source de France Travail, organisés par thématique (accessibilité, inclusion, éco-conception, IA, SI plateforme, etc.).",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server",
+    "build": "echo 'Static site – no build step required'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "open source",
+    "france-travail",
+    "catalogue",
+    "accessibilité",
+    "inclusion",
+    "opensource"
+  ],
+  "author": "France Travail – OSPO",
+  "license": "MIT"
+}
