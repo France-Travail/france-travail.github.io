@@ -1,44 +1,37 @@
 [
   {
-    "slug": "accessibilite",
-    "title": "Accessibilité",
-    "shortDescription": "Lorem nonem qui non doles acest solorporis.",
-    "longDescription": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
-    "icon": "/img/icon-image.png"
-  },
-  {
-    "slug": "inclusion",
-    "title": "Inclusion",
-    "shortDescription": "Peratem que lam alisqua spelenimilla.",
-    "longDescription": "Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con. Donsendella is ex ellum quam net ulleneculpa ad moditae.",
-    "icon": "/img/icon-image.png"
+    "slug": "accessibilite-inclusion",
+    "title": "Accessibilité & Inclusion",
+    "shortDescription": "Des outils numériques au service de tous, pour garantir l’accès équitable à l’emploi et à la formation.",
+    "longDescription": "Cette thématique regroupe les projets favorisant l’inclusion numérique et l’accessibilité des services publics. Les outils développés visent à lever les barrières linguistiques, techniques ou cognitives, afin que chacun puisse bénéficier des mêmes opportunités d’accès à l’emploi, à la formation et à l’information.",
+    "icon": "/img/icon-accessibilite.png"
   },
   {
     "slug": "eco",
     "title": "Éco-conception",
-    "shortDescription": "Alis illandis sitaeri beatiorit delique.",
-    "longDescription": "Alis illandis sitaeri beatiorit aut delique nectis moloreperi blabore ptatur aut aut qui dolorro. Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con.",
-    "icon": "/img/icon-image.png"
+    "shortDescription": "Un numérique plus sobre, durable et responsable.",
+    "longDescription": "Les projets de cette thématique promeuvent la conception responsable des services numériques. Ils sensibilisent les équipes aux impacts environnementaux et sociaux du numérique, et proposent des référentiels, outils et bonnes pratiques pour réduire l’empreinte carbone tout en améliorant la durabilité des produits.",
+    "icon": "/img/icon-eco.png"
   },
   {
     "slug": "architecture",
     "title": "Architecture",
-    "shortDescription": "Peratem que lam alisqua spelenimilla.",
-    "longDescription": "Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con. Donsendella is ex ellum quam net ulleneculpa ad moditae.",
-    "icon": "/img/icon-image.png"
+    "shortDescription": "Des pratiques communes pour un système d’information ouvert, résilient et durable.",
+    "longDescription": "Cette thématique rassemble les initiatives qui structurent la transformation du système d’information de France Travail. Elle met en avant les pratiques d’architecture continue, la documentation vivante et la collaboration entre architectes, développeurs et métiers.",
+    "icon": "/img/icon-architecture.png"
   },
   {
     "slug": "si-plateforme",
     "title": "SI Plateforme",
-    "shortDescription": "Lorem nonem qui non doles acest solorporis.",
-    "longDescription": "Lorem nonem qui non doles acest solorporis. Nis nis etureptibus audae ipiscid eostrum quam net ulleneculpa ad moditae. Quis estis quaeperro eni corecti undiorist aut qui dolorro.",
-    "icon": "/img/icon-image.png"
+    "shortDescription": "Construire un système d’information interopérable et centré sur les usages.",
+    "longDescription": "Cette catégorie regroupe les projets qui renforcent la mutualisation, la sécurité et l’interconnexion du SI France Travail. L’objectif : bâtir un écosystème de services modulaires, ouverts et réutilisables pour accélérer l’innovation et la qualité des services publics numériques.",
+    "icon": "/img/icon-si.png"
   },
   {
     "slug": "ia",
     "title": "Intelligence Artificielle",
-    "shortDescription": "Alis illandis sitaeri beatiorit delique.",
-    "longDescription": "Alis illandis sitaeri beatiorit aut delique nectis moloreperi blabore ptatur aut aut qui dolorro. Peratem que lam alisqua spelenimilla esti doluptatus sin nos dolorem de volorem poriatus estota sum con.",
-    "icon": "/img/icon-image.png"
+    "shortDescription": "Des modèles et outils IA éthiques, transparents et responsables.",
+    "longDescription": "Cette thématique réunit les projets d’intelligence artificielle développés ou soutenus par France Travail : frameworks, API et outils de traitement de la donnée. Tous partagent un même objectif : rendre l’IA accessible, explicable et au service de l’humain.",
+    "icon": "/img/icon-ia.png"
   }
 ]
