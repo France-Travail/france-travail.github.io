@@ -2,7 +2,7 @@
 
 Ce site présente les projets open source soutenus ou développés par France Travail, organisés autour de plusieurs thématiques comme :
 
-- 🧩 Inclusion
+- 🧩 Inclusion & Accessibilité
 - 🌿 Éco-conception
 - 🏛️ Architecture
 - 🧬 SI Plateforme

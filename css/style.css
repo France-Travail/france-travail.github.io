@@ -426,11 +426,81 @@ footer a:hover {
          Theme Grid
 -------------------------- */
 
+/* Amélioration du conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Style pour la section principale */
+main.container h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0053a4;
+  line-height: 1.2;
+}
+
+main.container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
 #themes-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive grid pour 5 éléments */
+@media (min-width: 768px) {
+  #themes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  #themes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Pour les écrans très larges, on peut faire 2+3 */
+@media (min-width: 1400px) {
+  #themes-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Améliorations mobiles */
+@media (max-width: 767px) {
+  #themes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  
+  .theme-card {
+    padding: 1.5rem;
+  }
+  
+  .theme-icon-wrapper {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .theme-icon {
+    max-width: 32px;
+    max-height: 32px;
+  }
 }
 
 .theme-card {
@@ -439,43 +509,88 @@ footer a:hover {
   align-items: center;
   text-align: center;
   background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e8f0fe;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 83, 164, 0.08);
   text-decoration: none;
   color: inherit;
-  transition: box-shadow 0.2s ease;
+  transition: all 0.3s ease;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0053a4, #0078d4);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
 .theme-card:hover {
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 83, 164, 0.15);
+  transform: translateY(-4px);
+  border-color: #0053a4;
+}
+
+.theme-card:hover::before {
+  transform: scaleX(1);
 }
 
 .theme-icon-wrapper {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover .theme-icon-wrapper {
+  background: linear-gradient(135deg, #e8f0fe, #d1e7ff);
+  transform: scale(1.05);
 }
 
 .theme-icon {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  filter: drop-shadow(0 2px 4px rgba(0, 83, 164, 0.1));
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover .theme-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 4px 8px rgba(0, 83, 164, 0.2));
 }
 
 .theme-card h2 {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
   color: #0053a4;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.theme-card:hover h2 {
+  color: #003c7d;
 }
 
 .theme-card p {
-  font-size: 0.9rem;
-  color: #333;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* -----------------------
