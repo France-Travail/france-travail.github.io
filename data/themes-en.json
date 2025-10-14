@@ -1,0 +1,37 @@
+[
+  {
+    "slug": "accessibilite-inclusion",
+    "title": "Accessibility & Inclusion",
+    "shortDescription": "Digital tools serving everyone, to guarantee equitable access to employment and training.",
+    "longDescription": "This theme brings together projects promoting digital inclusion and accessibility of public services. The tools developed aim to remove linguistic, technical or cognitive barriers, so that everyone can benefit from the same opportunities to access employment, training and information.",
+    "icon": "/img/icon-accessibilite.png"
+  },
+  {
+    "slug": "eco",
+    "title": "Eco-design",
+    "shortDescription": "A more sober, sustainable and responsible digital world.",
+    "longDescription": "Projects in this theme promote responsible design of digital services. They raise awareness among teams about the environmental and social impacts of digital technology, and offer frameworks, tools and best practices to reduce carbon footprint while improving product sustainability.",
+    "icon": "/img/icon-eco.png"
+  },
+  {
+    "slug": "architecture",
+    "title": "Architecture",
+    "shortDescription": "Common practices for an open, resilient and sustainable information system.",
+    "longDescription": "This theme brings together initiatives that structure the transformation of France Travail's information system. It highlights continuous architecture practices, living documentation and collaboration between architects, developers and business teams.",
+    "icon": "/img/icon-architecture.png"
+  },
+  {
+    "slug": "si-plateforme",
+    "title": "SI Platform",
+    "shortDescription": "Building an interoperable information system centered on uses.",
+    "longDescription": "This category brings together projects that strengthen the pooling, security and interconnection of the France Travail IS. The objective: build an ecosystem of modular, open and reusable services to accelerate innovation and the quality of digital public services.",
+    "icon": "/img/icon-si.png"
+  },
+  {
+    "slug": "ia",
+    "title": "Artificial Intelligence",
+    "shortDescription": "Ethical, transparent and responsible AI models and tools.",
+    "longDescription": "This theme brings together artificial intelligence projects developed or supported by France Travail: frameworks, APIs and data processing tools. All share the same objective: making AI accessible, explainable and at the service of humans.",
+    "icon": "/img/icon-ia.png"
+  }
+]

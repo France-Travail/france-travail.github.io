@@ -3,35 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Catalogue open source de France Travail : accessibilité, inclusion, éco-conception, architecture, IA, SI plateforme."
-    />
+    
+    <!-- SEO Meta Tags -->
+    <title>France Travail – Open Source | Projets numériques publics</title>
+    <meta name="description" content="Découvrez les projets open source de France Travail : accessibilité, éco-conception, IA, architecture. Services publics numériques innovants et inclusifs." />
+    <meta name="keywords" content="France Travail, open source, accessibilité, éco-conception, IA, architecture, services publics, numérique, inclusion, développement durable" />
     <meta name="author" content="France Travail" />
-    <title>France Travail – Open Source</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://france-travail.github.io/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://france-travail.github.io/" />
+    <meta property="og:title" content="France Travail – Open Source | Projets numériques publics" />
+    <meta property="og:description" content="Découvrez les projets open source de France Travail : accessibilité, éco-conception, IA, architecture. Services publics numériques innovants et inclusifs." />
+    <meta property="og:image" content="https://france-travail.github.io/img/logo-ft.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="France Travail Open Source" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://france-travail.github.io/" />
+    <meta name="twitter:title" content="France Travail – Open Source | Projets numériques publics" />
+    <meta name="twitter:description" content="Découvrez les projets open source de France Travail : accessibilité, éco-conception, IA, architecture. Services publics numériques innovants et inclusifs." />
+    <meta name="twitter:image" content="https://france-travail.github.io/img/logo-ft.png" />
+    
+    <!-- Hreflang for bilingual support -->
+    <link rel="alternate" hreflang="fr" href="https://france-travail.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://france-travail.github.io/?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/logo-ft.png" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="./css/style.css" as="style" />
+    <link rel="preload" href="./fonts/Marianne-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./components/navbar.js" defer></script>
     <script src="./components/footer.js" defer></script>
+    <script src="./js/i18n.js" defer></script>
     <script src="./js/renderThemesGrid.js" defer></script>
     <script src="./js/renderThemeHeader.js" defer></script>
+    
+    <!-- Structured Data JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "France Travail",
+      "url": "https://france-travail.github.io/",
+      "logo": "https://france-travail.github.io/img/logo-ft.png",
+      "description": "Catalogue des projets open source de France Travail pour l'innovation dans les services publics numériques",
+      "foundingDate": "2024",
+      "areaServed": "France",
+      "knowsAbout": [
+        "Open Source",
+        "Accessibilité numérique",
+        "Éco-conception",
+        "Intelligence artificielle",
+        "Architecture logicielle",
+        "Services publics numériques"
+      ],
+      "sameAs": [
+        "https://github.com/France-Travail"
+      ]
+    }
+    </script>
   </head>
 
   <body>
-    <div class="construction-banner">
-      🚧 Ce site est actuellement en construction. Certaines sections sont
-      incomplètes.
-    </div>
     <header id="navbar"></header>
 
     <main class="container">
-      <h1>France Travail – Open Source Softwares</h1>
-      <p>
-        Alis illandis sitaeri beatiorit aut delique nectis moloreperi blabore
-        ptatur aut aut qui dolorro. Peratem que lam alisqua spelenimilla esti
-        doluptatus sin nos dolorem de volorem poriatus estota sum con.
-      </p>
-
+      <h1 data-i18n="main_title">France Travail – Open Source Softwares</h1>
+      <p data-i18n="main_description">
+        L'open source est au cœur de la transformation numérique de France Travail. En partageant nos solutions, nous contribuons à un numérique plus accessible, durable et collaboratif, au service de tous les acteurs de l'emploi et de la société.</p>
       <!-- Grille des thèmes -->
       <div id="themes-grid" class="themes-grid"></div>
     </main>

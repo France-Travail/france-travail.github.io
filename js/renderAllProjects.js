@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", async () => {
+async function loadAllProjects() {
   const container = document.getElementById("projects-container");
 
   if (!container) {
@@ -7,20 +7,29 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   try {
-    const res = await fetch("../data/projects.json");
+    // Déterminer la langue actuelle
+    const currentLang = localStorage.getItem("lang") || "fr";
+    const projectsFile = currentLang === "en" ? "../data/projects-en.json" : "../data/projects.json";
+    
+    const res = await fetch(projectsFile);
     const allProjects = await res.json();
 
     if (allProjects.length === 0) {
-      container.innerHTML = `<p>Aucun projet trouvé pour le moment.</p>`;
+      container.innerHTML = `<p data-i18n="no_projects">Aucun projet trouvé pour le moment.</p>`;
       return;
     }
 
     container.innerHTML = allProjects.map((p) => renderProjectCard(p)).join("");
   } catch (error) {
     console.error("Erreur lors du chargement des projets :", error);
-    container.innerHTML = `<p>Erreur lors du chargement des projets.</p>`;
+    container.innerHTML = `<p data-i18n="load_error">Erreur lors du chargement des projets.</p>`;
   }
-});
+}
+
+// Rendre la fonction globale
+window.loadAllProjects = loadAllProjects;
+
+document.addEventListener("DOMContentLoaded", loadAllProjects);
 
 function renderProjectCard(project) {
   const {
@@ -44,23 +53,23 @@ function renderProjectCard(project) {
     <div class="project-card">
       ${
         logo
-          ? `<img src="../${logo}" alt="${name} logo" style="max-height: 60px; margin-bottom: 0.5rem;">`
+          ? `<img src="../${logo}" alt="${name} logo">`
           : ""
       }
       <h3>${name}</h3>
       <p>${description}</p>
 
-      ${status ? `<p><strong>Statut :</strong> ${status}</p>` : ""}
+      ${status ? `<p><strong data-i18n="status">Statut :</strong> ${status}</p>` : ""}
       ${
         lastUpdate
-          ? `<p><strong>Dernière mise à jour :</strong> ${formatDate(
+          ? `<p><strong data-i18n="last_update">Dernière mise à jour :</strong> ${formatDate(
               lastUpdate
             )}</p>`
           : ""
       }
       ${
         maintainers.length
-          ? `<p><strong>Mainteneur${
+          ? `<p><strong data-i18n="${maintainers.length > 1 ? 'maintainers_plural' : 'maintainers'}">Mainteneur${
               maintainers.length > 1 ? "s" : ""
             } :</strong> ${maintainerLinks.join(", ")}</p>`
           : ""
@@ -76,7 +85,7 @@ function renderProjectCard(project) {
       }
 
       <a class="button" href="${repo}" target="_blank" rel="noopener">
-        ${external ? "Voir le projet externe ↗" : "Voir sur GitHub ↗"}
+        ${external ? '<span data-i18n="view_external">Voir le projet externe ↗</span>' : '<span data-i18n="view_github">Voir sur GitHub ↗</span>'}
       </a>
     </div>
   `;

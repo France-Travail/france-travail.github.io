@@ -3,18 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Projets open source de France Travail autour de l’inclusion numérique."
-    />
+    
+    <!-- SEO Meta Tags -->
+    <title>Accessibilité & Inclusion | Projets France Travail</title>
+    <meta name="description" content="Découvrez les projets d'accessibilité et d'inclusion numérique de France Travail : TradEmploi, Anotéa. Services publics accessibles à tous." />
+    <meta name="keywords" content="accessibilité, inclusion, France Travail, TradEmploi, Anotéa, numérique, services publics, handicap, équité" />
     <meta name="author" content="France Travail" />
-    <title>Inclusion – France Travail Open Source</title>
-
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://france-travail.github.io/themes/accessibilite-inclusion.html" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://france-travail.github.io/themes/accessibilite-inclusion.html" />
+    <meta property="og:title" content="Accessibilité & Inclusion | Projets France Travail" />
+    <meta property="og:description" content="Découvrez les projets d'accessibilité et d'inclusion numérique de France Travail : TradEmploi, Anotéa. Services publics accessibles à tous." />
+    <meta property="og:image" content="https://france-travail.github.io/img/icon-accessibilite.png" />
+    <meta property="og:site_name" content="France Travail Open Source" />
+    <meta property="og:locale" content="fr_FR" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Accessibilité & Inclusion | Projets France Travail" />
+    <meta name="twitter:description" content="Découvrez les projets d'accessibilité et d'inclusion numérique de France Travail : TradEmploi, Anotéa. Services publics accessibles à tous." />
+    <meta name="twitter:image" content="https://france-travail.github.io/img/icon-accessibilite.png" />
+    
+    <!-- Hreflang for bilingual support -->
+    <link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/accessibilite-inclusion.html" />
+    <link rel="alternate" hreflang="en" href="https://france-travail.github.io/themes/accessibilite-inclusion.html?lang=en" />
+    <link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/accessibilite-inclusion.html" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="../../manifest.json" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../img/favicon.png" />
+    <link rel="apple-touch-icon" href="../img/logo-ft.png" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../css/style.css" as="style" />
+    
     <link rel="stylesheet" href="../css/style.css" />
 
     <script src="../components/navbar.js" defer></script>
     <script src="../components/footer.js" defer></script>
+    <script src="../js/i18n.js" defer></script>
     <script src="../js/renderProjects.js" defer></script>
     <script src="../js/renderThemeHeader.js" defer></script>
   </head>
@@ -26,7 +58,7 @@
       <div
         id="projects-container"
         class="project-grid"
-        data-category="inclusion"
+        data-category="accessibilite&inclusion"
       ></div>
     </main>
 

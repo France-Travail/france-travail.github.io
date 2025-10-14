@@ -1,0 +1,34 @@
+{
+  "name": "France Travail – Open Source",
+  "short_name": "FT Open Source",
+  "description": "Catalogue des projets open source de France Travail : accessibilité, éco-conception, IA, architecture et services publics numériques.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0053a4",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "https://france-travail.github.io/img/logo-ft.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://france-travail.github.io/img/logo-ft.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["government", "technology", "open source"],
+  "screenshots": [
+    {
+      "src": "https://france-travail.github.io/img/icon-francetravail-io.svg",
+      "sizes": "1280x720",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ]
+}

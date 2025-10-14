@@ -32,8 +32,8 @@
     "maintainers": [],
     "lastUpdate": "2025-10-13",
     "logo": "/img/icon-image.png",
-    "status": "contribution",
-    "external": true
+    "status": "maintenu",
+    "external": false
   },
   {
     "name": "Architecture",
@@ -105,7 +105,7 @@
     "maintainers": [],
     "lastUpdate": "2025-10-13",
     "status": "maintenu",
-    "external": true
+    "external": false
   },
   {
     "name": "Anotéa",

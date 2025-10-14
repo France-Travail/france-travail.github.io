@@ -1,9 +1,13 @@
-document.addEventListener("DOMContentLoaded", async () => {
+async function loadThemes() {
   const grid = document.getElementById("themes-grid");
   if (!grid) return;
 
   try {
-    const response = await fetch("./data/themes.json");
+    // Déterminer la langue actuelle
+    const currentLang = localStorage.getItem("lang") || "fr";
+    const themesFile = currentLang === "en" ? "./data/themes-en.json" : "./data/themes.json";
+    
+    const response = await fetch(themesFile);
     const themes = await response.json();
 
     grid.innerHTML = themes
@@ -21,6 +25,11 @@ document.addEventListener("DOMContentLoaded", async () => {
       .join("");
   } catch (error) {
     console.error("Erreur lors du chargement des thèmes :", error);
-    grid.innerHTML = "<p>Impossible de charger les thèmes pour le moment.</p>";
+    grid.innerHTML = "<p data-i18n='themes_load_error'>Impossible de charger les thèmes pour le moment.</p>";
   }
-});
+}
+
+// Rendre la fonction globale
+window.loadThemes = loadThemes;
+
+document.addEventListener("DOMContentLoaded", loadThemes);
