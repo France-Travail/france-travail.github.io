@@ -38,6 +38,9 @@ async function initI18n() {
       const newDict = await loadLocale(newLang);
       applyTranslations(newDict);
       
+      // Mettre à jour le texte du bouton
+      switcher.textContent = newDict["lang_switch"];
+      
       // Recharger tous les contenus dynamiques
       await reloadAllDynamicContent();
     });

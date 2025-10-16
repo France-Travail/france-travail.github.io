@@ -16,14 +16,14 @@
   {
     "slug": "architecture",
     "title": "Architecture",
-    "shortDescription": "Des pratiques communes pour un système d’information ouvert, résilient et durable.",
+    "shortDescription": "Des pratiques communes pour un système d’information structuré, résiliant et durable",
     "longDescription": "Cette thématique rassemble les initiatives qui structurent la transformation du système d’information de France Travail. Elle met en avant les pratiques d’architecture continue, la documentation vivante et la collaboration entre architectes, développeurs et métiers.",
     "icon": "/img/icon-architecture.png"
   },
   {
     "slug": "si-plateforme",
     "title": "SI Plateforme",
-    "shortDescription": "Construire un système d’information interopérable et centré sur les usages.",
+    "shortDescription": "Construire un système d’information agile, securisé et performant pour les usagers.",
     "longDescription": "Cette catégorie regroupe les projets qui renforcent la mutualisation, la sécurité et l’interconnexion du SI France Travail. L’objectif : bâtir un écosystème de services modulaires, ouverts et réutilisables pour accélérer l’innovation et la qualité des services publics numériques.",
     "icon": "/img/icon-si.png"
   },

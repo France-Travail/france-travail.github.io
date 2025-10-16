@@ -23,11 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="../img/icon-francetravail-io.svg" alt="Site" class="icon" />
         <a href="https://francetravail.io" target="_blank" rel="noopener">FranceTravail.io</a>
       </p>
-      <img
-        src="../img/logo-ft-only.png"
-        alt="France Travail"
-        class="icon"
-      />
     </div>
   `;
 });

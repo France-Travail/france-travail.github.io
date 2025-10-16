@@ -32,21 +32,24 @@ async function loadThemeHeader() {
     const theme = themes.find((t) => t.slug === slug);
     if (!theme) return;
 
-    // Création du H1 avec image
+    // Création du H1 avec bulle colorée
     const h1 = document.createElement("h1");
     h1.className = "theme-header-h1"; // Classe pour identifier les éléments à supprimer
     h1.style.display = "flex";
     h1.style.alignItems = "center";
     h1.style.gap = "0.75rem";
 
-    if (theme.icon) {
-      const img = document.createElement("img");
-      img.src = theme.icon;
-      img.alt = `${theme.title} icon`;
-      img.style.height = "32px";
-      img.style.verticalAlign = "middle";
-      h1.appendChild(img);
-    }
+    // Créer une bulle colorée au lieu de l'image
+    const bubble = document.createElement("div");
+    bubble.style.cssText = `
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: ${getThemeColor(category)};
+      box-shadow: 0 2px 8px rgba(0, 83, 164, 0.15);
+      flex-shrink: 0;
+    `;
+    h1.appendChild(bubble);
 
     const span = document.createElement("span");
     span.textContent = theme.title;
@@ -65,7 +68,21 @@ async function loadThemeHeader() {
   }
 }
 
+// Fonction pour obtenir la couleur correspondante à chaque thème
+function getThemeColor(category) {
+  const themeColors = {
+    "accessibilite&inclusion": "#008ece",  // Bleu clair pour accessibilité
+    "eco": "#ffe000",                      // Jaune pour éco-conception
+    "ia": "#e1010e",                       // Rouge pour IA
+    "architecture": "#283276",            // Bleu foncé pour architecture
+    "si-plateforme": "#f29fc4"           // Rose pour SI plateforme
+  };
+  
+  return themeColors[category] || "#0053a4"; // Couleur par défaut
+}
+
 // Rendre la fonction globale
 window.loadThemeHeader = loadThemeHeader;
+window.getThemeColor = getThemeColor;
 
 document.addEventListener("DOMContentLoaded", loadThemeHeader);

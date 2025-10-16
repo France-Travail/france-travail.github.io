@@ -15,7 +15,8 @@ async function loadThemes() {
         (theme) => `
         <a class="theme-card" href="./themes/${theme.slug}.html">
           <div class="theme-icon-wrapper">
-            <img src="${theme.icon}" alt="${theme.title} icon" class="theme-icon" />
+            <div class="theme-bubble" style="background: ${getThemeColor(theme.slug)};">
+            </div>
           </div>
           <h2>${theme.title}</h2>
           <p>${theme.shortDescription}</p>
@@ -29,7 +30,21 @@ async function loadThemes() {
   }
 }
 
+// Fonction pour obtenir la couleur correspondante à chaque thème
+function getThemeColor(slug) {
+  const themeColors = {
+    "accessibilite-inclusion": "#008ece",  // Bleu clair pour accessibilité
+    "eco": "#ffe000",                      // Jaune pour éco-conception
+    "ia": "#e1010e",                       // Rouge pour IA
+    "architecture": "#283276",            // Bleu foncé pour architecture
+    "si-plateforme": "#f29fc4"           // Rose pour SI plateforme
+  };
+  
+  return themeColors[slug] || "#0053a4"; // Couleur par défaut
+}
+
 // Rendre la fonction globale
 window.loadThemes = loadThemes;
+window.getThemeColor = getThemeColor;
 
 document.addEventListener("DOMContentLoaded", loadThemes);
