@@ -816,6 +816,14 @@ footer a:hover {
   padding-bottom: 2rem;
 }
 
+.title-desktop {
+  display: block;
+}
+
+.title-mobile {
+  display: none;
+}
+
 .hero-content h1::after {
   content: "";
   position: absolute;
@@ -1011,6 +1019,16 @@ footer a:hover {
   
   .hero-content h1 {
     font-size: 1.8rem;
+    text-align: left;
+  }
+  
+  .title-desktop {
+    display: none;
+  }
+  
+  .title-mobile {
+    display: block;
+    text-align: center;
   }
 }
 

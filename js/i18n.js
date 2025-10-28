@@ -12,7 +12,14 @@ async function loadLocale(lang) {
 function applyTranslations(dict) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
-    if (dict[key]) el.textContent = dict[key];
+    if (dict[key]) {
+      // Utiliser innerHTML pour les clés qui contiennent du HTML
+      if (key.includes('mobile') || key.includes('html')) {
+        el.innerHTML = dict[key];
+      } else {
+        el.textContent = dict[key];
+      }
+    }
   });
   if (dict["title_home"]) {
     document.title = dict["title_home"];
