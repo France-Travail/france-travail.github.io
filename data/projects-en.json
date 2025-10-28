@@ -1,9 +1,9 @@
 [
   {
-    "name": "TradEmploi",
+    "name": "TradOpen",
     "repo": "https://github.com/France-Travail/TradEmploi",
     "category": "accessibilite&inclusion",
-    "description": "TradEmploi (or TradSNCF) is a multilingual web app that enables two people who do not speak the same language to communicate in real time. It combines speech recognition, automatic translation and voice synthesis in over 130 languages to promote inclusion and equal access to information in public services.",
+    "description": "TradOpen (or TradEmploi/TradSNCF)  is a multilingual web app that enables two people who do not speak the same language to communicate in real time. It combines speech recognition, automatic translation and voice synthesis in over 130 languages to promote inclusion and equal access to information in public services.",
     "tags": ["translation", "multilingual", "inclusion", "accessibility"],
     "logo": "",
     "maintainers": [],
