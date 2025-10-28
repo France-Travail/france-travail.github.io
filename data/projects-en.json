@@ -130,5 +130,57 @@
     "lastUpdate": "2025-10-13",
     "status": "maintained",
     "external": false
+  },
+  {
+    "name": "France Travail Design System",
+    "repo": "https://github.com/France-Travail/design-system",
+    "category": "si-plateforme",
+    "description": "Reusable components, tokens, guidelines and resources to standardize France Travail's digital interfaces.",
+    "tags": ["design system", "ui", "accessibility", "reusable"],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2025-10-16",
+    "status": "in the process of being open sourced",
+    "external": false,
+    "inProgress": true
+  },
+  {
+    "name": "Grist Widget – Excel Import",
+    "repo": "https://github.com/France-Travail/widget-import-excel",
+    "category": "si-plateforme",
+    "description": "Dynamic Excel import widget for Grist, with column mapping and per-column and per-row update strategies.",
+    "tags": ["grist", "excel", "import", "automation"],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2025-10-16",
+    "status": "in the process of being open sourced",
+    "external": false,
+    "inProgress": true
+  },
+  {
+    "name": "CEJ – Youth Engagement Contract",
+    "repo": "https://github.com/France-Travail/cej",
+    "category": "si-plateforme",
+    "description": "Monitoring and support app for young people within the CEJ program. Includes both agent and user interfaces.",
+    "tags": ["cej", "employment", "youth", "support"],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2025-10-16",
+    "status": "in the process of being open sourced",
+    "external": false,
+    "inProgress": true
+  },
+  {
+    "name": "France-Travail.github.io",
+    "repo": "https://github.com/France-Travail/francetravail.github.io",
+    "category": "si-plateforme",
+    "description": "Showcase website listing France Travail's open source projects.",
+    "tags": ["open source", "documentation", "showcase site"],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2025-10-16",
+    "status": "in the process of being open sourced",
+    "external": false,
+    "inProgress": true
   }
 ]

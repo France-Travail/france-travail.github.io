@@ -221,8 +221,7 @@ h3 {
 
 h1 {
   font-size: 2rem;
-  border-bottom: 2px solid var(--color-primary);
-  padding-bottom: 0.25rem;
+  color: var(--color-primary);
 }
 
 h2 {
@@ -813,6 +812,20 @@ footer a:hover {
   margin-bottom: 1rem;
   font-weight: 700;
   line-height: 1.3;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.hero-content h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #0053a4, transparent);
+  border-radius: 2px;
 }
 
 .hero-content p {
@@ -820,7 +833,7 @@ footer a:hover {
   color: #555;
   line-height: 1.6;
   max-width: 700px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
 }
 
 .hero-stats {
@@ -1132,7 +1145,7 @@ main.container h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #0053a4;
-  line-height: 1.2;
+  line-height: 2.0;
 }
 
 main.container p {

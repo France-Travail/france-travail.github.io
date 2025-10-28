@@ -46,3 +46,5 @@ Desktop.ini
 # --------------------------------------
 # (si tu génères des artefacts dans .github)
 .github/deploy.log
+
+/todo

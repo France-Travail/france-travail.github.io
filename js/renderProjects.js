@@ -60,6 +60,7 @@ function renderProjectCard(project) {
     lastUpdate,
     status,
     external,
+    inProgress,
   } = project;
 
   // Transforme chaque mainteneur en lien GitHub
@@ -116,9 +117,9 @@ function renderProjectCard(project) {
       }
 
       <div class="project-actions">
-        <a class="button" href="${repo}" target="_blank" rel="noopener">
+        ${!inProgress ? `<a class="button" href="${repo}" target="_blank" rel="noopener">
           ${external ? '<span data-i18n="view_external">Voir le projet externe ↗</span>' : '<span data-i18n="view_github">Voir sur GitHub ↗</span>'}
-        </a>
+        </a>` : ''}
         <div class="share-buttons">
           <button class="share-btn" onclick="shareProject('${name}', '${repo}')" title="Partager ce projet">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

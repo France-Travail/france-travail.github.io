@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <nav class="navbar">
       <div class="navbar-container">
         <a href="../index.html" class="navbar-logo">
-          <img src="../img/logo-ft.png" alt="France Travail logo" height="80" />
+          <img src="../img/logos/logo-ft.png" alt="France Travail logo" height="80" />
         </a>
         <ul class="navbar-links">
           <li><a href="../index.html" data-i18n="home">Accueil</a></li>

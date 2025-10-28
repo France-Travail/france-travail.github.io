@@ -10,13 +10,13 @@
   "lang": "fr",
   "icons": [
     {
-      "src": "https://france-travail.github.io/img/logo-ft.png",
+      "src": "https://france-travail.github.io/img/logos/logo-ft.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://france-travail.github.io/img/logo-ft.png",
+      "src": "https://france-travail.github.io/img/logos/logo-ft.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -25,7 +25,7 @@
   "categories": ["government", "technology", "open source"],
   "screenshots": [
     {
-      "src": "https://france-travail.github.io/img/icon-francetravail-io.svg",
+      "src": "https://france-travail.github.io/img/logos/icon-francetravail-io.svg",
       "sizes": "1280x720",
       "type": "image/svg+xml",
       "form_factor": "wide"

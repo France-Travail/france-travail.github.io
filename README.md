@@ -14,7 +14,7 @@ Mettre en valeur les logiciels, outils et démarches open source portés par Fra
 
 ## 🛠 Démo
 
-👉 https://francetravail.github.io
+👉 https://france-travail.github.io
 
 ## 💬 Contact
 

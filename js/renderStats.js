@@ -45,7 +45,7 @@ async function loadStats() {
       
       <div class="stat-card">
         <div class="stat-icon">
-          <img src="./img/icon-git-fork.svg" alt="Git Fork" style="width: 100%; height: 100%; filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%) hue-rotate(200deg) brightness(0.8);">
+          <img src="./img/icons/icon-git-fork.svg" alt="Git Fork" style="width: 100%; height: 100%; filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%) hue-rotate(200deg) brightness(0.8);">
         </div>
         <div class="stat-number">${stats.total_forks}</div>
         <div class="stat-label" data-i18n="stat_forks">Forks</div>
