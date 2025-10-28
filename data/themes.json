@@ -16,7 +16,7 @@
   {
     "slug": "architecture",
     "title": "Architecture",
-    "shortDescription": "Des pratiques communes pour un système d’information structuré, résiliant et durable",
+    "shortDescription": "Des pratiques communes pour un système d’information structuré, résilient et durable",
     "longDescription": "Cette thématique rassemble les initiatives qui structurent la transformation du système d’information de France Travail. Elle met en avant les pratiques d’architecture continue, la documentation vivante et la collaboration entre architectes, développeurs et métiers.",
     "icon": "/img/icon-architecture.png"
   },

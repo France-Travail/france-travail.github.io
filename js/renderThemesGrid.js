@@ -14,9 +14,7 @@ async function loadThemes() {
       .map(
         (theme) => `
         <a class="theme-card" href="./themes/${theme.slug}.html">
-          <div class="theme-icon-wrapper">
-            <div class="theme-bubble" style="background: ${getThemeColor(theme.slug)};">
-            </div>
+          <div class="theme-bubble" style="background: ${getThemeColor(theme.slug)};">
           </div>
           <h2>${theme.title}</h2>
           <p>${theme.shortDescription}</p>

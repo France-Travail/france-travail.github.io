@@ -50,8 +50,14 @@ async function initI18n() {
 async function reloadAllDynamicContent() {
   // Recharger les thèmes sur la page d'accueil
   if (document.getElementById("themes-grid")) {
+    if (typeof window.loadStats === 'function') {
+      await window.loadStats();
+    }
     if (typeof window.loadThemes === 'function') {
       await window.loadThemes();
+    }
+    if (typeof window.loadInProgress === 'function') {
+      await window.loadInProgress();
     }
   }
   

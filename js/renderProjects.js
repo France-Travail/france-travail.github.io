@@ -85,7 +85,7 @@ function renderProjectCard(project) {
       ${
         logo && logo.trim() !== ""
           ? `<img src="../${logo}" alt="${name} logo">`
-          : `<div class="project-icon" style="width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; font-weight: bold; color: white; margin: 0 auto 1rem auto; background: ${projectColor} !important; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); transition: all 0.3s ease;">${name.charAt(0).toUpperCase()}</div>`
+          : `<div class="project-icon" style="width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; color: white; margin: 0 auto 1rem auto; background: ${projectColor} !important; box-shadow: 0 4px 12px rgba(0, 83, 164, 0.3); transition: all 0.3s ease;">${name.charAt(0).toUpperCase()}</div>`
       }
       <h3>${name}</h3>
       <p>${description}</p>

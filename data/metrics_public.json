@@ -1,759 +1,759 @@
 {
-  "organization": "France-Travail",
-  "collected_at": "2025-10-27T18:19:00.243408+00:00",
-  "summary": {
-    "total_repositories": 33,
-    "active_repositories": 24,
-    "total_stars": 200,
-    "total_forks": 34,
-    "total_contributors": 810,
-    "total_commits_last_30_days": 0,
-    "total_pageviews_30d": 0
-  },
-  "repositories": [
-    {
-      "name": "gabarit",
-      "url": "https://github.com/France-Travail/gabarit",
-      "description": "Gabarit : kickstart your data science project from scratch ",
-      "stars": 61,
-      "forks": 12,
-      "contributors": 11,
-      "license": "AGPL-3.0",
-      "language": "Python",
-      "last_update": "2024-12-12",
-      "topics": [
-        "data-science",
-        "deep-learning",
-        "machine-learning",
-        "python"
-      ],
-      "pages_url": "https://france-travail.github.io/gabarit",
-      "metrics": {
+    "organization": "France-Travail",
+    "collected_at": "2025-10-27T18:19:00.243408+00:00",
+    "summary": {
+      "total_repositories": 33,
+      "active_repositories": 24,
+      "total_stars": 200,
+      "total_forks": 34,
+      "total_contributors": 810,
+      "total_commits_last_30_days": 0,
+      "total_pageviews_30d": 0
+    },
+    "repositories": [
+      {
+        "name": "gabarit",
+        "url": "https://github.com/France-Travail/gabarit",
+        "description": "Gabarit : kickstart your data science project from scratch ",
         "stars": 61,
         "forks": 12,
         "contributors": 11,
-        "commits_30d": null,
-        "issues_open": 50,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "words_n_fun",
-      "url": "https://github.com/France-Travail/words_n_fun",
-      "description": " Words'n fun : NLP preprocessing pipeline ",
-      "stars": 20,
-      "forks": 4,
-      "contributors": 5,
-      "license": "AGPL-3.0",
-      "language": "Python",
-      "last_update": "2024-06-11",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "Python",
+        "last_update": "2024-12-12",
+        "topics": [
+          "data-science",
+          "deep-learning",
+          "machine-learning",
+          "python"
+        ],
+        "pages_url": "https://france-travail.github.io/gabarit",
+        "metrics": {
+          "stars": 61,
+          "forks": 12,
+          "contributors": 11,
+          "commits_30d": null,
+          "issues_open": 50,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "words_n_fun",
+        "url": "https://github.com/France-Travail/words_n_fun",
+        "description": " Words'n fun : NLP preprocessing pipeline ",
         "stars": 20,
         "forks": 4,
         "contributors": 5,
-        "commits_30d": null,
-        "issues_open": 5,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "AI_frameworks",
-      "url": "https://github.com/France-Travail/AI_frameworks",
-      "description": "Old https://github.com/OSS-Pole-Emploi/gabarit Repo",
-      "stars": 1,
-      "forks": 0,
-      "contributors": 1,
-      "license": null,
-      "language": null,
-      "last_update": "2022-07-13",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "Python",
+        "last_update": "2024-06-11",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 20,
+          "forks": 4,
+          "contributors": 5,
+          "commits_30d": null,
+          "issues_open": 5,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "AI_frameworks",
+        "url": "https://github.com/France-Travail/AI_frameworks",
+        "description": "Old https://github.com/OSS-Pole-Emploi/gabarit Repo",
         "stars": 1,
         "forks": 0,
         "contributors": 1,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "TradEmploi-BackEnd",
-      "url": "https://github.com/France-Travail/TradEmploi-BackEnd",
-      "description": "BackEnd of TradEmploi",
-      "stars": 3,
-      "forks": 3,
-      "contributors": 5,
-      "license": "AGPL-3.0",
-      "language": "JavaScript",
-      "last_update": "2025-01-09",
-      "topics": [
-        "firestore",
-        "gcp",
-        "gcp-cloud-build",
-        "gcp-cloud-run"
-      ],
-      "pages_url": null,
-      "metrics": {
+        "license": null,
+        "language": null,
+        "last_update": "2022-07-13",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 1,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "TradEmploi-BackEnd",
+        "url": "https://github.com/France-Travail/TradEmploi-BackEnd",
+        "description": "BackEnd of TradEmploi",
         "stars": 3,
         "forks": 3,
         "contributors": 5,
-        "commits_30d": null,
-        "issues_open": 1,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "TradEmploi",
-      "url": "https://github.com/France-Travail/TradEmploi",
-      "description": "TradEmploi",
-      "stars": 5,
-      "forks": 2,
-      "contributors": 6,
-      "license": "AGPL-3.0",
-      "language": null,
-      "last_update": "2025-10-16",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "JavaScript",
+        "last_update": "2025-01-09",
+        "topics": [
+          "firestore",
+          "gcp",
+          "gcp-cloud-build",
+          "gcp-cloud-run"
+        ],
+        "pages_url": null,
+        "metrics": {
+          "stars": 3,
+          "forks": 3,
+          "contributors": 5,
+          "commits_30d": null,
+          "issues_open": 1,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "TradEmploi",
+        "url": "https://github.com/France-Travail/TradEmploi",
+        "description": "TradEmploi",
         "stars": 5,
         "forks": 2,
         "contributors": 6,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "embcompare",
-      "url": "https://github.com/France-Travail/embcompare",
-      "description": "A simple python tool for embedding comparison",
-      "stars": 7,
-      "forks": 0,
-      "contributors": 2,
-      "license": "AGPL-3.0",
-      "language": "Python",
-      "last_update": "2024-03-25",
-      "topics": [
-        "comparison-tool",
-        "embedding-python",
-        "embedding-vectors",
-        "embeddings",
-        "embeddings-similarity",
-        "embeddings-word2vec",
-        "pypi-package",
-        "python-package",
-        "python3",
-        "streamlit-dashboard"
-      ],
-      "pages_url": "https://france-travail.github.io/embcompare",
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": null,
+        "last_update": "2025-10-16",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 5,
+          "forks": 2,
+          "contributors": 6,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "embcompare",
+        "url": "https://github.com/France-Travail/embcompare",
+        "description": "A simple python tool for embedding comparison",
         "stars": 7,
         "forks": 0,
         "contributors": 2,
-        "commits_30d": null,
-        "issues_open": 2,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "TradEmploi-FrontEnd",
-      "url": "https://github.com/France-Travail/TradEmploi-FrontEnd",
-      "description": "Frontend of TradEmploi",
-      "stars": 2,
-      "forks": 1,
-      "contributors": 12,
-      "license": "AGPL-3.0",
-      "language": "TypeScript",
-      "last_update": "2025-02-20",
-      "topics": [
-        "angular",
-        "firebase",
-        "speech-to-text",
-        "text-to-speech",
-        "traduction"
-      ],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "Python",
+        "last_update": "2024-03-25",
+        "topics": [
+          "comparison-tool",
+          "embedding-python",
+          "embedding-vectors",
+          "embeddings",
+          "embeddings-similarity",
+          "embeddings-word2vec",
+          "pypi-package",
+          "python-package",
+          "python3",
+          "streamlit-dashboard"
+        ],
+        "pages_url": "https://france-travail.github.io/embcompare",
+        "metrics": {
+          "stars": 7,
+          "forks": 0,
+          "contributors": 2,
+          "commits_30d": null,
+          "issues_open": 2,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "TradEmploi-FrontEnd",
+        "url": "https://github.com/France-Travail/TradEmploi-FrontEnd",
+        "description": "Frontend of TradEmploi",
         "stars": 2,
         "forks": 1,
         "contributors": 12,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "mobiville",
-      "url": "https://github.com/France-Travail/mobiville",
-      "description": null,
-      "stars": 2,
-      "forks": 0,
-      "contributors": 4,
-      "license": "AGPL-3.0",
-      "language": "JavaScript",
-      "last_update": "2023-05-24",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "TypeScript",
+        "last_update": "2025-02-20",
+        "topics": [
+          "angular",
+          "firebase",
+          "speech-to-text",
+          "text-to-speech",
+          "traduction"
+        ],
+        "pages_url": null,
+        "metrics": {
+          "stars": 2,
+          "forks": 1,
+          "contributors": 12,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "mobiville",
+        "url": "https://github.com/France-Travail/mobiville",
+        "description": null,
         "stars": 2,
         "forks": 0,
         "contributors": 4,
-        "commits_30d": null,
-        "issues_open": 1,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "fairlens_pe",
-      "url": "https://github.com/France-Travail/fairlens_pe",
-      "description": "Identify bias and measure fairness of your data",
-      "stars": 3,
-      "forks": 0,
-      "contributors": 6,
-      "license": "BSD-3-Clause",
-      "language": "Python",
-      "last_update": "2024-06-11",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "JavaScript",
+        "last_update": "2023-05-24",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 2,
+          "forks": 0,
+          "contributors": 4,
+          "commits_30d": null,
+          "issues_open": 1,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "fairlens_pe",
+        "url": "https://github.com/France-Travail/fairlens_pe",
+        "description": "Identify bias and measure fairness of your data",
         "stars": 3,
         "forks": 0,
         "contributors": 6,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "results_benchmark_llm_serving",
-      "url": "https://github.com/France-Travail/results_benchmark_llm_serving",
-      "description": "The results of the benchmarks obtained using benchmark_llm_serving (https://github.com/France-Travail/benchmark_llm_serving)",
-      "stars": 7,
-      "forks": 0,
-      "contributors": 3,
-      "license": null,
-      "language": null,
-      "last_update": "2025-03-27",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "BSD-3-Clause",
+        "language": "Python",
+        "last_update": "2024-06-11",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 3,
+          "forks": 0,
+          "contributors": 6,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "results_benchmark_llm_serving",
+        "url": "https://github.com/France-Travail/results_benchmark_llm_serving",
+        "description": "The results of the benchmarks obtained using benchmark_llm_serving (https://github.com/France-Travail/benchmark_llm_serving)",
         "stars": 7,
         "forks": 0,
         "contributors": 3,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "happy_vllm",
-      "url": "https://github.com/France-Travail/happy_vllm",
-      "description": "A REST API for vLLM, production ready",
-      "stars": 24,
-      "forks": 3,
-      "contributors": 3,
-      "license": "AGPL-3.0",
-      "language": "Python",
-      "last_update": "2025-10-20",
-      "topics": [
-        "api-rest",
-        "llm",
-        "llm-serving",
-        "production",
-        "vllm"
-      ],
-      "pages_url": "https://france-travail.github.io/happy_vllm",
-      "metrics": {
+        "license": null,
+        "language": null,
+        "last_update": "2025-03-27",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 7,
+          "forks": 0,
+          "contributors": 3,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "happy_vllm",
+        "url": "https://github.com/France-Travail/happy_vllm",
+        "description": "A REST API for vLLM, production ready",
         "stars": 24,
         "forks": 3,
         "contributors": 3,
-        "commits_30d": null,
-        "issues_open": 5,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "benchmark_llm_serving",
-      "url": "https://github.com/France-Travail/benchmark_llm_serving",
-      "description": "A library to benchmark LLMs via their API exposure",
-      "stars": 7,
-      "forks": 1,
-      "contributors": 3,
-      "license": "AGPL-3.0",
-      "language": "Python",
-      "last_update": "2025-05-16",
-      "topics": [
-        "benchmark",
-        "llm",
-        "llm-serving",
-        "vllm"
-      ],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "Python",
+        "last_update": "2025-10-20",
+        "topics": [
+          "api-rest",
+          "llm",
+          "llm-serving",
+          "production",
+          "vllm"
+        ],
+        "pages_url": "https://france-travail.github.io/happy_vllm",
+        "metrics": {
+          "stars": 24,
+          "forks": 3,
+          "contributors": 3,
+          "commits_30d": null,
+          "issues_open": 5,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "benchmark_llm_serving",
+        "url": "https://github.com/France-Travail/benchmark_llm_serving",
+        "description": "A library to benchmark LLMs via their API exposure",
         "stars": 7,
         "forks": 1,
         "contributors": 3,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "referentiel-ecoconception",
-      "url": "https://github.com/France-Travail/referentiel-ecoconception",
-      "description": "Référentiel des bonnes pratiques d’écoconception des services numériques",
-      "stars": 14,
-      "forks": 3,
-      "contributors": 0,
-      "license": "GFDL-1.3",
-      "language": "TeX",
-      "last_update": "2024-12-02",
-      "topics": [
-        "ecoconception",
-        "greenit",
-        "referentiel",
-        "sustainability"
-      ],
-      "pages_url": null,
-      "metrics": {
+        "license": "AGPL-3.0",
+        "language": "Python",
+        "last_update": "2025-05-16",
+        "topics": [
+          "benchmark",
+          "llm",
+          "llm-serving",
+          "vllm"
+        ],
+        "pages_url": null,
+        "metrics": {
+          "stars": 7,
+          "forks": 1,
+          "contributors": 3,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "referentiel-ecoconception",
+        "url": "https://github.com/France-Travail/referentiel-ecoconception",
+        "description": "Référentiel des bonnes pratiques d’écoconception des services numériques",
         "stars": 14,
         "forks": 3,
         "contributors": 0,
-        "commits_30d": null,
-        "issues_open": 1,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "AfficheOspo",
-      "url": "https://github.com/France-Travail/AfficheOspo",
-      "description": "Fiche synthétique présentant notre démarche open source, réalisée pour l'Open Source Experience.",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 1,
-      "license": null,
-      "language": "HTML",
-      "last_update": "2025-07-02",
-      "topics": [],
-      "pages_url": "https://france-travail.github.io/AfficheOspo",
-      "metrics": {
+        "license": "GFDL-1.3",
+        "language": "TeX",
+        "last_update": "2024-12-02",
+        "topics": [
+          "ecoconception",
+          "greenit",
+          "referentiel",
+          "sustainability"
+        ],
+        "pages_url": null,
+        "metrics": {
+          "stars": 14,
+          "forks": 3,
+          "contributors": 0,
+          "commits_30d": null,
+          "issues_open": 1,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "AfficheOspo",
+        "url": "https://github.com/France-Travail/AfficheOspo",
+        "description": "Fiche synthétique présentant notre démarche open source, réalisée pour l'Open Source Experience.",
         "stars": 0,
         "forks": 0,
         "contributors": 1,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "Architecture",
-      "url": "https://github.com/France-Travail/Architecture",
-      "description": "Outils et pratiques d'architecture des équipes de la DSI de France Travail",
-      "stars": 29,
-      "forks": 1,
-      "contributors": 3,
-      "license": "CC0-1.0",
-      "language": null,
-      "last_update": "2025-06-27",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": null,
+        "language": "HTML",
+        "last_update": "2025-07-02",
+        "topics": [],
+        "pages_url": "https://france-travail.github.io/AfficheOspo",
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 1,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "Architecture",
+        "url": "https://github.com/France-Travail/Architecture",
+        "description": "Outils et pratiques d'architecture des équipes de la DSI de France Travail",
         "stars": 29,
         "forks": 1,
         "contributors": 3,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "hackathon-GenAI-for-Public-Good",
-      "url": "https://github.com/France-Travail/hackathon-GenAI-for-Public-Good",
-      "description": null,
-      "stars": 0,
-      "forks": 0,
-      "contributors": 2,
-      "license": "MIT",
-      "language": null,
-      "last_update": "2025-02-04",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "CC0-1.0",
+        "language": null,
+        "last_update": "2025-06-27",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 29,
+          "forks": 1,
+          "contributors": 3,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "hackathon-GenAI-for-Public-Good",
+        "url": "https://github.com/France-Travail/hackathon-GenAI-for-Public-Good",
+        "description": null,
         "stars": 0,
         "forks": 0,
         "contributors": 2,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "vllm-ft",
-      "url": "https://github.com/France-Travail/vllm-ft",
-      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
-      "stars": 5,
-      "forks": 0,
-      "contributors": 455,
-      "license": "Apache-2.0",
-      "language": "Python",
-      "last_update": "2025-10-06",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": null,
+        "last_update": "2025-02-04",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 2,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "vllm-ft",
+        "url": "https://github.com/France-Travail/vllm-ft",
+        "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
         "stars": 5,
         "forks": 0,
         "contributors": 455,
-        "commits_30d": null,
-        "issues_open": 1,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "Continuous-architecture-toolkit",
-      "url": "https://github.com/France-Travail/Continuous-architecture-toolkit",
-      "description": "Navigate Exponential Change with the Continuous Architecture toolkit , Built for Speed, ready to deploy.",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 14,
-      "license": "NOASSERTION",
-      "language": "CSS",
-      "last_update": "2025-04-10",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "Apache-2.0",
+        "language": "Python",
+        "last_update": "2025-10-06",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 5,
+          "forks": 0,
+          "contributors": 455,
+          "commits_30d": null,
+          "issues_open": 1,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "Continuous-architecture-toolkit",
+        "url": "https://github.com/France-Travail/Continuous-architecture-toolkit",
+        "description": "Navigate Exponential Change with the Continuous Architecture toolkit , Built for Speed, ready to deploy.",
         "stars": 0,
         "forks": 0,
         "contributors": 14,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "LabDesEditeurs2025",
-      "url": "https://github.com/France-Travail/LabDesEditeurs2025",
-      "description": "L'objectif est d'illustrer notre présentation en séance avec des exemples de code et de les partager au éditeurs a posteriori.",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 1,
-      "license": null,
-      "language": "Java",
-      "last_update": "2025-07-01",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "NOASSERTION",
+        "language": "CSS",
+        "last_update": "2025-04-10",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 14,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "LabDesEditeurs2025",
+        "url": "https://github.com/France-Travail/LabDesEditeurs2025",
+        "description": "L'objectif est d'illustrer notre présentation en séance avec des exemples de code et de les partager au éditeurs a posteriori.",
         "stars": 0,
         "forks": 0,
         "contributors": 1,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "Authentification-Client-Credential-et-ACF",
-      "url": "https://github.com/France-Travail/Authentification-Client-Credential-et-ACF",
-      "description": null,
-      "stars": 0,
-      "forks": 1,
-      "contributors": 2,
-      "license": "MIT",
-      "language": "Java",
-      "last_update": "2025-06-23",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": null,
+        "language": "Java",
+        "last_update": "2025-07-01",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 1,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "Authentification-Client-Credential-et-ACF",
+        "url": "https://github.com/France-Travail/Authentification-Client-Credential-et-ACF",
+        "description": null,
         "stars": 0,
         "forks": 1,
         "contributors": 2,
-        "commits_30d": null,
-        "issues_open": 4,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "nvda",
-      "url": "https://github.com/France-Travail/nvda",
-      "description": "NVDA, the free and open source Screen Reader for Microsoft Windows",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 184,
-      "license": "NOASSERTION",
-      "language": "Python",
-      "last_update": "2025-10-24",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "Java",
+        "last_update": "2025-06-23",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 0,
+          "forks": 1,
+          "contributors": 2,
+          "commits_30d": null,
+          "issues_open": 4,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "nvda",
+        "url": "https://github.com/France-Travail/nvda",
+        "description": "NVDA, the free and open source Screen Reader for Microsoft Windows",
         "stars": 0,
         "forks": 0,
         "contributors": 184,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "sensibilisation-conception-responsable",
-      "url": "https://github.com/France-Travail/sensibilisation-conception-responsable",
-      "description": "Un site web de sensibilisation à la conception responsable de services numériques. Open source et pédagogique.",
-      "stars": 1,
-      "forks": 1,
-      "contributors": 1,
-      "license": "MIT",
-      "language": "HTML",
-      "last_update": "2025-07-03",
-      "topics": [
-        "developpement-durable",
-        "ecoconception",
-        "green-it",
-        "low-tech",
-        "numerique-responsable",
-        "sustainability",
-        "ux-design"
-      ],
-      "pages_url": "https://france-travail.github.io/sensibilisation-conception-responsable",
-      "metrics": {
+        "license": "NOASSERTION",
+        "language": "Python",
+        "last_update": "2025-10-24",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 184,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "sensibilisation-conception-responsable",
+        "url": "https://github.com/France-Travail/sensibilisation-conception-responsable",
+        "description": "Un site web de sensibilisation à la conception responsable de services numériques. Open source et pédagogique.",
         "stars": 1,
         "forks": 1,
         "contributors": 1,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "DragonIframeCompatibilityExtension",
-      "url": "https://github.com/France-Travail/DragonIframeCompatibilityExtension",
-      "description": "Dragon Iframe Compatibility Extension : makes a pop up to allow dragon to work in embedded iframe websites.",
-      "stars": 2,
-      "forks": 1,
-      "contributors": 2,
-      "license": "MIT",
-      "language": "JavaScript",
-      "last_update": "2025-10-21",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "HTML",
+        "last_update": "2025-07-03",
+        "topics": [
+          "developpement-durable",
+          "ecoconception",
+          "green-it",
+          "low-tech",
+          "numerique-responsable",
+          "sustainability",
+          "ux-design"
+        ],
+        "pages_url": "https://france-travail.github.io/sensibilisation-conception-responsable",
+        "metrics": {
+          "stars": 1,
+          "forks": 1,
+          "contributors": 1,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "DragonIframeCompatibilityExtension",
+        "url": "https://github.com/France-Travail/DragonIframeCompatibilityExtension",
+        "description": "Dragon Iframe Compatibility Extension : makes a pop up to allow dragon to work in embedded iframe websites.",
         "stars": 2,
         "forks": 1,
         "contributors": 2,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass_emploi_app",
-      "url": "https://github.com/France-Travail/pass_emploi_app",
-      "description": null,
-      "stars": 1,
-      "forks": 0,
-      "contributors": 12,
-      "license": "MIT",
-      "language": "Dart",
-      "last_update": "2025-10-22",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "JavaScript",
+        "last_update": "2025-10-21",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 2,
+          "forks": 1,
+          "contributors": 2,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass_emploi_app",
+        "url": "https://github.com/France-Travail/pass_emploi_app",
+        "description": null,
         "stars": 1,
         "forks": 0,
         "contributors": 12,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass-emploi-api",
-      "url": "https://github.com/France-Travail/pass-emploi-api",
-      "description": null,
-      "stars": 1,
-      "forks": 1,
-      "contributors": 24,
-      "license": "MIT",
-      "language": "TypeScript",
-      "last_update": "2025-10-27",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "Dart",
+        "last_update": "2025-10-22",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 12,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass-emploi-api",
+        "url": "https://github.com/France-Travail/pass-emploi-api",
+        "description": null,
         "stars": 1,
         "forks": 1,
         "contributors": 24,
-        "commits_30d": null,
-        "issues_open": 4,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass-emploi-web",
-      "url": "https://github.com/France-Travail/pass-emploi-web",
-      "description": null,
-      "stars": 1,
-      "forks": 0,
-      "contributors": 23,
-      "license": "MIT",
-      "language": "TypeScript",
-      "last_update": "2025-10-27",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "TypeScript",
+        "last_update": "2025-10-27",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 1,
+          "contributors": 24,
+          "commits_30d": null,
+          "issues_open": 4,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass-emploi-web",
+        "url": "https://github.com/France-Travail/pass-emploi-web",
+        "description": null,
         "stars": 1,
         "forks": 0,
         "contributors": 23,
-        "commits_30d": null,
-        "issues_open": 3,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass-emploi-connect",
-      "url": "https://github.com/France-Travail/pass-emploi-connect",
-      "description": null,
-      "stars": 1,
-      "forks": 0,
-      "contributors": 5,
-      "license": "MIT",
-      "language": "TypeScript",
-      "last_update": "2025-10-23",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "TypeScript",
+        "last_update": "2025-10-27",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 23,
+          "commits_30d": null,
+          "issues_open": 3,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass-emploi-connect",
+        "url": "https://github.com/France-Travail/pass-emploi-connect",
+        "description": null,
         "stars": 1,
         "forks": 0,
         "contributors": 5,
-        "commits_30d": null,
-        "issues_open": 6,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass-emploi-auth",
-      "url": "https://github.com/France-Travail/pass-emploi-auth",
-      "description": null,
-      "stars": 1,
-      "forks": 0,
-      "contributors": 8,
-      "license": "MIT",
-      "language": "HCL",
-      "last_update": "2025-10-20",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "TypeScript",
+        "last_update": "2025-10-23",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 5,
+          "commits_30d": null,
+          "issues_open": 6,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass-emploi-auth",
+        "url": "https://github.com/France-Travail/pass-emploi-auth",
+        "description": null,
         "stars": 1,
         "forks": 0,
         "contributors": 8,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass-emploi-tools",
-      "url": "https://github.com/France-Travail/pass-emploi-tools",
-      "description": null,
-      "stars": 1,
-      "forks": 0,
-      "contributors": 6,
-      "license": "MIT",
-      "language": "HTML",
-      "last_update": "2025-10-22",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "HCL",
+        "last_update": "2025-10-20",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 8,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass-emploi-tools",
+        "url": "https://github.com/France-Travail/pass-emploi-tools",
+        "description": null,
         "stars": 1,
         "forks": 0,
         "contributors": 6,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "pass-emploi-analytics",
-      "url": "https://github.com/France-Travail/pass-emploi-analytics",
-      "description": null,
-      "stars": 1,
-      "forks": 0,
-      "contributors": 2,
-      "license": null,
-      "language": "Jupyter Notebook",
-      "last_update": "2025-10-20",
-      "topics": [],
-      "pages_url": null,
-      "metrics": {
+        "license": "MIT",
+        "language": "HTML",
+        "last_update": "2025-10-22",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 6,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "pass-emploi-analytics",
+        "url": "https://github.com/France-Travail/pass-emploi-analytics",
+        "description": null,
         "stars": 1,
         "forks": 0,
         "contributors": 2,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "grist-widget-import-excel",
-      "url": "https://github.com/France-Travail/grist-widget-import-excel",
-      "description": "Widget d’import Excel → Grist avec règles de duplication configurables. Permet à un utilisateur de charger un fichier Excel, de mapper dynamiquement les colonnes vers une table Grist, et d’appliquer des règles d’import (écrasement, ajout, etc.) définies dans un onglet d’administration connecté à Grist.",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 1,
-      "license": "MIT",
-      "language": "Python",
-      "last_update": "2025-10-23",
-      "topics": [],
-      "pages_url": "https://france-travail.github.io/grist-widget-import-excel",
-      "metrics": {
+        "license": null,
+        "language": "Jupyter Notebook",
+        "last_update": "2025-10-20",
+        "topics": [],
+        "pages_url": null,
+        "metrics": {
+          "stars": 1,
+          "forks": 0,
+          "contributors": 2,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "grist-widget-import-excel",
+        "url": "https://github.com/France-Travail/grist-widget-import-excel",
+        "description": "Widget d’import Excel → Grist avec règles de duplication configurables. Permet à un utilisateur de charger un fichier Excel, de mapper dynamiquement les colonnes vers une table Grist, et d’appliquer des règles d’import (écrasement, ajout, etc.) définies dans un onglet d’administration connecté à Grist.",
         "stars": 0,
         "forks": 0,
         "contributors": 1,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "plaquettes-produits-os",
-      "url": "https://github.com/France-Travail/plaquettes-produits-os",
-      "description": "🔁 Génération automatique de pages HTML à partir de plaquettes PDF pour une lecture fluide sur GitHub Pages. Utilisé en interne par France Travail, ce dépôt convertit chaque PDF en image et page HTML via GitHub Actions.",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 2,
-      "license": "NOASSERTION",
-      "language": "CSS",
-      "last_update": "2025-09-15",
-      "topics": [],
-      "pages_url": "https://france-travail.github.io/plaquettes-produits-os",
-      "metrics": {
+        "license": "MIT",
+        "language": "Python",
+        "last_update": "2025-10-23",
+        "topics": [],
+        "pages_url": "https://france-travail.github.io/grist-widget-import-excel",
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 1,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "plaquettes-produits-os",
+        "url": "https://github.com/France-Travail/plaquettes-produits-os",
+        "description": "🔁 Génération automatique de pages HTML à partir de plaquettes PDF pour une lecture fluide sur GitHub Pages. Utilisé en interne par France Travail, ce dépôt convertit chaque PDF en image et page HTML via GitHub Actions.",
         "stars": 0,
         "forks": 0,
         "contributors": 2,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
-      }
-    },
-    {
-      "name": "france-travail.github.io",
-      "url": "https://github.com/France-Travail/france-travail.github.io",
-      "description": "Site vitrine des projets open source de France Travail, organisés par thématique (Inclusion, éco-conception, IA, SI plateforme, etc.).",
-      "stars": 0,
-      "forks": 0,
-      "contributors": 1,
-      "license": null,
-      "language": "HTML",
-      "last_update": "2025-10-16",
-      "topics": [],
-      "pages_url": "https://france-travail.github.io/france-travail.github.io",
-      "metrics": {
+        "license": "NOASSERTION",
+        "language": "CSS",
+        "last_update": "2025-09-15",
+        "topics": [],
+        "pages_url": "https://france-travail.github.io/plaquettes-produits-os",
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 2,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
+      },
+      {
+        "name": "france-travail.github.io",
+        "url": "https://github.com/France-Travail/france-travail.github.io",
+        "description": "Site vitrine des projets open source de France Travail, organisés par thématique (Inclusion, éco-conception, IA, SI plateforme, etc.).",
         "stars": 0,
         "forks": 0,
         "contributors": 1,
-        "commits_30d": null,
-        "issues_open": 0,
-        "traffic_views": 0
+        "license": null,
+        "language": "HTML",
+        "last_update": "2025-10-16",
+        "topics": [],
+        "pages_url": "https://france-travail.github.io/france-travail.github.io",
+        "metrics": {
+          "stars": 0,
+          "forks": 0,
+          "contributors": 1,
+          "commits_30d": null,
+          "issues_open": 0,
+          "traffic_views": 0
+        }
       }
-    }
-  ]
-}
+    ]
+  }

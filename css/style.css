@@ -145,45 +145,31 @@ body {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;
 }
 
-/* Effet de bulles flottantes en arrière-plan - Version très discrète */
+/* Effet de bulles flottantes en arrière-plan - Version subtile */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 20%, rgba(0, 83, 164, 0.015) 0%, transparent 70%),
-    radial-gradient(circle at 80% 30%, rgba(0, 142, 206, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 40% 70%, rgba(40, 50, 118, 0.012) 0%, transparent 70%),
-    radial-gradient(circle at 90% 80%, rgba(225, 1, 14, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 10% 90%, rgba(255, 224, 0, 0.015) 0%, transparent 70%),
-    radial-gradient(circle at 60% 10%, rgba(242, 159, 196, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 30% 50%, rgba(0, 83, 164, 0.008) 0%, transparent 70%),
-    radial-gradient(circle at 70% 60%, rgba(0, 142, 206, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 15% 40%, rgba(40, 50, 118, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 85% 15%, rgba(225, 1, 14, 0.008) 0%, transparent 70%),
-    radial-gradient(circle at 50% 85%, rgba(255, 224, 0, 0.012) 0%, transparent 70%),
-    radial-gradient(circle at 25% 75%, rgba(242, 159, 196, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 75% 45%, rgba(0, 83, 164, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 5% 60%, rgba(0, 142, 206, 0.008) 0%, transparent 70%),
-    radial-gradient(circle at 95% 40%, rgba(40, 50, 118, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 45% 25%, rgba(225, 1, 14, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 65% 95%, rgba(255, 224, 0, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 35% 15%, rgba(242, 159, 196, 0.008) 0%, transparent 70%),
-    radial-gradient(circle at 55% 65%, rgba(0, 83, 164, 0.01) 0%, transparent 70%),
-    radial-gradient(circle at 80% 5%, rgba(0, 142, 206, 0.01) 0%, transparent 70%);
+    radial-gradient(circle at 20% 20%, rgba(0, 83, 164, 0.03) 0%, transparent 70%),
+    radial-gradient(circle at 80% 30%, rgba(0, 142, 206, 0.02) 0%, transparent 70%),
+    radial-gradient(circle at 40% 70%, rgba(40, 50, 118, 0.02) 0%, transparent 70%),
+    radial-gradient(circle at 90% 80%, rgba(225, 1, 14, 0.015) 0%, transparent 70%),
+    radial-gradient(circle at 10% 90%, rgba(255, 224, 0, 0.02) 0%, transparent 70%),
+    radial-gradient(circle at 60% 10%, rgba(242, 159, 196, 0.02) 0%, transparent 70%);
   animation: floatingBubbles 25s ease-in-out infinite;
   pointer-events: none;
   z-index: -1;
 }
 
 @keyframes floatingBubbles {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.1;
     transform: translateY(0px) scale(1);
   }
@@ -277,9 +263,9 @@ nav a:hover {
 -------------------------- */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 2rem;
-  padding: 2rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
   align-items: stretch;
   max-width: 1200px;
   margin: 0 auto;
@@ -294,7 +280,7 @@ nav a:hover {
 
 @media (min-width: 1024px) {
   .project-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
   }
 }
@@ -307,11 +293,12 @@ nav a:hover {
   }
 }
 .project-card {
-  background: #fff;
-  border: 1px solid #e8f0fe;
+  background: linear-gradient(135deg, #ffffff 0%, #fafbff 100%);
+  border: 2px solid #e8f0fe;
   border-radius: 16px;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 83, 164, 0.08);
+  padding: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 83, 164, 0.08),
+    0 2px 8px rgba(0, 83, 164, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -322,21 +309,23 @@ nav a:hover {
 }
 
 .project-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 4px;
   background: linear-gradient(90deg, #0053a4, #0078d4);
-  transform: scaleX(0);
+  transform: scaleX(0.3);
   transition: transform 0.3s ease;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 83, 164, 0.15);
-  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 83, 164, 0.15),
+    0 4px 15px rgba(0, 83, 164, 0.08);
+  transform: translateY(-6px);
   border-color: #0053a4;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
 }
 
 .project-card:hover::before {
@@ -345,13 +334,13 @@ nav a:hover {
 
 .project-card h3 {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   font-size: 1.25rem;
   font-weight: 600;
   color: #0053a4;
   line-height: 1.3;
   transition: color 0.3s ease;
-  text-align: center;
+  text-align: left;
 }
 
 .project-card:hover h3 {
@@ -359,20 +348,17 @@ nav a:hover {
 }
 
 .project-card p {
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.05rem 0;
   font-size: 0.95rem;
   color: #555;
-  line-height: 1.5;
-  text-align: center;
-  min-height: 4.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.3;
+  text-align: left;
+  min-height: 2rem;
 }
 
 .project-card .tags-container {
-  text-align: center;
-  margin: 1rem 0;
+  text-align: left;
+  margin: 0.25rem 0;
 }
 
 .project-card .tag {
@@ -395,8 +381,8 @@ nav a:hover {
 
 .project-card .button {
   margin-top: 1.5rem;
-  align-self: stretch;
-  text-align: center;
+  align-self: flex-start;
+  text-align: left;
   padding: 0.75rem 1.5rem;
   background: linear-gradient(135deg, #0053a4, #0078d4);
   color: #fff;
@@ -408,16 +394,23 @@ nav a:hover {
   position: relative;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 83, 164, 0.2);
+  display: inline-block;
+  width: auto;
 }
 
 .project-card .button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
   transition: left 0.5s ease;
 }
 
@@ -431,7 +424,49 @@ nav a:hover {
   left: 100%;
 }
 
-/* Images des projets */
+/* Conteneur pour les logos de projets */
+.project-logo-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0053a4, #1e88e5) !important;
+  border: 2px solid rgba(0, 83, 164, 0.3) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+  box-shadow: 0 4px 12px rgba(0, 83, 164, 0.2) !important;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.project-logo-container img {
+  max-width: 60px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  transition: all 0.3s ease;
+  background: transparent !important;
+  border-radius: 0 !important;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+}
+
+.project-card:hover .project-logo-container {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 83, 164, 0.2);
+}
+
+.project-card:hover .project-logo-container img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 83, 164, 0.2));
+}
+
+/* Images des projets (fallback pour les anciens styles) */
 .project-card img {
   max-height: 80px;
   max-width: 100%;
@@ -446,13 +481,13 @@ nav a:hover {
 
 /* Icône de remplacement avec première lettre */
 .project-icon {
-  width: 80px !important;
-  height: 80px !important;
+  width: 100px !important;
+  height: 100px !important;
   border-radius: 50% !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
   font-weight: bold !important;
   color: white !important;
   margin: 0 auto 1rem auto !important;
@@ -476,20 +511,20 @@ nav a:hover {
 
 /* Métadonnées des projets */
 .project-card .project-meta {
-  margin: 1rem 0;
-  padding: 1rem;
-  background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
+  margin: 0.05rem 0;
+  padding: 0.4rem;
+  background: #eaecfb;
   border-radius: 12px;
   border: 1px solid rgba(0, 83, 164, 0.1);
-  text-align: center;
+  text-align: left;
 }
 
 .project-card .project-meta p {
-  margin: 0.25rem 0;
+  margin: 0.05rem 0;
   font-size: 0.85rem;
   color: #666;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 
 .project-card .project-meta strong {
@@ -500,16 +535,15 @@ nav a:hover {
    Footer
 -------------------------- */
 footer {
-  background: linear-gradient(135deg, #f8f9ff 0%, #e8f0fe 100%);
+  background: #eaecfb;
   padding: 3rem 1rem 2rem 1rem;
-  text-align: center;
+  text-align: left;
   font-size: 0.9rem;
   color: #555;
   margin-top: 4rem;
   border-top: 1px solid #e8f0fe;
   position: relative;
 }
-
 
 .footer-content {
   display: flex;
@@ -580,7 +614,7 @@ footer a:hover {
 
 .share-btn {
   background: #f8f9ff;
-  border: 1px solid #e8f0fe;
+  border: 2px solid #e8f0fe;
   border-radius: 8px;
   padding: 0.5rem;
   cursor: pointer;
@@ -614,12 +648,12 @@ footer a:hover {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .share-buttons {
     width: 100%;
     justify-content: center;
   }
-  
+
   .share-btn {
     flex: 1;
     max-width: 50px;
@@ -650,7 +684,7 @@ footer a:hover {
   .footer-content {
     flex-direction: column;
     gap: 1rem;
-    text-align: center;
+    text-align: left;
   }
 
   .footer-content p {
@@ -668,7 +702,7 @@ footer a:hover {
    Navbar France Travail
 -------------------------- */
 .navbar {
-  background: linear-gradient(135deg, #f8f9ff 0%, #e8f0fe 100%);
+  background: #eaecfb;
   border-bottom: 1px solid #e8f0fe;
   padding: 1rem 0;
   box-shadow: 0 2px 8px rgba(0, 83, 164, 0.08);
@@ -757,6 +791,313 @@ footer a:hover {
 }
 
 /* -----------------------
+   Hero Section avec chiffres clés
+-------------------------- */
+.hero-section {
+  margin: 0 0 2rem 0;
+  padding: 2rem 0;
+  background: transparent;
+  position: relative;
+}
+
+
+.hero-content {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  color: #0053a4;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-stats {
+  padding: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  border: 2px solid #e8f0fe;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 83, 164, 0.06);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0053a4, #0078d4);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 83, 164, 0.1);
+  border-color: #0053a4;
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0053a4;
+  filter: drop-shadow(0 2px 4px rgba(0, 83, 164, 0.1));
+  transition: all 0.3s ease;
+}
+
+.stat-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0053a4;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  transition: color 0.3s ease;
+}
+
+.stat-card:hover .stat-number {
+  color: #003c7d;
+}
+
+.stat-label {
+  font-size: 0.95rem;
+  color: #666;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* États de chargement et d'erreur */
+.stat-card.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #e8f0fe;
+  border-top: 3px solid #0053a4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.stat-card.error {
+  background: linear-gradient(135deg, #fff5f5 0%, #fef2f2 100%);
+  border-color: #fecaca;
+  color: #dc2626;
+}
+
+/* Responsive pour le hero et les stats */
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    margin: 1rem 0 2rem 0;
+    padding: 2rem 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .stat-number {
+    font-size: 1.75rem;
+  }
+  
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 0 1rem;
+  }
+  
+  .hero-stats {
+    padding: 0 1rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* -----------------------
+   In-progress section (Accueil)
+-------------------------- */
+.inprogress-section {
+  margin: 3rem 0;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 255, 0.8) 100%);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 83, 164, 0.1), 0 5px 15px rgba(0, 83, 164, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.inprogress-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0053a4, #0078d4);
+}
+
+.inprogress-title {
+  font-size: 1.8rem;
+  color: #0053a4;
+  margin: 0 0 1rem 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.inprogress-desc {
+  color: #555;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.inprogress-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.inprogress-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+  border: 2px solid rgba(232, 240, 254, 0.8);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 83, 164, 0.1), 0 3px 10px rgba(0, 83, 164, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.inprogress-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 83, 164, 0.15), 0 5px 15px rgba(0, 83, 164, 0.08);
+}
+
+.inprogress-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.2rem;
+  color: #0053a4;
+  text-align: left;
+  font-weight: 600;
+}
+
+.inprogress-resume {
+  margin: 0 0 1rem 0;
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.inprogress-meta {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+  text-align: left;
+}
+
+.inprogress-logo {
+  max-height: 60px;
+  max-width: 100%;
+  display: block;
+  margin: 0 0 1rem 0;
+  object-fit: contain;
+}
+
+.inprogress-button {
+  margin-top: 1rem;
+}
+
+/* -----------------------
          Theme Grid
 -------------------------- */
 
@@ -764,13 +1105,25 @@ footer a:hover {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 83, 164, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 83, 164, 0.08), 0 2px 8px rgba(0, 83, 164, 0.05);
   backdrop-filter: blur(10px);
   margin-top: 2rem;
   margin-bottom: 2rem;
+  border: 1px solid rgba(232, 240, 254, 0.5);
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 83, 164, 0.3), transparent);
 }
 
 /* Style pour la section principale */
@@ -786,17 +1139,31 @@ main.container p {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #555;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   max-width: 800px;
 }
 
 #themes-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 3rem 1rem;
+  gap: 2.5rem;
+  padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+  overflow: visible;
+}
+
+#themes-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #0053a4, transparent);
+  border-radius: 2px;
 }
 
 /* Responsive grid pour 5 éléments */
@@ -824,19 +1191,19 @@ main.container p {
 @media (max-width: 767px) {
   #themes-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
   }
-  
+
   .theme-card {
     padding: 1.5rem;
   }
-  
+
   .theme-icon-wrapper {
     width: 60px;
     height: 60px;
   }
-  
+
   .theme-icon {
     max-width: 32px;
     max-height: 32px;
@@ -846,19 +1213,33 @@ main.container p {
 .theme-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: #fff;
-  border: 1px solid #e8f0fe;
+  align-items: flex-start;
+  text-align: left;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f0fe 100%);
+  border: 2px solid #e8f0fe;
   border-radius: 16px;
-  padding: 2rem 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 83, 164, 0.08);
+  padding: 1.5rem;
+  padding-top: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 83, 164, 0.08);
   text-decoration: none !important;
   color: inherit;
   transition: all 0.3s ease;
   height: 100%;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
+}
+
+.theme-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 83, 164, 0.02) 0%, rgba(0, 83, 164, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .theme-card:hover {
@@ -866,7 +1247,7 @@ main.container p {
 }
 
 .theme-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -887,50 +1268,24 @@ main.container p {
   transform: scaleX(1);
 }
 
-.theme-icon-wrapper {
-  width: 72px;
-  height: 72px;
-  margin-bottom: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #f8f9ff, #e8f0fe);
-  border-radius: 20px;
-  position: relative;
-  transition: all 0.3s ease;
-}
 
-.theme-card:hover .theme-icon-wrapper {
-  background: linear-gradient(135deg, #e8f0fe, #d1e7ff);
-  transform: scale(1.05);
-}
-
-.theme-icon {
-  max-width: 40px;
-  max-height: 40px;
-  filter: drop-shadow(0 2px 4px rgba(0, 83, 164, 0.1));
-  transition: all 0.3s ease;
-}
-
-.theme-card:hover .theme-icon {
-  transform: scale(1.1);
-  filter: drop-shadow(0 4px 8px rgba(0, 83, 164, 0.2));
-}
-
-/* Bulles colorées pour les thèmes */
+/* Bulles colorées pour les thèmes - Positionnées en coin haut-gauche de la carte */
 .theme-bubble {
-  width: 56px;
-  height: 56px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: white;
   box-shadow: 0 4px 12px rgba(0, 83, 164, 0.15);
   transition: all 0.3s ease;
-  margin: 0 auto;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 10;
 }
 
 .theme-card:hover .theme-bubble {
@@ -943,9 +1298,11 @@ main.container p {
   font-weight: 600;
   color: #0053a4;
   margin-bottom: 0.75rem;
+  margin-top: 0;
   line-height: 1.3;
   transition: color 0.3s ease;
   text-decoration: none;
+  text-align: left;
 }
 
 .theme-card:hover h2 {
@@ -959,6 +1316,7 @@ main.container p {
   line-height: 1.5;
   margin: 0;
   text-decoration: none;
+  text-align: left;
 }
 
 .theme-card:hover p {
@@ -981,7 +1339,7 @@ main.container p {
 .construction-banner {
   background-color: #fff3cd;
   color: #856404;
-  text-align: center;
+  text-align: left;
   padding: 0.75rem 1rem;
   font-size: 0.95rem;
   border-bottom: 1px solid #ffeeba;
