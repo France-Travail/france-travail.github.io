@@ -1,9 +1,9 @@
 [
   {
-    "name": "TradEmploi",
+    "name": "TradOpen",
     "repo": "https://github.com/France-Travail/TradEmploi",
     "category": "accessibilite&inclusion",
-    "description": "TradEmploi (ou TradSNCF) est une application web de traduction instantanée multilingue qui permet à deux personnes ne parlant pas la même langue de dialoguer chacune dans la leur.",
+    "description": "TradOpen (ou TradEmploi/TradSNCF) est une application web de traduction instantanée multilingue qui permet à deux personnes ne parlant pas la même langue de dialoguer chacune dans la leur.",
     "tags": ["traduction", "multilingue", "inclusion", "accessibilité"],
     "logo": "/img/projects/tradEmploi.png",
     "maintainers": [],
