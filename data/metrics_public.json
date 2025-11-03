@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2025-10-30T15:08:35.220436+00:00",
+  "collected_at": "2025-11-03T06:21:14.357886+00:00",
   "summary": {
-    "total_repositories": 34,
+    "total_repositories": 35,
     "active_repositories": 24,
     "total_stars": 200,
     "total_forks": 36,
-    "total_contributors": 622,
+    "total_contributors": 623,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -504,7 +504,7 @@
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-07-03",
+      "last_update": "2025-10-30",
       "topics": [
         "developpement-durable",
         "ecoconception",
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2025-10-28",
+      "last_update": "2025-10-30",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -770,6 +770,27 @@
       "metrics": {
         "stars": 0,
         "forks": 1,
+        "contributors": 1,
+        "commits_30d": null,
+        "issues_open": 0,
+        "traffic_views": 0
+      }
+    },
+    {
+      "name": "starter-kit-ecoconception",
+      "url": "https://github.com/France-Travail/starter-kit-ecoconception",
+      "description": "Starter kit d'écoconception pour UX/UI et intégrateurs : les fondamentaux, pratiques et outils pour un numérique plus responsable.",
+      "stars": 0,
+      "forks": 0,
+      "contributors": 1,
+      "license": "MIT",
+      "language": "HTML",
+      "last_update": "2025-10-31",
+      "topics": [],
+      "pages_url": "https://france-travail.github.io/starter-kit-ecoconception",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
         "contributors": 1,
         "commits_30d": null,
         "issues_open": 0,
