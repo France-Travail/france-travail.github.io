@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2025-11-03T06:21:14.357886+00:00",
+  "collected_at": "2025-11-10T06:21:49.228081+00:00",
   "summary": {
-    "total_repositories": 35,
+    "total_repositories": 36,
     "active_repositories": 24,
-    "total_stars": 200,
-    "total_forks": 36,
-    "total_contributors": 623,
+    "total_stars": 201,
+    "total_forks": 39,
+    "total_contributors": 626,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -307,10 +307,10 @@
       "description": "Référentiel des bonnes pratiques d’écoconception des services numériques",
       "stars": 14,
       "forks": 3,
-      "contributors": 0,
+      "contributors": 1,
       "license": "GFDL-1.3",
       "language": "TeX",
-      "last_update": "2024-12-02",
+      "last_update": "2025-11-04",
       "topics": [
         "ecoconception",
         "greenit",
@@ -321,9 +321,9 @@
       "metrics": {
         "stars": 14,
         "forks": 3,
-        "contributors": 0,
+        "contributors": 1,
         "commits_30d": null,
-        "issues_open": 1,
+        "issues_open": 2,
         "traffic_views": 0
       }
     },
@@ -352,7 +352,7 @@
       "name": "Architecture",
       "url": "https://github.com/France-Travail/Architecture",
       "description": "Outils et pratiques d'architecture des équipes de la DSI de France Travail",
-      "stars": 29,
+      "stars": 30,
       "forks": 1,
       "contributors": 3,
       "license": "CC0-1.0",
@@ -361,7 +361,7 @@
       "topics": [],
       "pages_url": null,
       "metrics": {
-        "stars": 29,
+        "stars": 30,
         "forks": 1,
         "contributors": 3,
         "commits_30d": null,
@@ -395,7 +395,7 @@
       "url": "https://github.com/France-Travail/vllm-ft",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "stars": 5,
-      "forks": 0,
+      "forks": 1,
       "contributors": 455,
       "license": "Apache-2.0",
       "language": "Python",
@@ -404,7 +404,7 @@
       "pages_url": null,
       "metrics": {
         "stars": 5,
-        "forks": 0,
+        "forks": 1,
         "contributors": 455,
         "commits_30d": null,
         "issues_open": 1,
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2025-10-24",
+      "last_update": "2025-11-05",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -504,7 +504,7 @@
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-10-30",
+      "last_update": "2025-11-03",
       "topics": [
         "developpement-durable",
         "ecoconception",
@@ -533,7 +533,7 @@
       "contributors": 2,
       "license": "MIT",
       "language": "JavaScript",
-      "last_update": "2025-10-28",
+      "last_update": "2025-11-06",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2025-10-22",
+      "last_update": "2025-11-07",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-10-30",
+      "last_update": "2025-11-07",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -593,18 +593,18 @@
       "description": null,
       "stars": 1,
       "forks": 0,
-      "contributors": 24,
+      "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-10-30",
+      "last_update": "2025-11-05",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 1,
         "forks": 0,
-        "contributors": 24,
+        "contributors": 25,
         "commits_30d": null,
-        "issues_open": 2,
+        "issues_open": 1,
         "traffic_views": 0
       }
     },
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2025-10-30",
+      "last_update": "2025-11-03",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -764,7 +764,7 @@
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-10-28",
+      "last_update": "2025-11-03",
       "topics": [],
       "pages_url": "https://france-travail.github.io/formation-ecoconception-dev",
       "metrics": {
@@ -781,16 +781,41 @@
       "url": "https://github.com/France-Travail/starter-kit-ecoconception",
       "description": "Starter kit d'écoconception pour UX/UI et intégrateurs : les fondamentaux, pratiques et outils pour un numérique plus responsable.",
       "stars": 0,
-      "forks": 0,
+      "forks": 1,
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-10-31",
+      "last_update": "2025-11-05",
       "topics": [],
       "pages_url": "https://france-travail.github.io/starter-kit-ecoconception",
       "metrics": {
         "stars": 0,
-        "forks": 0,
+        "forks": 1,
+        "contributors": 1,
+        "commits_30d": null,
+        "issues_open": 0,
+        "traffic_views": 0
+      }
+    },
+    {
+      "name": "kit_ecoconception_PO-PM",
+      "url": "https://github.com/France-Travail/kit_ecoconception_PO-PM",
+      "description": "Kit d'auto-formation à l'écoconception pour les équipes produit (PM, PO, UX, Devs). Contient des exercices pratiques et un radar de maturité interactif.",
+      "stars": 0,
+      "forks": 1,
+      "contributors": 1,
+      "license": "MIT",
+      "language": "HTML",
+      "last_update": "2025-11-06",
+      "topics": [
+        "conception-responsable",
+        "ecoconception",
+        "rgesn"
+      ],
+      "pages_url": "https://france-travail.github.io/kit_ecoconception_PO-PM",
+      "metrics": {
+        "stars": 0,
+        "forks": 1,
         "contributors": 1,
         "commits_30d": null,
         "issues_open": 0,
