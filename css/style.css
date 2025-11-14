@@ -155,13 +155,36 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: 
-    radial-gradient(circle at 20% 20%, rgba(0, 83, 164, 0.03) 0%, transparent 70%),
-    radial-gradient(circle at 80% 30%, rgba(0, 142, 206, 0.02) 0%, transparent 70%),
-    radial-gradient(circle at 40% 70%, rgba(40, 50, 118, 0.02) 0%, transparent 70%),
-    radial-gradient(circle at 90% 80%, rgba(225, 1, 14, 0.015) 0%, transparent 70%),
-    radial-gradient(circle at 10% 90%, rgba(255, 224, 0, 0.02) 0%, transparent 70%),
-    radial-gradient(circle at 60% 10%, rgba(242, 159, 196, 0.02) 0%, transparent 70%);
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(0, 83, 164, 0.03) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 80% 30%,
+      rgba(0, 142, 206, 0.02) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 40% 70%,
+      rgba(40, 50, 118, 0.02) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(225, 1, 14, 0.015) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(255, 224, 0, 0.02) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 60% 10%,
+      rgba(242, 159, 196, 0.02) 0%,
+      transparent 70%
+    );
   animation: floatingBubbles 25s ease-in-out infinite;
   pointer-events: none;
   z-index: -1;
@@ -605,6 +628,13 @@ footer a:hover {
   margin-top: 1rem;
 }
 
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
 .share-buttons {
   display: flex;
   gap: 0.5rem;
@@ -646,6 +676,17 @@ footer a:hover {
   .project-actions {
     flex-direction: column;
     align-items: center;
+  }
+
+  .project-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .project-buttons .button {
+    width: 100%;
+    text-align: center;
   }
 
   .share-buttons {
@@ -799,7 +840,6 @@ footer a:hover {
   position: relative;
 }
 
-
 .hero-content {
   text-align: center;
   margin-bottom: 2rem;
@@ -952,8 +992,12 @@ footer a:hover {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .stat-card.error {
@@ -975,28 +1019,28 @@ footer a:hover {
     margin: 1rem 0 2rem 0;
     padding: 2rem 0;
   }
-  
+
   .hero-content h1 {
     font-size: 2.2rem;
   }
-  
+
   .hero-content p {
     font-size: 1.1rem;
   }
-  
+
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
-  
+
   .stat-card {
     padding: 1rem;
   }
-  
+
   .stat-number {
     font-size: 1.75rem;
   }
-  
+
   .stat-icon {
     width: 40px;
     height: 40px;
@@ -1007,25 +1051,25 @@ footer a:hover {
   .hero-content {
     padding: 0 1rem;
   }
-  
+
   .hero-stats {
     padding: 0 1rem;
   }
-  
+
   .stats-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .hero-content h1 {
     font-size: 1.8rem;
     text-align: left;
   }
-  
+
   .title-desktop {
     display: none;
   }
-  
+
   .title-mobile {
     display: block;
     text-align: center;
@@ -1038,9 +1082,14 @@ footer a:hover {
 .inprogress-section {
   margin: 3rem 0;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 249, 255, 0.8) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(248, 249, 255, 0.8) 100%
+  );
   border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 83, 164, 0.1), 0 5px 15px rgba(0, 83, 164, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 83, 164, 0.1),
+    0 5px 15px rgba(0, 83, 164, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.3);
   position: relative;
   overflow: hidden;
@@ -1082,7 +1131,8 @@ footer a:hover {
   border: 2px solid rgba(232, 240, 254, 0.8);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 8px 25px rgba(0, 83, 164, 0.1), 0 3px 10px rgba(0, 83, 164, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 83, 164, 0.1),
+    0 3px 10px rgba(0, 83, 164, 0.05);
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -1090,7 +1140,8 @@ footer a:hover {
 
 .inprogress-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 83, 164, 0.15), 0 5px 15px rgba(0, 83, 164, 0.08);
+  box-shadow: 0 15px 35px rgba(0, 83, 164, 0.15),
+    0 5px 15px rgba(0, 83, 164, 0.08);
 }
 
 .inprogress-card h3 {
@@ -1139,7 +1190,8 @@ footer a:hover {
   padding: 2rem 1.5rem;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(0, 83, 164, 0.08), 0 2px 8px rgba(0, 83, 164, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 83, 164, 0.08),
+    0 2px 8px rgba(0, 83, 164, 0.05);
   backdrop-filter: blur(10px);
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1154,7 +1206,12 @@ footer a:hover {
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0, 83, 164, 0.3), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 83, 164, 0.3),
+    transparent
+  );
 }
 
 /* Style pour la section principale */
@@ -1163,7 +1220,7 @@ main.container h1 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #0053a4;
-  line-height: 2.0;
+  line-height: 2;
 }
 
 main.container p {
@@ -1222,8 +1279,8 @@ main.container p {
 @media (max-width: 767px) {
   #themes-grid {
     grid-template-columns: 1fr;
-  gap: 1.5rem;
-  padding: 2rem 1rem;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
   }
 
   .theme-card {
@@ -1267,7 +1324,11 @@ main.container p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 83, 164, 0.02) 0%, rgba(0, 83, 164, 0.05) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 83, 164, 0.02) 0%,
+    rgba(0, 83, 164, 0.05) 100%
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -1298,7 +1359,6 @@ main.container p {
 .theme-card:hover::before {
   transform: scaleX(1);
 }
-
 
 /* Bulles colorées pour les thèmes - Positionnées en coin haut-gauche de la carte */
 .theme-bubble {

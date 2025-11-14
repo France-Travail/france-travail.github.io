@@ -120,7 +120,7 @@
     "external": false
   },
   {
-    "name": "Referentiel Ecoconception",
+    "name": "Generic sensitization to digital services ecodesign",
     "repo": "https://github.com/France-Travail/referentiel-ecoconception",
     "category": "eco",
     "description": "France Travail’s digital eco-design reference framework, providing criteria, tools and concrete examples to reduce the environmental footprint of digital services. It complements the awareness platform for responsible design and supports sustainability in public digital services.",
@@ -182,5 +182,17 @@
     "status": "in the process of being open sourced",
     "external": false,
     "inProgress": true
+  },
+  {
+    "name": "Generic sensitization to digital services ecodesign - Developers",
+    "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
+    "category": "eco",
+    "description": "Awareness website about responsible design for developers, testers, architects, and project managers. Environmental impacts, training modules, and practical guides.",
+    "tags": ["eco-design", "framework", "sustainability", "responsibility"],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2025-10-13",
+    "status": "maintained",
+    "external": false
   }
 ]

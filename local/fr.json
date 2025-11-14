@@ -15,6 +15,7 @@
   "construction_banner": "🚧 Ce site est actuellement en construction. Certaines sections sont incomplètes.",
   "view_github": "Voir sur GitHub ↗",
   "view_external": "Voir le projet externe ↗",
+  "view_site": "Voir le site ↗",
   "status": "Statut",
   "last_update": "Dernière mise à jour",
   "maintainers": "Mainteneur",
@@ -23,8 +24,7 @@
   "load_error": "Erreur lors du chargement des projets.",
   "themes_load_error": "Impossible de charger les thèmes pour le moment.",
   "all_projects_title": "Tous les projets open source",
-  "all_projects_description": "Découvrez l'ensemble des projets open source portés ou soutenus par France Travail."
-  ,
+  "all_projects_description": "Découvrez l'ensemble des projets open source portés ou soutenus par France Travail.",
   "inprogress_title": "Projets en cours",
   "inprogress_desc": "Les projets suivants sont en cours de reversement ou d'ouverture. Les informations peuvent évoluer.",
   "stats_title": "Chiffres clés",

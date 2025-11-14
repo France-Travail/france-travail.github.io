@@ -13,10 +13,10 @@
     "inProgress": false
   },
   {
-    "name": "Sensibilisation à la Conception Responsable de Service Numérique",
+    "name": "Sensibilisation à la Conception Responsable de Service Numérique (Générique)",
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
-    "description": "Site statique de sensibilisation à la conception responsable. Impacts environnementaux, frugalité et fiches pratiques.",
+    "description": "Site de sensibilisation à la conception responsable, dédiée aux développeurs. Impacts environnementaux, frugalité et fiches pratiques.",
     "tags": ["écoconception", "sobriété", "numérique responsable"],
     "logo": "",
     "maintainers": [],
@@ -193,5 +193,18 @@
     "status": "en cours de reversement",
     "external": false,
     "inProgress": true
+  },
+  {
+    "name": "Sensibilisation à la Conception Responsable de Service Numérique - Développeurs",
+    "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
+    "category": "eco",
+    "description": "Site de sensibilisation à la conception responsable à destination des développeurs, testeurs, architectes et chefs de projets. Impacts environnementaux, modules de formation et fiches pratiques.",
+    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2025-10-13",
+    "status": "actif",
+    "external": false,
+    "inProgress": false
   }
 ]

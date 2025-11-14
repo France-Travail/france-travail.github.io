@@ -1,3 +1,41 @@
+// Fonction utilitaire pour extraire le nom du repo depuis l'URL
+function extractRepoName(repoUrl) {
+  if (!repoUrl) return null;
+  const match = repoUrl.match(/github\.com\/[^\/]+\/([^\/]+)/);
+  return match ? match[1] : null;
+}
+
+// Fonction pour déterminer le chemin vers data/ selon l'emplacement de la page
+function getDataPath() {
+  const path = window.location.pathname;
+  // Si on est dans un sous-dossier (comme themes/), utiliser ../data
+  // Sinon, utiliser ./data
+  return path.includes("/themes/") ? "../data" : "./data";
+}
+
+// Fonction pour charger les métriques et créer un mapping nom -> pages_url
+async function loadMetricsMapping() {
+  try {
+    const dataPath = getDataPath();
+    const res = await fetch(`${dataPath}/metrics_public.json`);
+    const metricsData = await res.json();
+    const mapping = {};
+
+    if (metricsData.repositories) {
+      metricsData.repositories.forEach((repo) => {
+        if (repo.name && repo.pages_url) {
+          mapping[repo.name] = repo.pages_url;
+        }
+      });
+    }
+
+    return mapping;
+  } catch (error) {
+    console.warn("Impossible de charger les métriques :", error);
+    return {};
+  }
+}
+
 async function loadAllProjects() {
   const container = document.getElementById("projects-container");
 
@@ -9,17 +47,35 @@ async function loadAllProjects() {
   try {
     // Déterminer la langue actuelle
     const currentLang = localStorage.getItem("lang") || "fr";
-    const projectsFile = currentLang === "en" ? "../data/projects-en.json" : "../data/projects.json";
-    
-    const res = await fetch(projectsFile);
-    const allProjects = await res.json();
+    const dataPath = getDataPath();
+    const projectsFile =
+      currentLang === "en"
+        ? `${dataPath}/projects-en.json`
+        : `${dataPath}/projects.json`;
+
+    // Charger les projets et les métriques en parallèle
+    const [projectsRes, metricsMapping] = await Promise.all([
+      fetch(projectsFile),
+      loadMetricsMapping(),
+    ]);
+
+    const allProjects = await projectsRes.json();
 
     if (allProjects.length === 0) {
       container.innerHTML = `<p data-i18n="no_projects">Aucun projet trouvé pour le moment.</p>`;
       return;
     }
 
-    container.innerHTML = allProjects.map((p) => renderProjectCard(p)).join("");
+    // Enrichir chaque projet avec son pages_url si disponible
+    const enrichedProjects = allProjects.map((p) => {
+      const repoName = extractRepoName(p.repo);
+      const pagesUrl = repoName ? metricsMapping[repoName] : null;
+      return { ...p, pagesUrl };
+    });
+
+    container.innerHTML = enrichedProjects
+      .map((p) => renderProjectCard(p))
+      .join("");
   } catch (error) {
     console.error("Erreur lors du chargement des projets :", error);
     container.innerHTML = `<p data-i18n="load_error">Erreur lors du chargement des projets.</p>`;
@@ -28,13 +84,7 @@ async function loadAllProjects() {
 
 // Fonction pour générer des couleurs aléatoires pour les bulles de projets
 function getRandomProjectColor() {
-  const colors = [
-    "#008ece",
-    "#283276", 
-    "#e1010e",
-    "#ffe000",
-    "#f29fc4"
-  ];
+  const colors = ["#008ece", "#283276", "#e1010e", "#ffe000", "#f29fc4"];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
 }
@@ -66,13 +116,13 @@ function renderProjectCard(project) {
 
   // Associer une couleur fixe à chaque catégorie
   const categoryColors = {
-    "accessibilite&inclusion": "#008ece",  // Bleu clair pour accessibilité
-    "eco": "#ffe000",                       // Jaune pour éco-conception
-    "ia": "#e1010e",                        // Rouge pour IA
-    "architecture": "#283276",              // Bleu foncé pour architecture
-    "si-plateforme": "#f29fc4"             // Rose pour SI plateforme
+    "accessibilite&inclusion": "#008ece", // Bleu clair pour accessibilité
+    eco: "#ffe000", // Jaune pour éco-conception
+    ia: "#e1010e", // Rouge pour IA
+    architecture: "#283276", // Bleu foncé pour architecture
+    "si-plateforme": "#f29fc4", // Rose pour SI plateforme
   };
-  
+
   const projectColor = categoryColors[project.category] || "#0053a4"; // Couleur par défaut
   console.log(`Projet ${name} (${project.category}): couleur ${projectColor}`);
 
@@ -81,12 +131,18 @@ function renderProjectCard(project) {
       ${
         logo && logo.trim() !== ""
           ? `<img src="../${logo}" alt="${name} logo">`
-          : `<div class="project-icon" style="width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; color: white; margin: 0 auto 1rem auto; background: ${projectColor} !important; box-shadow: 0 4px 12px rgba(0, 83, 164, 0.3); transition: all 0.3s ease;">${name.charAt(0).toUpperCase()}</div>`
+          : `<div class="project-icon" style="width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; color: white; margin: 0 auto 1rem auto; background: ${projectColor} !important; box-shadow: 0 4px 12px rgba(0, 83, 164, 0.3); transition: all 0.3s ease;">${name
+              .charAt(0)
+              .toUpperCase()}</div>`
       }
       <h3>${name}</h3>
       <p>${description}</p>
 
-      ${status ? `<p><strong data-i18n="status">Statut</strong>: ${status}</p>` : ""}
+      ${
+        status
+          ? `<p><strong data-i18n="status">Statut</strong>: ${status}</p>`
+          : ""
+      }
       ${
         lastUpdate
           ? `<p><strong data-i18n="last_update">Dernière mise à jour</strong>: ${formatDate(
@@ -96,7 +152,9 @@ function renderProjectCard(project) {
       }
       ${
         maintainers.length
-          ? `<p><strong data-i18n="${maintainers.length > 1 ? 'maintainers_plural' : 'maintainers'}">Mainteneur${
+          ? `<p><strong data-i18n="${
+              maintainers.length > 1 ? "maintainers_plural" : "maintainers"
+            }">Mainteneur${
               maintainers.length > 1 ? "s" : ""
             }</strong>: ${maintainerLinks.join(", ")}</p>`
           : ""
@@ -112,9 +170,26 @@ function renderProjectCard(project) {
       }
 
       <div class="project-actions">
-        ${!inProgress ? `<a class="button" href="${repo}" target="_blank" rel="noopener">
-          ${external ? '<span data-i18n="view_external">Voir le projet externe ↗</span>' : '<span data-i18n="view_github">Voir sur GitHub ↗</span>'}
-        </a>` : ''}
+        <div class="project-buttons">
+          ${
+            !inProgress
+              ? `<a class="button" href="${repo}" target="_blank" rel="noopener">
+            ${
+              external
+                ? '<span data-i18n="view_external">Voir le projet externe ↗</span>'
+                : '<span data-i18n="view_github">Voir sur GitHub ↗</span>'
+            }
+          </a>`
+              : ""
+          }
+          ${
+            project.pagesUrl
+              ? `<a class="button" href="${project.pagesUrl}" target="_blank" rel="noopener">
+            <span data-i18n="view_site">Voir le site ↗</span>
+          </a>`
+              : ""
+          }
+        </div>
         <div class="share-buttons">
           <button class="share-btn" onclick="shareProject('${name}', '${repo}')" title="Partager ce projet">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -144,7 +219,7 @@ function shareProject(name, repo) {
     navigator.share({
       title: `Projet ${name} - France Travail Open Source`,
       text: `Découvrez le projet ${name} sur le catalogue open source de France Travail`,
-      url: repo
+      url: repo,
     });
   } else {
     // Fallback : copier le lien
@@ -155,8 +230,8 @@ function shareProject(name, repo) {
 function copyProjectLink(repo) {
   navigator.clipboard.writeText(repo).then(() => {
     // Afficher une notification temporaire
-    const notification = document.createElement('div');
-    notification.textContent = 'Lien copié !';
+    const notification = document.createElement("div");
+    notification.textContent = "Lien copié !";
     notification.style.cssText = `
       position: fixed;
       top: 20px;
