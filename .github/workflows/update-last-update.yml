@@ -1,0 +1,62 @@
+name: Mise à jour des dates lastUpdate
+
+on:
+  # Déclenchement manuel
+  workflow_dispatch:
+  # Déclenchement automatique toutes les semaines (dimanche) à 6h UTC
+  schedule:
+    - cron: '0 6 * * 0'
+  # Déclenchement quand metrics_public.json est modifié
+  push:
+    paths:
+      - 'data/metrics_public.json'
+
+jobs:
+  update-dates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout du repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Configuration de Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Exécution du script de mise à jour
+        run: |
+          python3 scripts/update_last_update.py
+
+      - name: Vérification des changements
+        id: verify-changes
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Configuration de Git
+        if: steps.verify-changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit des changements
+        if: steps.verify-changes.outputs.changes == 'true'
+        run: |
+          git add data/projects.json data/projects-en.json
+          git commit -m "chore: mise à jour automatique des dates lastUpdate depuis metrics_public.json"
+          git push
+
+      - name: Message si aucune modification
+        if: steps.verify-changes.outputs.changes == 'false'
+        run: |
+          echo "ℹ️  Aucune mise à jour nécessaire."
+

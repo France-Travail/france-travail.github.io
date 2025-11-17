@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         class="icon"
       />
       <p>
-        <a href="https://francetravail.io" target="_blank" rel="noopener">
+        <a href="https://www.francetravail.fr" target="_blank" rel="noopener">
           &copy; <span id="year">${new Date().getFullYear()}</span> France Travail
         </a>
         —

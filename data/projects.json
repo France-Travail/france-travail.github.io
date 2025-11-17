@@ -4,10 +4,15 @@
     "repo": "https://github.com/France-Travail/TradEmploi",
     "category": "accessibilite&inclusion",
     "description": "TradOpen (ou TradEmploi/TradSNCF) est une application web de traduction instantanée multilingue qui permet à deux personnes ne parlant pas la même langue de dialoguer chacune dans la leur.",
-    "tags": ["traduction", "multilingue", "inclusion", "accessibilité"],
+    "tags": [
+      "traduction",
+      "multilingue",
+      "inclusion",
+      "accessibilité"
+    ],
     "logo": "/img/projects/tradEmploi.png",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-10-16",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -16,11 +21,15 @@
     "name": "Sensibilisation à la Conception Responsable de Service Numérique (Générique)",
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
-    "description": "Site de sensibilisation à la conception responsable, dédiée aux développeurs. Impacts environnementaux, frugalité et fiches pratiques.",
-    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "description": "Site de sensibilisation à la conception responsable. Impacts environnementaux, frugalité et fiches pratiques.",
+    "tags": [
+      "écoconception",
+      "sobriété",
+      "numérique responsable"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-11-03",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -30,10 +39,15 @@
     "repo": "https://github.com/France-Travail/gabarit",
     "category": "ia",
     "description": "Templates Python pour projets de data science. Intègre DVC, MLFlow, Streamlit. Couvre NLP, vision, numérique.",
-    "tags": ["data science", "framework", "machine learning", "IA"],
+    "tags": [
+      "data science",
+      "framework",
+      "machine learning",
+      "IA"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2024-12-12",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -43,10 +57,15 @@
     "repo": "https://github.com/France-Travail/Architecture",
     "category": "architecture",
     "description": "Espace des architectes DSI FT. Partage d’outils, bonnes pratiques et démarches collaboratives durables.",
-    "tags": ["architecture", "si plateforme", "collaboration", "documentation"],
+    "tags": [
+      "architecture",
+      "si plateforme",
+      "collaboration",
+      "documentation"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-06-27",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -56,10 +75,15 @@
     "repo": "https://github.com/France-Travail/words_n_fun",
     "category": "ia",
     "description": "Prétraitement NLP pour projets linguistiques. Nettoyage, normalisation, pipelines sémantiques.",
-    "tags": ["nlp", "prétraitement", "text mining", "pipeline"],
+    "tags": [
+      "nlp",
+      "prétraitement",
+      "text mining",
+      "pipeline"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2024-06-11",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -69,10 +93,15 @@
     "repo": "https://github.com/France-Travail/happy_vllm",
     "category": "ia",
     "description": "API REST optimisée pour vLLM. Déploiement scalable de modèles de langage avec endpoints standardisés.",
-    "tags": ["LLM", "API", "vLLM", "IA générative"],
+    "tags": [
+      "LLM",
+      "API",
+      "vLLM",
+      "IA générative"
+    ],
     "logo": "/img/projects/happy_vllm.png",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-10-20",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -82,10 +111,15 @@
     "repo": "https://github.com/France-Travail/embcompare",
     "category": "ia",
     "description": "Outil de comparaison d’embeddings NLP. Visualisation via Streamlit. Analyse de performance vectorielle.",
-    "tags": ["NLP", "embedding", "évaluation", "comparaison"],
+    "tags": [
+      "NLP",
+      "embedding",
+      "évaluation",
+      "comparaison"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2024-03-25",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -95,10 +129,16 @@
     "repo": "https://github.com/France-Travail/benchmark_llm_serving",
     "category": "ia",
     "description": "Benchmarks des backends LLM (vLLM, Mistral). Mesure latence, performance, génération parallèle, GPU.",
-    "tags": ["benchmark", "LLM", "performance", "vLLM", "Mistral"],
+    "tags": [
+      "benchmark",
+      "LLM",
+      "performance",
+      "vLLM",
+      "Mistral"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-05-16",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -108,10 +148,15 @@
     "repo": "https://github.com/France-Travail/fairlens_pe",
     "category": "ia",
     "description": "Adaptation de FairLens pour évaluer l’équité des données IA. Intégré à Gabarit. Analyse de biais automatique.",
-    "tags": ["fairness", "bias", "éthique", "IA responsable"],
+    "tags": [
+      "fairness",
+      "bias",
+      "éthique",
+      "IA responsable"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2024-06-11",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -121,7 +166,12 @@
     "repo": "https://github.com/StartupsPoleEmploi/anotea",
     "category": "accessibilite&inclusion",
     "description": "Plateforme de notation des formations par les usagers. API + widget. Retours anonymisés pour + transparence.",
-    "tags": ["avis", "formation", "usager", "transparence"],
+    "tags": [
+      "avis",
+      "formation",
+      "usager",
+      "transparence"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-13",
@@ -134,10 +184,15 @@
     "repo": "https://github.com/France-Travail/referentiel-ecoconception",
     "category": "eco",
     "description": "Référentiel des bonnes pratiques d’écoconception numérique. Complète la plateforme de sensibilisation FT.",
-    "tags": ["écoconception", "référentiel", "durabilité", "responsabilité"],
+    "tags": [
+      "écoconception",
+      "référentiel",
+      "durabilité",
+      "responsabilité"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-11-04",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -147,7 +202,12 @@
     "repo": "https://github.com/France-Travail/design-system",
     "category": "si-plateforme",
     "description": "Composants réutilisables, tokens, chartes et ressources pour homogénéiser les interfaces numériques de France Travail.",
-    "tags": ["design system", "ui", "accessibilité", "réutilisable"],
+    "tags": [
+      "design system",
+      "ui",
+      "accessibilité",
+      "réutilisable"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -160,7 +220,12 @@
     "repo": "https://github.com/France-Travail/widget-import-excel",
     "category": "si-plateforme",
     "description": "Widget d’import dynamique Excel pour Grist, avec correspondance des colonnes et stratégie de mise à jour colonne par colonne et ligne par ligne.",
-    "tags": ["grist", "excel", "import", "automatisation"],
+    "tags": [
+      "grist",
+      "excel",
+      "import",
+      "automatisation"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -173,7 +238,12 @@
     "repo": "https://github.com/France-Travail/cej",
     "category": "si-plateforme",
     "description": "Application de suivi et accompagnement des jeunes dans le cadre du CEJ. Interface agent + usager.",
-    "tags": ["cej", "emploi", "jeunes", "accompagnement"],
+    "tags": [
+      "cej",
+      "emploi",
+      "jeunes",
+      "accompagnement"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -186,7 +256,11 @@
     "repo": "https://github.com/France-Travail/francetravail.github.io",
     "category": "si-plateforme",
     "description": "Site vitrine listant les projets Open Source de France Travail.",
-    "tags": ["open source", "documentation", "site vitrine"],
+    "tags": [
+      "open source",
+      "documentation",
+      "site vitrine"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -199,10 +273,14 @@
     "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
     "category": "eco",
     "description": "Site de sensibilisation à la conception responsable à destination des développeurs, testeurs, architectes et chefs de projets. Impacts environnementaux, modules de formation et fiches pratiques.",
-    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "tags": [
+      "écoconception",
+      "sobriété",
+      "numérique responsable"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-13",
+    "lastUpdate": "2025-11-03",
     "status": "actif",
     "external": false,
     "inProgress": false
