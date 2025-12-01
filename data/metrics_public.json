@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2025-11-24T06:21:17.273665+00:00",
+  "collected_at": "2025-12-01T06:22:51.024435+00:00",
   "summary": {
     "total_repositories": 37,
     "active_repositories": 24,
     "total_stars": 204,
     "total_forks": 39,
-    "total_contributors": 625,
+    "total_contributors": 624,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -101,7 +101,7 @@
         "forks": 3,
         "contributors": 5,
         "commits_30d": null,
-        "issues_open": 2,
+        "issues_open": 3,
         "traffic_views": 0
       }
     },
@@ -396,7 +396,7 @@
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "stars": 7,
       "forks": 1,
-      "contributors": 455,
+      "contributors": 453,
       "license": "Apache-2.0",
       "language": "Python",
       "last_update": "2025-10-06",
@@ -405,7 +405,7 @@
       "metrics": {
         "stars": 7,
         "forks": 1,
-        "contributors": 455,
+        "contributors": 453,
         "commits_30d": null,
         "issues_open": 1,
         "traffic_views": 0
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2025-11-19",
+      "last_update": "2025-11-26",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2025-11-21",
+      "last_update": "2025-11-28",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-11-20",
+      "last_update": "2025-11-28",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 24,
         "commits_30d": null,
-        "issues_open": 3,
+        "issues_open": 5,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-11-21",
+      "last_update": "2025-11-28",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -604,7 +604,7 @@
         "forks": 0,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 1,
+        "issues_open": 0,
         "traffic_views": 0
       }
     },
@@ -617,7 +617,7 @@
       "contributors": 6,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-11-13",
+      "last_update": "2025-11-26",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -625,7 +625,7 @@
         "forks": 0,
         "contributors": 6,
         "commits_30d": null,
-        "issues_open": 6,
+        "issues_open": 7,
         "traffic_views": 0
       }
     },
@@ -659,7 +659,7 @@
       "contributors": 6,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-10-28",
+      "last_update": "2025-11-27",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -719,16 +719,16 @@
       "description": "🔁 Génération automatique de pages HTML à partir de plaquettes PDF pour une lecture fluide sur GitHub Pages. Utilisé en interne par France Travail, ce dépôt convertit chaque PDF en image et page HTML via GitHub Actions.",
       "stars": 0,
       "forks": 0,
-      "contributors": 2,
+      "contributors": 3,
       "license": "NOASSERTION",
       "language": "CSS",
-      "last_update": "2025-09-15",
+      "last_update": "2025-11-25",
       "topics": [],
       "pages_url": "https://france-travail.github.io/plaquettes-produits-os",
       "metrics": {
         "stars": 0,
         "forks": 0,
-        "contributors": 2,
+        "contributors": 3,
         "commits_30d": null,
         "issues_open": 0,
         "traffic_views": 0
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2025-11-17",
+      "last_update": "2025-11-30",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -764,7 +764,7 @@
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-11-03",
+      "last_update": "2025-11-26",
       "topics": [],
       "pages_url": "https://france-travail.github.io/formation-ecoconception-dev",
       "metrics": {
@@ -831,7 +831,7 @@
       "contributors": 0,
       "license": "Apache-2.0",
       "language": "TypeScript",
-      "last_update": "2025-11-18",
+      "last_update": "2025-11-28",
       "topics": [],
       "pages_url": null,
       "metrics": {
