@@ -1,11 +1,11 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2025-12-08T06:23:04.330653+00:00",
+  "collected_at": "2025-12-15T06:23:50.869689+00:00",
   "summary": {
     "total_repositories": 37,
     "active_repositories": 24,
     "total_stars": 206,
-    "total_forks": 39,
+    "total_forks": 40,
     "total_contributors": 625,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
@@ -253,7 +253,7 @@
       "url": "https://github.com/France-Travail/happy_vllm",
       "description": "A REST API for vLLM, production ready",
       "stars": 25,
-      "forks": 2,
+      "forks": 3,
       "contributors": 3,
       "license": "AGPL-3.0",
       "language": "Python",
@@ -268,7 +268,7 @@
       "pages_url": "https://france-travail.github.io/happy_vllm",
       "metrics": {
         "stars": 25,
-        "forks": 2,
+        "forks": 3,
         "contributors": 3,
         "commits_30d": null,
         "issues_open": 5,
@@ -396,7 +396,7 @@
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "stars": 7,
       "forks": 1,
-      "contributors": 453,
+      "contributors": 452,
       "license": "Apache-2.0",
       "language": "Python",
       "last_update": "2025-10-06",
@@ -405,7 +405,7 @@
       "metrics": {
         "stars": 7,
         "forks": 1,
-        "contributors": 453,
+        "contributors": 452,
         "commits_30d": null,
         "issues_open": 1,
         "traffic_views": 0
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2025-12-03",
+      "last_update": "2025-12-10",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2025-12-03",
+      "last_update": "2025-12-10",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-12-05",
+      "last_update": "2025-12-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-12-05",
+      "last_update": "2025-12-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 6,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-11-26",
+      "last_update": "2025-12-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -625,7 +625,7 @@
         "forks": 0,
         "contributors": 6,
         "commits_30d": null,
-        "issues_open": 7,
+        "issues_open": 1,
         "traffic_views": 0
       }
     },
@@ -656,16 +656,16 @@
       "description": null,
       "stars": 1,
       "forks": 0,
-      "contributors": 6,
+      "contributors": 7,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-11-27",
+      "last_update": "2025-12-11",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 1,
         "forks": 0,
-        "contributors": 6,
+        "contributors": 7,
         "commits_30d": null,
         "issues_open": 0,
         "traffic_views": 0
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2025-12-01",
+      "last_update": "2025-12-08",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
