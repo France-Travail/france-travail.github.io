@@ -1,6 +1,6 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2025-12-22T06:23:29.321495+00:00",
+  "collected_at": "2025-12-29T06:24:17.769624+00:00",
   "summary": {
     "total_repositories": 37,
     "active_repositories": 24,
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2025-12-19",
+      "last_update": "2025-12-22",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -504,7 +504,7 @@
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2025-11-03",
+      "last_update": "2025-12-23",
       "topics": [
         "developpement-durable",
         "ecoconception",
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2025-12-19",
+      "last_update": "2025-12-23",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2025-12-19",
+      "last_update": "2025-12-24",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 5,
+        "issues_open": 3,
         "traffic_views": 0
       }
     },
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2025-12-15",
+      "last_update": "2025-12-22",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
