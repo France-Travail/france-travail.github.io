@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-01-19T06:28:05.201003+00:00",
+  "collected_at": "2026-01-26T06:27:09.142243+00:00",
   "summary": {
     "total_repositories": 37,
     "active_repositories": 24,
-    "total_stars": 207,
-    "total_forks": 40,
-    "total_contributors": 634,
+    "total_stars": 209,
+    "total_forks": 41,
+    "total_contributors": 632,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -111,7 +111,7 @@
       "description": "TradEmploi",
       "stars": 5,
       "forks": 2,
-      "contributors": 6,
+      "contributors": 5,
       "license": "AGPL-3.0",
       "language": null,
       "last_update": "2025-10-16",
@@ -120,7 +120,7 @@
       "metrics": {
         "stars": 5,
         "forks": 2,
-        "contributors": 6,
+        "contributors": 5,
         "commits_30d": null,
         "issues_open": 11,
         "traffic_views": 0
@@ -164,7 +164,7 @@
       "description": "Frontend of TradEmploi",
       "stars": 2,
       "forks": 1,
-      "contributors": 12,
+      "contributors": 11,
       "license": "AGPL-3.0",
       "language": "TypeScript",
       "last_update": "2025-02-20",
@@ -179,7 +179,7 @@
       "metrics": {
         "stars": 2,
         "forks": 1,
-        "contributors": 12,
+        "contributors": 11,
         "commits_30d": null,
         "issues_open": 0,
         "traffic_views": 0
@@ -252,7 +252,7 @@
       "name": "happy_vllm",
       "url": "https://github.com/France-Travail/happy_vllm",
       "description": "A REST API for vLLM, production ready",
-      "stars": 25,
+      "stars": 26,
       "forks": 3,
       "contributors": 3,
       "license": "AGPL-3.0",
@@ -267,7 +267,7 @@
       ],
       "pages_url": "https://france-travail.github.io/happy_vllm",
       "metrics": {
-        "stars": 25,
+        "stars": 26,
         "forks": 3,
         "contributors": 3,
         "commits_30d": null,
@@ -305,7 +305,7 @@
       "name": "referentiel-ecoconception",
       "url": "https://github.com/France-Travail/referentiel-ecoconception",
       "description": "Référentiel des bonnes pratiques d’écoconception des services numériques",
-      "stars": 16,
+      "stars": 17,
       "forks": 3,
       "contributors": 1,
       "license": "GFDL-1.3",
@@ -319,7 +319,7 @@
       ],
       "pages_url": null,
       "metrics": {
-        "stars": 16,
+        "stars": 17,
         "forks": 3,
         "contributors": 1,
         "commits_30d": null,
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-01-16",
+      "last_update": "2026-01-21",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -500,7 +500,7 @@
       "url": "https://github.com/France-Travail/sensibilisation-conception-responsable",
       "description": "Un site web de sensibilisation à la conception responsable de services numériques. Open source et pédagogique.",
       "stars": 1,
-      "forks": 1,
+      "forks": 2,
       "contributors": 1,
       "license": "MIT",
       "language": "HTML",
@@ -517,7 +517,7 @@
       "pages_url": "https://france-travail.github.io/sensibilisation-conception-responsable",
       "metrics": {
         "stars": 1,
-        "forks": 1,
+        "forks": 2,
         "contributors": 1,
         "commits_30d": null,
         "issues_open": 0,
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-01-16",
+      "last_update": "2026-01-23",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -562,7 +562,7 @@
         "forks": 0,
         "contributors": 12,
         "commits_30d": null,
-        "issues_open": 1,
+        "issues_open": 0,
         "traffic_views": 0
       }
     },
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-16",
+      "last_update": "2026-01-22",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 3,
+        "issues_open": 5,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-16",
+      "last_update": "2026-01-23",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 6,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-06",
+      "last_update": "2026-01-23",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2026-01-12",
+      "last_update": "2026-01-19",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
