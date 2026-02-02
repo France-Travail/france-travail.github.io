@@ -1,10 +1,10 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-01-26T06:27:09.142243+00:00",
+  "collected_at": "2026-02-02T06:54:41.985433+00:00",
   "summary": {
-    "total_repositories": 37,
-    "active_repositories": 24,
-    "total_stars": 209,
+    "total_repositories": 39,
+    "active_repositories": 25,
+    "total_stars": 211,
     "total_forks": 41,
     "total_contributors": 632,
     "total_commits_last_30_days": 0,
@@ -396,16 +396,16 @@
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "stars": 8,
       "forks": 1,
-      "contributors": 460,
+      "contributors": 458,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-01-08",
+      "last_update": "2026-01-26",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 8,
         "forks": 1,
-        "contributors": 460,
+        "contributors": 458,
         "commits_30d": null,
         "issues_open": 1,
         "traffic_views": 0
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-01-21",
+      "last_update": "2026-01-28",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-22",
+      "last_update": "2026-01-28",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 5,
+        "issues_open": 6,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-23",
+      "last_update": "2026-01-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -604,7 +604,7 @@
         "forks": 0,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 8,
+        "issues_open": 7,
         "traffic_views": 0
       }
     },
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2026-01-19",
+      "last_update": "2026-01-26",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -838,6 +838,48 @@
         "stars": 0,
         "forks": 0,
         "contributors": 0,
+        "commits_30d": null,
+        "issues_open": 0,
+        "traffic_views": 0
+      }
+    },
+    {
+      "name": "si_plateforme",
+      "url": "https://github.com/France-Travail/si_plateforme",
+      "description": null,
+      "stars": 2,
+      "forks": 0,
+      "contributors": 1,
+      "license": null,
+      "language": null,
+      "last_update": "2026-01-30",
+      "topics": [],
+      "pages_url": null,
+      "metrics": {
+        "stars": 2,
+        "forks": 0,
+        "contributors": 1,
+        "commits_30d": null,
+        "issues_open": 1,
+        "traffic_views": 0
+      }
+    },
+    {
+      "name": "concevoir-developper-et-mettre-en-place-une-IA-responsable",
+      "url": "https://github.com/France-Travail/concevoir-developper-et-mettre-en-place-une-IA-responsable",
+      "description": "Cette formation vise à permettre aux équipes techniques et produit d'acquérir les compétences pour concevoir des solutions IA sobres et durables. Elle inclut des arbres de décision interactifs, des cas pratiques et des ressources concrètes.",
+      "stars": 0,
+      "forks": 0,
+      "contributors": 1,
+      "license": "NOASSERTION",
+      "language": "HTML",
+      "last_update": "2026-01-26",
+      "topics": [],
+      "pages_url": "https://france-travail.github.io/concevoir-developper-et-mettre-en-place-une-IA-responsable",
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "contributors": 1,
         "commits_30d": null,
         "issues_open": 0,
         "traffic_views": 0
