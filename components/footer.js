@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </a>
         —
         <img src="../img/icons/icon-mail.svg" alt="Mail" class="icon" />
-        <a href="mailto:oss.00619@francetravail.fr">oss.00619@francetravail.fr</a>
+        <a href="mailto:sioss.00006@francetravail.fr">sioss.00006@francetravail.fr</a>
         —
         <img src="../img/icons/icon-github.png" alt="GitHub" class="icon" />
         <a href="https://github.com/France-Travail" target="_blank" rel="noopener">GitHub</a>

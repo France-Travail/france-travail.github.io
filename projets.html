@@ -82,24 +82,28 @@
     <link rel="apple-touch-icon" href="../img/logo-ft.png" />
 
     <!-- Preload critical resources -->
-    <link rel="preload" href="../css/style.css" as="style" />
+    <link rel="preload" href="./css/style.css" as="style" />
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <!-- France Travail Design System -->
+    <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!-- JS -->
-    <script src="../components/navbar.js" defer></script>
-    <script src="../components/footer.js" defer></script>
-    <script src="../js/i18n.js" defer></script>
-    <script src="../js/renderAllProjects.js" defer></script>
+    <script src="./js/customHeader.js" defer></script>
+    <script src="./js/customFooter.js" defer></script>
+    <script src="./js/i18n.js" defer></script>
+    <script src="./js/renderAllProjects.js" defer></script>
   </head>
 
   <body>
-    <header id="navbar"></header>
+    <header id="custom-header"></header>
 
     <main class="container">
       <section style="margin-bottom: 2rem">
         <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-          <img src="../img/logos/logo-ft-only.png" alt="France Travail" style="height: 70px; vertical-align: middle;" />
+          <img src="./img/logos/logo-ft-only.png" alt="France Travail" style="height: 70px; vertical-align: middle;" />
           <h1 data-i18n="all_projects_title" style="margin: 0;">Tous les projets open source</h1>
         </div>
         <p data-i18n="all_projects_description">
@@ -111,6 +115,6 @@
       <div id="projects-container" class="project-grid"></div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer id="custom-footer"></footer>
   </body>
 </html>

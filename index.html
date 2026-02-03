@@ -88,9 +88,13 @@
       crossorigin
     />
 
+    <!-- France Travail Design System -->
+    <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
+
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./components/navbar.js" defer></script>
-    <script src="./components/footer.js" defer></script>
+    <script src="./js/customHeader.js" defer></script>
+    <script src="./js/customFooter.js" defer></script>
     <script src="./js/i18n.js" defer></script>
     <script src="./js/renderStats.js" defer></script>
     <script src="./js/renderThemesGrid.js" defer></script>
@@ -122,46 +126,41 @@
   </head>
 
   <body>
-    <header id="navbar"></header>
-    <main class="container">
-      <!-- Section Hero avec chiffres clés -->
-      <section class="hero-section">
-        <div class="hero-content">
-          <h1>
-            <span class="title-desktop" data-i18n="main_title"
-              >France Travail – Open Source Softwares</span
-            >
-            <span class="title-mobile" data-i18n="main_title_mobile"
-              >France Travail<br />–<br />Open Source Softwares</span
-            >
-          </h1>
-          <p data-i18n="main_description">
+    <header id="custom-header"></header>
+
+    <!-- Hero Section Style Landing Page Bleue -->
+    <section class="hero-landing">
+      <div class="hero-landing-container">
+        <div class="hero-landing-left">
+          <h1 data-i18n="main_title">France Travail – Open Source</h1>
+          <p class="hero-landing-description" data-i18n="main_description">
             L'open source est au cœur de la transformation numérique de France
             Travail. En partageant nos solutions, nous contribuons à un
             numérique plus accessible, durable et collaboratif, au service de
             tous les acteurs de l'emploi et de la société.
           </p>
+          <a href="./projets.html" class="hero-landing-cta">
+            <span data-i18n="discover_projects">Découvrir nos projets</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+            </svg>
+          </a>
         </div>
-
-        <!-- Chiffres clés intégrés dans le hero -->
-        <div class="hero-stats">
-          <div id="stats-grid" class="stats-grid" aria-live="polite">
+        <div class="hero-landing-right">
+          <div id="stats-grid" class="hero-stats-grid" aria-live="polite">
             <!-- Les métriques seront chargées dynamiquement -->
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Grille des thèmes -->
-      <div id="themes-grid" class="themes-grid"></div>
-
-      <!-- Section Projets en cours -->
-      <!-- <section id="inprogress-section" class="inprogress-section" style="display: none;">
-        <h2 class="inprogress-title" data-i18n="inprogress_title">Projets en cours</h2>
-        <p class="inprogress-desc" data-i18n="inprogress_desc">Les projets suivants sont en cours de reversement ou d’ouverture. Les informations peuvent évoluer.</p>
-        <div id="inprogress-grid" class="inprogress-grid" aria-live="polite"></div>
-      </section> -->
+    <!-- Section Thèmes avec fond blanc -->
+    <main class="themes-section">
+      <div class="container">
+        <div id="themes-grid" class="themes-grid"></div>
+      </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer id="custom-footer"></footer>
   </body>
 </html>

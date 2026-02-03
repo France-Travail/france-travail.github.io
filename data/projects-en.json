@@ -3,7 +3,7 @@
     "name": "TradOpen",
     "repo": "https://github.com/France-Travail/TradEmploi",
     "category": "accessibilite&inclusion",
-    "description": "TradOpen (or TradEmploi/TradSNCF)  is a multilingual web app that enables two people who do not speak the same language to communicate in real time. It combines speech recognition, automatic translation and voice synthesis in over 130 languages to promote inclusion and equal access to information in public services.",
+    "description": "Instant translation web application enabling two people who don't speak the same language to communicate naturally. Each person speaks and listens in their own language among 130 available languages. Integrates speech recognition, translation (via Google Cloud, Azure, DeepL) and voice synthesis in a secure environment with anonymized data deleted after exchange.",
     "tags": [
       "translation",
       "multilingual",
@@ -20,7 +20,7 @@
     "name": "EcoConception",
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
-    "description": "Static website raising awareness of responsible digital design. It highlights the environmental and social impacts of digital services, the principles of frugality and sustainability, and provides practical guides for each profession to initiate an accessible and sustainable eco-design approach.",
+    "description": "Awareness platform about the environmental impacts of digital technology. Offers eco-design best practices, frugality approaches and practical guides to reduce the ecological footprint of digital services.",
     "tags": [
       "eco-design",
       "sobriety",
@@ -36,7 +36,7 @@
     "name": "Gabarit",
     "repo": "https://github.com/France-Travail/gabarit",
     "category": "ia",
-    "description": "Gabarit provides ready-to-use Python templates to quickly launch Data Science and AI projects. Three frameworks cover NLP, numerical data and computer vision, with DVC, MLFlow and Streamlit integration. The goal is to accelerate the development of ethical and production-ready AI models.",
+    "description": "Python framework accelerating data science project development. Generates production-ready code base with built-in models (TF-IDF, transformers), MLFlow/DVC management, Streamlit demos and generic scripts. Covers NLP, computer vision and numerical data to quickly move from POC to production.",
     "tags": [
       "data science",
       "framework",
@@ -53,7 +53,7 @@
     "name": "Architecture",
     "repo": "https://github.com/France-Travail/Architecture",
     "category": "architecture",
-    "description": "Collaborative repository for France Travail IT architects, designed to share tools, methods and feedback. It promotes a continuous approach to information systems architecture: resilient, open, sustainable and focused on collaboration between product and business teams.",
+    "description": "Collaborative space for DSI architects sharing tools, templates and continuous architecture best practices. Offers guides on Domain-Driven Design, Team Topologies, Wardley Maps, ADR and methods to build an evolutionary, resilient and eco-responsible platform IS using a lean approach.",
     "tags": [
       "architecture",
       "platform",
@@ -70,7 +70,7 @@
     "name": "Words n Fun",
     "repo": "https://github.com/France-Travail/words_n_fun",
     "category": "ia",
-    "description": "Python module for text preprocessing in NLP projects. Words’n Fun provides cleaning and normalization pipelines that standardize and speed up data preparation for semantic analysis and machine learning models based on natural language processing.",
+    "description": "Modular and versatile NLP preprocessing pipeline. Automatically handles different formats (CSV, DataFrame, lists) and applies linguistic transformations (lemmatization, cleaning, normalization) to efficiently prepare text data before modeling. Used by Gabarit.",
     "tags": [
       "nlp",
       "preprocessing",
@@ -87,7 +87,7 @@
     "name": "Happy_vllm",
     "repo": "https://github.com/France-Travail/happy_vllm",
     "category": "ia",
-    "description": "happy_vLLM is a REST API built for the vLLM engine, designed for large-scale production of language models. It offers standardized endpoints, Swagger documentation, and a ready-to-use Docker image to serve high-performance LLMs efficiently and securely in production environments.",
+    "description": "Optimized REST API for production deployment of language models via vLLM. Provides standardized endpoints, environment variable configuration, Swagger interface and scaling capabilities to serve LLMs robustly and performantly. Available as Docker image.",
     "tags": [
       "LLM",
       "API",
@@ -104,7 +104,7 @@
     "name": "Embcompare",
     "repo": "https://github.com/France-Travail/embcompare",
     "category": "ia",
-    "description": "EmbCompare is a Python tool to visually and numerically compare NLP model embeddings. It provides an interactive Streamlit interface and JSON reports to analyze the consistency, performance and evolution of vector representations across different language models.",
+    "description": "Tool for comparing and evaluating text embeddings with Streamlit interface. Allows visual analysis of different vector encoding model performances to choose the most suitable solution for your NLP use case.",
     "tags": [
       "NLP",
       "embedding",
@@ -121,7 +121,7 @@
     "name": "Benchmark_llm_serving",
     "repo": "https://github.com/France-Travail/benchmark_llm_serving",
     "category": "ia",
-    "description": "Benchmark LLM Serving is a tool for measuring the performance of language model APIs. It evaluates speed, latency, parallel generation and GPU usage of vLLM and Mistral backends, generating detailed analytical reports and comparison graphs for optimization and research purposes.",
+    "description": "Comprehensive benchmarking library for LLM APIs (vLLM, Mistral). Measures latency, generation speed, KV cache usage and GPU performance with parallel requests. Generates graphs and detailed metrics to optimize model deployment in production.",
     "tags": [
       "benchmark",
       "LLM",
@@ -139,7 +139,7 @@
     "name": "Fairlens_pe",
     "repo": "https://github.com/France-Travail/fairlens_pe",
     "category": "ia",
-    "description": "Internal adaptation of FairLens, an open source Python library for detecting bias and measuring fairness in datasets. This fork was integrated into Gabarit to support France Travail’s commitment to ethical and responsible AI by assessing representativeness and neutrality in data models.",
+    "description": "FairLens fork adapted to evaluate fairness and detect bias in AI data and models. Integrated into the Gabarit framework to enable automatic fairness analysis and ensure more responsible and ethical AI.",
     "tags": [
       "fairness",
       "bias",
@@ -156,7 +156,7 @@
     "name": "Anotéa",
     "repo": "https://github.com/StartupsPoleEmploi/anotea",
     "category": "accessibilite&inclusion",
-    "description": "Anotéa is a public service that allows job seekers to share feedback on completed training courses. The collected and anonymized reviews are reconciled to provide reliable, transparent information accessible via API and widget, promoting continuous improvement of training offers.",
+    "description": "Platform for collecting and publishing authenticated reviews on professional training courses. Only trainees who have actually completed a training can give their feedback via post-training questionnaire. Anonymized reviews are accessible via API and widget to ensure transparency and reliability of training information.",
     "tags": [
       "reviews",
       "training",
@@ -190,12 +190,12 @@
     "name": "France Travail Design System",
     "repo": "https://github.com/France-Travail/design-system",
     "category": "si-plateforme",
-    "description": "Reusable components, tokens, guidelines and resources to standardize France Travail's digital interfaces.",
+    "description": "France Travail Design System web components: library of web components, tokens and resources to standardize digital interfaces.",
     "tags": [
       "design system",
+      "web components",
       "ui",
-      "accessibility",
-      "reusable"
+      "accessibility"
     ],
     "logo": "",
     "maintainers": [],
@@ -218,7 +218,7 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
-    "status": "in the process of being open sourced",
+    "status": "maintained",
     "external": false,
     "inProgress": true
   },
@@ -253,7 +253,7 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
-    "status": "in the process of being open sourced",
+    "status": "maintained",
     "external": false,
     "inProgress": true
   },
@@ -261,7 +261,7 @@
     "name": "Awareness on Responsible Digital Service Design - Developers",
     "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
     "category": "eco",
-    "description": "Awareness website about responsible design for developers, testers, architects, and project managers. Environmental impacts, training modules, and practical guides.",
+    "description": "Eco-design training module for developers, testers, architects and project managers. Explains the environmental impacts of code, offers practical exercises and methodological guides to develop more sober and responsible applications.",
     "tags": [
       "eco-design",
       "framework",
@@ -278,7 +278,7 @@
     "name": "Awareness on Responsible Digital Service Design – UX/UI",
     "repo": "http://github.com/France-Travail/starter-kit-ecoconception",
     "category": "eco",
-    "description": "Eco-design starter kit for UX/UI designers and integrators: fundamentals, practices, and tools for more responsible digital services.",
+    "description": "Eco-design starter kit for designers and integrators. Presents fundamentals, responsible design practices and tools to create sober digital interfaces without sacrificing user experience.",
     "tags": [
       "eco-design",
       "digital sobriety",
@@ -295,7 +295,7 @@
     "name": "Awareness on Responsible Digital Service Design – PM/PO",
     "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM",
     "category": "eco",
-    "description": "Self-training eco-design kit for product teams (PM, PO, UX, Devs). Includes practical exercises and an interactive maturity radar.",
+    "description": "Interactive self-training kit for Product Managers and Product Owners. Contains practical exercises and maturity radar to evaluate and improve eco-design practices from the product phase.",
     "tags": [
       "eco-design",
       "digital sobriety",
@@ -304,6 +304,24 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-11-12",
+    "status": "active",
+    "external": false,
+    "inProgress": false
+  },
+  {
+    "name": "Responsible AI Training",
+    "repo": "https://github.com/France-Travail/concevoir-developper-et-mettre-en-place-une-IA-responsable",
+    "category": "eco",
+    "description": "One-day interactive training on designing and deploying responsible, eco-designed and frugal AI. Includes interactive decision trees, practical cases and concrete resources.",
+    "tags": [
+      "responsible AI",
+      "eco-design",
+      "training",
+      "frugality"
+    ],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2026-02-03",
     "status": "active",
     "external": false,
     "inProgress": false

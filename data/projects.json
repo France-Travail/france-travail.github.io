@@ -3,7 +3,7 @@
     "name": "TradOpen",
     "repo": "https://github.com/France-Travail/TradEmploi",
     "category": "accessibilite&inclusion",
-    "description": "TradOpen (ou TradEmploi/TradSNCF) est une application web de traduction instantanée multilingue qui permet à deux personnes ne parlant pas la même langue de dialoguer chacune dans la leur.",
+    "description": "Application web de traduction instantanée permettant à deux personnes ne parlant pas la même langue de communiquer naturellement. Chacun parle et écoute dans sa propre langue parmi 130 langues disponibles. Intègre reconnaissance vocale, traduction (via Google Cloud, Azure, DeepL) et synthèse vocale dans un cadre sécurisé avec données anonymisées et supprimées après échange.",
     "tags": [
       "traduction",
       "multilingue",
@@ -21,7 +21,7 @@
     "name": "Sensibilisation à la Conception Responsable de Service Numérique (Générique)",
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
-    "description": "Site de sensibilisation à la conception responsable. Impacts environnementaux, frugalité et fiches pratiques.",
+    "description": "Plateforme de sensibilisation aux impacts environnementaux du numérique. Propose bonnes pratiques d'écoconception, démarches de frugalité et fiches pratiques pour réduire l'empreinte écologique des services numériques.",
     "tags": [
       "écoconception",
       "sobriété",
@@ -38,7 +38,7 @@
     "name": "Gabarit",
     "repo": "https://github.com/France-Travail/gabarit",
     "category": "ia",
-    "description": "Templates Python pour projets de data science. Intègre DVC, MLFlow, Streamlit. Couvre NLP, vision, numérique.",
+    "description": "Framework Python accélérant le développement de projets data science. Génère une base de code production-ready avec modèles intégrés (TF-IDF, transformers), gestion MLFlow/DVC, démos Streamlit et scripts génériques. Couvre NLP, vision par ordinateur et données numériques pour passer rapidement du POC à la production.",
     "tags": [
       "data science",
       "framework",
@@ -56,7 +56,7 @@
     "name": "Outils et Pratiques d'Architecture",
     "repo": "https://github.com/France-Travail/Architecture",
     "category": "architecture",
-    "description": "Espace des architectes DSI FT. Partage d’outils, bonnes pratiques et démarches collaboratives durables.",
+    "description": "Espace collaboratif des architectes DSI partageant outils, templates et bonnes pratiques d'architecture continue. Propose guides sur Domain-Driven Design, Team Topologies, Wardley Maps, ADR et méthodes pour construire un SI plateforme évolutif, résilient et écoresponsable dans une démarche lean.",
     "tags": [
       "architecture",
       "si plateforme",
@@ -74,7 +74,7 @@
     "name": "Words n Fun",
     "repo": "https://github.com/France-Travail/words_n_fun",
     "category": "ia",
-    "description": "Prétraitement NLP pour projets linguistiques. Nettoyage, normalisation, pipelines sémantiques.",
+    "description": "Pipeline de prétraitement NLP modulaire et polyvalent. Gère automatiquement différents formats (CSV, DataFrame, listes) et applique des transformations linguistiques (lemmatisation, nettoyage, normalisation) pour préparer efficacement les données textuelles avant modélisation. Utilisé par Gabarit.",
     "tags": [
       "nlp",
       "prétraitement",
@@ -92,7 +92,7 @@
     "name": "Happy_vllm",
     "repo": "https://github.com/France-Travail/happy_vllm",
     "category": "ia",
-    "description": "API REST optimisée pour vLLM. Déploiement scalable de modèles de langage avec endpoints standardisés.",
+    "description": "API REST optimisée pour le déploiement production de modèles de langage via vLLM. Fournit endpoints standardisés, configuration par variables d'environnement, interface Swagger et capacités de scaling pour servir des LLMs de manière robuste et performante. Disponible en image Docker.",
     "tags": [
       "LLM",
       "API",
@@ -110,7 +110,7 @@
     "name": "Embcompare",
     "repo": "https://github.com/France-Travail/embcompare",
     "category": "ia",
-    "description": "Outil de comparaison d’embeddings NLP. Visualisation via Streamlit. Analyse de performance vectorielle.",
+    "description": "Outil de comparaison et d'évaluation d'embeddings textuels avec interface Streamlit. Permet d'analyser visuellement les performances de différents modèles d'encodage vectoriel pour choisir la solution la plus adaptée à son cas d'usage NLP.",
     "tags": [
       "NLP",
       "embedding",
@@ -128,7 +128,7 @@
     "name": "Benchmark_llm_serving",
     "repo": "https://github.com/France-Travail/benchmark_llm_serving",
     "category": "ia",
-    "description": "Benchmarks des backends LLM (vLLM, Mistral). Mesure latence, performance, génération parallèle, GPU.",
+    "description": "Bibliothèque de benchmarking complète pour APIs de LLMs (vLLM, Mistral). Mesure latence, vitesse de génération, usage KV cache et performance GPU avec requêtes parallèles. Génère graphiques et métriques détaillées pour optimiser le déploiement de modèles en production.",
     "tags": [
       "benchmark",
       "LLM",
@@ -147,7 +147,7 @@
     "name": "Fairlens_pe",
     "repo": "https://github.com/France-Travail/fairlens_pe",
     "category": "ia",
-    "description": "Adaptation de FairLens pour évaluer l’équité des données IA. Intégré à Gabarit. Analyse de biais automatique.",
+    "description": "Fork de FairLens adapté pour évaluer l'équité et détecter les biais dans les données et modèles IA. Intégré au framework Gabarit pour permettre une analyse automatique de fairness et garantir une IA plus responsable et éthique.",
     "tags": [
       "fairness",
       "bias",
@@ -165,7 +165,7 @@
     "name": "Anotéa",
     "repo": "https://github.com/StartupsPoleEmploi/anotea",
     "category": "accessibilite&inclusion",
-    "description": "Plateforme de notation des formations par les usagers. API + widget. Retours anonymisés pour + transparence.",
+    "description": "Plateforme de collecte et publication d'avis authentifiés sur les formations professionnelles. Seuls les stagiaires ayant réellement suivi une formation peuvent donner leur avis via questionnaire post-formation. Les retours anonymisés sont accessibles via API et widget pour garantir transparence et fiabilité des informations formation.",
     "tags": [
       "avis",
       "formation",
@@ -201,12 +201,12 @@
     "name": "Design System France Travail",
     "repo": "https://github.com/France-Travail/design-system",
     "category": "si-plateforme",
-    "description": "Composants réutilisables, tokens, chartes et ressources pour homogénéiser les interfaces numériques de France Travail.",
+    "description": "Composants web du Design System France Travail : bibliothèque de web components, tokens et ressources pour homogénéiser les interfaces numériques.",
     "tags": [
       "design system",
+      "web components",
       "ui",
-      "accessibilité",
-      "réutilisable"
+      "accessibilité"
     ],
     "logo": "",
     "maintainers": [],
@@ -229,7 +229,7 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
-    "status": "en cours de reversement",
+    "status": "actif",
     "external": false,
     "inProgress": true
   },
@@ -264,7 +264,7 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
-    "status": "en cours de reversement",
+    "status": "actif",
     "external": false,
     "inProgress": true
   },
@@ -272,7 +272,7 @@
     "name": "Sensibilisation à la Conception Responsable de Service Numérique - Développeurs",
     "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
     "category": "eco",
-    "description": "Site de sensibilisation à la conception responsable à destination des développeurs, testeurs, architectes et chefs de projets. Impacts environnementaux, modules de formation et fiches pratiques.",
+    "description": "Module de formation à l'écoconception destiné aux développeurs, testeurs, architectes et chefs de projets. Explique les impacts environnementaux du code, propose des exercices pratiques et fiches méthodologiques pour développer des applications plus sobres et responsables.",
     "tags": [
       "écoconception",
       "sobriété",
@@ -289,7 +289,7 @@
     "name": "Sensibilisation à la Conception Responsable de Service Numérique - UX/UI",
     "repo": "http://github.com/France-Travail/starter-kit-ecoconception",
     "category": "eco",
-    "description": "Starter kit d'écoconception pour UX/UI et intégrateurs : les fondamentaux, pratiques et outils pour un numérique plus responsable.",
+    "description": "Kit d'initiation à l'écoconception pour designers et intégrateurs. Présente les fondamentaux, pratiques de design responsable et outils pour concevoir des interfaces numériques sobres sans sacrifier l'expérience utilisateur.",
     "tags": [
       "écoconception",
       "sobriété",
@@ -306,7 +306,7 @@
     "name": "Sensibilisation à la Conception Responsable de Service Numérique - PM/PO",
     "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM",
     "category": "eco",
-    "description": "Kit d'auto-formation à l'écoconception pour les équipes produit (PM, PO, UX, Devs). Contient des exercices pratiques et un radar de maturité interactif.",
+    "description": "Kit d'auto-formation interactif pour Product Managers et Product Owners. Contient exercices pratiques et radar de maturité pour évaluer et améliorer les pratiques d'écoconception dès la phase produit.",
     "tags": [
       "écoconception",
       "sobriété",
@@ -315,6 +315,24 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-11-12",
+    "status": "actif",
+    "external": false,
+    "inProgress": false
+  },
+  {
+    "name": "Formation IA Responsable",
+    "repo": "https://github.com/France-Travail/concevoir-developper-et-mettre-en-place-une-IA-responsable",
+    "category": "eco",
+    "description": "Formation interactive d'une journée sur la conception et le déploiement d'une IA responsable, éco-conçue et frugale. Arbres de décision interactifs, cas pratiques et ressources concrètes.",
+    "tags": [
+      "IA responsable",
+      "écoconception",
+      "formation",
+      "frugalité"
+    ],
+    "logo": "",
+    "maintainers": [],
+    "lastUpdate": "2026-02-03",
     "status": "actif",
     "external": false,
     "inProgress": false

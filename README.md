@@ -18,6 +18,6 @@ Mettre en valeur les logiciels, outils et démarches open source portés par Fra
 
 ## 💬 Contact
 
-Pour toute question ou suggestion, vous pouvez ouvrir une issue ou nous contacter via [oss.00619@francetravail.fr](mailto:oss.00619@francetravail.fr).
+Pour toute question ou suggestion, vous pouvez ouvrir une issue ou nous contacter via [sioss.00006@francetravail.fr](mailto:sioss.00006@francetravail.fr).
 
 ---
