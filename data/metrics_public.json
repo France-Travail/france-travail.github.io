@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-02-02T06:54:41.985433+00:00",
+  "collected_at": "2026-02-03T13:44:11.974425+00:00",
   "summary": {
     "total_repositories": 39,
     "active_repositories": 25,
     "total_stars": 211,
     "total_forks": 41,
-    "total_contributors": 632,
+    "total_contributors": 174,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -396,18 +396,18 @@
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "stars": 8,
       "forks": 1,
-      "contributors": 458,
+      "contributors": 0,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-01-26",
+      "last_update": "2026-02-03",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 8,
         "forks": 1,
-        "contributors": 458,
+        "contributors": 0,
         "commits_30d": null,
-        "issues_open": 1,
+        "issues_open": 2,
         "traffic_views": 0
       }
     },
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-01-28",
+      "last_update": "2026-02-03",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-01-23",
+      "last_update": "2026-02-03",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-28",
+      "last_update": "2026-02-02",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-01-29",
+      "last_update": "2026-02-03",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "JavaScript",
-      "last_update": "2026-01-26",
+      "last_update": "2026-02-02",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
