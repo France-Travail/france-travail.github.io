@@ -229,7 +229,7 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
-    "status": "en cours de reversement",
+    "status": "actif",
     "external": false,
     "inProgress": true
   },
@@ -264,7 +264,7 @@
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
-    "status": "en cours de reversement",
+    "status": "actif",
     "external": false,
     "inProgress": true
   },
@@ -322,7 +322,7 @@
   {
     "name": "Formation IA Responsable",
     "repo": "https://github.com/France-Travail/concevoir-developper-et-mettre-en-place-une-IA-responsable",
-    "category": "ia",
+    "category": "eco",
     "description": "Formation interactive d'une journée sur la conception et le déploiement d'une IA responsable, éco-conçue et frugale. Arbres de décision interactifs, cas pratiques et ressources concrètes.",
     "tags": [
       "IA responsable",
