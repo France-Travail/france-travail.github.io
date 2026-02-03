@@ -135,10 +135,12 @@ function renderProjectCard(project) {
     <div class="project-card">
       ${
         logo && logo.trim() !== ""
-          ? `<img src="../${logo}" alt="${name} logo">`
-          : `<div class="project-icon" style="width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: bold; color: white; margin: 0 auto 1rem auto; background: ${projectColor} !important; box-shadow: 0 4px 12px rgba(0, 83, 164, 0.3); transition: all 0.3s ease;">${name
-              .charAt(0)
-              .toUpperCase()}</div>`
+          ? `<div class="project-icon-container project-has-logo">
+              <img src="../${logo}" alt="${name} logo" class="project-logo-img">
+            </div>`
+          : `<div class="project-icon-container" style="background: ${projectColor};">
+              <span class="project-letter">${name.charAt(0).toUpperCase()}</span>
+            </div>`
       }
       <h3>${name}</h3>
       <p>${description}</p>
@@ -168,8 +170,8 @@ function renderProjectCard(project) {
       ${
         tags.length
           ? `
-        <div style="margin: 0.5rem 0;">
-          ${tags.map((tag) => `<span class="tag">${tag}</span>`).join(" ")}
+        <div class="tags-container" style="margin: 0.5rem 0;">
+          ${tags.map((tag) => `<span class="tag tag-blue"><span class="tag-content">${tag}</span></span>`).join(" ")}
         </div>`
           : ""
       }
@@ -178,19 +180,19 @@ function renderProjectCard(project) {
         <div class="project-buttons">
           ${
             !inProgress
-              ? `<a class="button" href="${repo}" target="_blank" rel="noopener">
-            ${
+              ? `<a class="btn btn-primary" href="${repo}" target="_blank" rel="noopener">
+            <span class="btn-content">${
               external
                 ? '<span data-i18n="view_external">Voir le projet externe ↗</span>'
                 : '<span data-i18n="view_github">Voir sur GitHub ↗</span>'
-            }
+            }</span>
           </a>`
               : ""
           }
           ${
             project.pagesUrl
-              ? `<a class="button" href="${project.pagesUrl}" target="_blank" rel="noopener">
-            <span data-i18n="view_site">Voir le site ↗</span>
+              ? `<a class="btn btn-secondary" href="${project.pagesUrl}" target="_blank" rel="noopener">
+            <span class="btn-content"><span data-i18n="view_site">Voir le site ↗</span></span>
           </a>`
               : ""
           }
