@@ -4,7 +4,12 @@
     "repo": "https://github.com/France-Travail/TradEmploi",
     "category": "accessibilite&inclusion",
     "description": "Application web de traduction instantanée permettant à deux personnes ne parlant pas la même langue de communiquer naturellement. Chacun parle et écoute dans sa propre langue parmi 130 langues disponibles. Intègre reconnaissance vocale, traduction (via Google Cloud, Azure, DeepL) et synthèse vocale dans un cadre sécurisé avec données anonymisées et supprimées après échange.",
-    "tags": ["traduction", "multilingue", "inclusion", "accessibilité"],
+    "tags": [
+      "traduction",
+      "multilingue",
+      "inclusion",
+      "accessibilité"
+    ],
     "logo": "/img/projects/tradEmploi.png",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -17,7 +22,11 @@
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
     "description": "Plateforme de sensibilisation aux impacts environnementaux du numérique. Propose bonnes pratiques d'écoconception, démarches de frugalité et fiches pratiques pour réduire l'empreinte écologique des services numériques.",
-    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "tags": [
+      "écoconception",
+      "sobriété",
+      "numérique responsable"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-12-23",
@@ -30,7 +39,12 @@
     "repo": "https://github.com/France-Travail/gabarit",
     "category": "ia",
     "description": "Framework Python accélérant le développement de projets data science. Génère une base de code production-ready avec modèles intégrés (TF-IDF, transformers), gestion MLFlow/DVC, démos Streamlit et scripts génériques. Couvre NLP, vision par ordinateur et données numériques pour passer rapidement du POC à la production.",
-    "tags": ["data science", "framework", "machine learning", "IA"],
+    "tags": [
+      "data science",
+      "framework",
+      "machine learning",
+      "IA"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2024-12-12",
@@ -43,7 +57,12 @@
     "repo": "https://github.com/France-Travail/Architecture",
     "category": "architecture",
     "description": "Espace collaboratif des architectes DSI partageant outils, templates et bonnes pratiques d'architecture continue. Propose guides sur Domain-Driven Design, Team Topologies, Wardley Maps, ADR et méthodes pour construire un SI plateforme évolutif, résilient et écoresponsable dans une démarche lean.",
-    "tags": ["architecture", "si plateforme", "collaboration", "documentation"],
+    "tags": [
+      "architecture",
+      "si plateforme",
+      "collaboration",
+      "documentation"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-06-27",
@@ -56,7 +75,12 @@
     "repo": "https://github.com/France-Travail/words_n_fun",
     "category": "ia",
     "description": "Pipeline de prétraitement NLP modulaire et polyvalent. Gère automatiquement différents formats (CSV, DataFrame, listes) et applique des transformations linguistiques (lemmatisation, nettoyage, normalisation) pour préparer efficacement les données textuelles avant modélisation. Utilisé par Gabarit.",
-    "tags": ["nlp", "prétraitement", "text mining", "pipeline"],
+    "tags": [
+      "nlp",
+      "prétraitement",
+      "text mining",
+      "pipeline"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2024-06-11",
@@ -69,7 +93,12 @@
     "repo": "https://github.com/France-Travail/happy_vllm",
     "category": "ia",
     "description": "API REST optimisée pour le déploiement production de modèles de langage via vLLM. Fournit endpoints standardisés, configuration par variables d'environnement, interface Swagger et capacités de scaling pour servir des LLMs de manière robuste et performante. Disponible en image Docker.",
-    "tags": ["LLM", "API", "vLLM", "IA générative"],
+    "tags": [
+      "LLM",
+      "API",
+      "vLLM",
+      "IA générative"
+    ],
     "logo": "/img/projects/happy_vllm.png",
     "maintainers": [],
     "lastUpdate": "2025-10-20",
@@ -82,7 +111,12 @@
     "repo": "https://github.com/France-Travail/embcompare",
     "category": "ia",
     "description": "Outil de comparaison et d'évaluation d'embeddings textuels avec interface Streamlit. Permet d'analyser visuellement les performances de différents modèles d'encodage vectoriel pour choisir la solution la plus adaptée à son cas d'usage NLP.",
-    "tags": ["NLP", "embedding", "évaluation", "comparaison"],
+    "tags": [
+      "NLP",
+      "embedding",
+      "évaluation",
+      "comparaison"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2024-03-25",
@@ -95,7 +129,13 @@
     "repo": "https://github.com/France-Travail/benchmark_llm_serving",
     "category": "ia",
     "description": "Bibliothèque de benchmarking complète pour APIs de LLMs (vLLM, Mistral). Mesure latence, vitesse de génération, usage KV cache et performance GPU avec requêtes parallèles. Génère graphiques et métriques détaillées pour optimiser le déploiement de modèles en production.",
-    "tags": ["benchmark", "LLM", "performance", "vLLM", "Mistral"],
+    "tags": [
+      "benchmark",
+      "LLM",
+      "performance",
+      "vLLM",
+      "Mistral"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-05-16",
@@ -108,7 +148,12 @@
     "repo": "https://github.com/France-Travail/fairlens_pe",
     "category": "ia",
     "description": "Fork de FairLens adapté pour évaluer l'équité et détecter les biais dans les données et modèles IA. Intégré au framework Gabarit pour permettre une analyse automatique de fairness et garantir une IA plus responsable et éthique.",
-    "tags": ["fairness", "bias", "éthique", "IA responsable"],
+    "tags": [
+      "fairness",
+      "bias",
+      "éthique",
+      "IA responsable"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2024-06-11",
@@ -121,7 +166,12 @@
     "repo": "https://github.com/StartupsPoleEmploi/anotea",
     "category": "accessibilite&inclusion",
     "description": "Plateforme de collecte et publication d'avis authentifiés sur les formations professionnelles. Seuls les stagiaires ayant réellement suivi une formation peuvent donner leur avis via questionnaire post-formation. Les retours anonymisés sont accessibles via API et widget pour garantir transparence et fiabilité des informations formation.",
-    "tags": ["avis", "formation", "usager", "transparence"],
+    "tags": [
+      "avis",
+      "formation",
+      "usager",
+      "transparence"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-13",
@@ -134,7 +184,12 @@
     "repo": "https://github.com/France-Travail/referentiel-ecoconception",
     "category": "eco",
     "description": "Référentiel des bonnes pratiques d’écoconception numérique. Complète la plateforme de sensibilisation FT.",
-    "tags": ["écoconception", "référentiel", "durabilité", "responsabilité"],
+    "tags": [
+      "écoconception",
+      "référentiel",
+      "durabilité",
+      "responsabilité"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-11-04",
@@ -147,10 +202,16 @@
     "repo": "https://github.com/France-Travail/si_plateforme",
     "category": "si-plateforme",
     "description": "Point d'entrée pour la prise en main du SI Plateforme France Travail. Cinématique d'implémentation pas à pas, collections Postman et kits d'appropriation pour consommateurs d'API et partenaires. Parcours LPE comme référence documentée.",
-    "tags": ["onboarding", "API", "si plateforme", "Postman", "LPE"],
+    "tags": [
+      "onboarding",
+      "API",
+      "si plateforme",
+      "Postman",
+      "LPE"
+    ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2026-02-09",
+    "lastUpdate": "2026-01-30",
     "status": "actif",
     "external": false,
     "inProgress": false
@@ -160,7 +221,12 @@
     "repo": "https://github.com/France-Travail/design-system",
     "category": "si-plateforme",
     "description": "Composants web du Design System France Travail : bibliothèque de web components, tokens et ressources pour homogénéiser les interfaces numériques.",
-    "tags": ["design system", "web components", "ui", "accessibilité"],
+    "tags": [
+      "design system",
+      "web components",
+      "ui",
+      "accessibilité"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -173,7 +239,11 @@
     "repo": "https://github.com/France-Travail/francetravail.github.io",
     "category": "si-plateforme",
     "description": "Site vitrine listant les projets Open Source de France Travail.",
-    "tags": ["open source", "documentation", "site vitrine"],
+    "tags": [
+      "open source",
+      "documentation",
+      "site vitrine"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -186,7 +256,12 @@
     "repo": "https://github.com/France-Travail/cej",
     "category": "si-plateforme",
     "description": "Application de suivi et accompagnement des jeunes dans le cadre du CEJ. Interface agent + usager.",
-    "tags": ["cej", "emploi", "jeunes", "accompagnement"],
+    "tags": [
+      "cej",
+      "emploi",
+      "jeunes",
+      "accompagnement"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -199,7 +274,12 @@
     "repo": "https://github.com/France-Travail/widget-import-excel",
     "category": "si-plateforme",
     "description": "Widget d'import dynamique Excel pour Grist, avec correspondance des colonnes et stratégie de mise à jour colonne par colonne et ligne par ligne.",
-    "tags": ["grist", "excel", "import", "automatisation"],
+    "tags": [
+      "grist",
+      "excel",
+      "import",
+      "automatisation"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-10-16",
@@ -212,7 +292,11 @@
     "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
     "category": "eco",
     "description": "Module de formation à l'écoconception destiné aux développeurs, testeurs, architectes et chefs de projets. Explique les impacts environnementaux du code, propose des exercices pratiques et fiches méthodologiques pour développer des applications plus sobres et responsables.",
-    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "tags": [
+      "écoconception",
+      "sobriété",
+      "numérique responsable"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-11-26",
@@ -225,7 +309,11 @@
     "repo": "http://github.com/France-Travail/starter-kit-ecoconception",
     "category": "eco",
     "description": "Kit d'initiation à l'écoconception pour designers et intégrateurs. Présente les fondamentaux, pratiques de design responsable et outils pour concevoir des interfaces numériques sobres sans sacrifier l'expérience utilisateur.",
-    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "tags": [
+      "écoconception",
+      "sobriété",
+      "numérique responsable"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-11-05",
@@ -238,7 +326,11 @@
     "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM",
     "category": "eco",
     "description": "Kit d'auto-formation interactif pour Product Managers et Product Owners. Contient exercices pratiques et radar de maturité pour évaluer et améliorer les pratiques d'écoconception dès la phase produit.",
-    "tags": ["écoconception", "sobriété", "numérique responsable"],
+    "tags": [
+      "écoconception",
+      "sobriété",
+      "numérique responsable"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-11-12",
@@ -251,7 +343,12 @@
     "repo": "https://github.com/France-Travail/concevoir-developper-et-mettre-en-place-une-IA-responsable",
     "category": "eco",
     "description": "Formation interactive d'une journée sur la conception et le déploiement d'une IA responsable, éco-conçue et frugale. Arbres de décision interactifs, cas pratiques et ressources concrètes.",
-    "tags": ["IA responsable", "écoconception", "formation", "frugalité"],
+    "tags": [
+      "IA responsable",
+      "écoconception",
+      "formation",
+      "frugalité"
+    ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2026-01-26",
