@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-03-02T06:46:13.792513+00:00",
+  "collected_at": "2026-03-09T06:52:40.842955+00:00",
   "summary": {
     "total_repositories": 39,
     "active_repositories": 25,
     "total_stars": 214,
     "total_forks": 42,
-    "total_contributors": 175,
+    "total_contributors": 173,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -399,7 +399,7 @@
       "contributors": 0,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-02-03",
+      "last_update": "2026-03-03",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-02-25",
+      "last_update": "2026-03-04",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -491,7 +491,7 @@
         "forks": 0,
         "contributors": 0,
         "commits_30d": null,
-        "issues_open": 1,
+        "issues_open": 0,
         "traffic_views": 0
       }
     },
@@ -551,18 +551,18 @@
       "description": null,
       "stars": 1,
       "forks": 0,
-      "contributors": 12,
+      "contributors": 11,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-02-25",
+      "last_update": "2026-03-05",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 1,
         "forks": 0,
-        "contributors": 12,
+        "contributors": 11,
         "commits_30d": null,
-        "issues_open": 0,
+        "issues_open": 1,
         "traffic_views": 0
       }
     },
@@ -572,18 +572,18 @@
       "description": null,
       "stars": 1,
       "forks": 1,
-      "contributors": 25,
+      "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-03-02",
+      "last_update": "2026-03-09",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 1,
         "forks": 1,
-        "contributors": 25,
+        "contributors": 24,
         "commits_30d": null,
-        "issues_open": 18,
+        "issues_open": 8,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-03-02",
+      "last_update": "2026-03-09",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -659,7 +659,7 @@
       "contributors": 8,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-02-25",
+      "last_update": "2026-03-04",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-02-23",
+      "last_update": "2026-03-02",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -852,7 +852,7 @@
       "contributors": 2,
       "license": null,
       "language": "Java",
-      "last_update": "2026-02-16",
+      "last_update": "2026-03-06",
       "topics": [],
       "pages_url": null,
       "metrics": {
