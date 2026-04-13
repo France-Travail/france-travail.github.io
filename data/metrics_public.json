@@ -1,10 +1,10 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-04-06T07:19:15.792505+00:00",
+  "collected_at": "2026-04-13T07:50:23.209461+00:00",
   "summary": {
     "total_repositories": 40,
     "active_repositories": 26,
-    "total_stars": 217,
+    "total_stars": 219,
     "total_forks": 43,
     "total_contributors": 173,
     "total_commits_last_30_days": 0,
@@ -15,7 +15,7 @@
       "name": "gabarit",
       "url": "https://github.com/France-Travail/gabarit",
       "description": "Gabarit : kickstart your data science project from scratch ",
-      "stars": 62,
+      "stars": 64,
       "forks": 13,
       "contributors": 11,
       "license": "AGPL-3.0",
@@ -29,7 +29,7 @@
       ],
       "pages_url": "https://france-travail.github.io/gabarit",
       "metrics": {
-        "stars": 62,
+        "stars": 64,
         "forks": 13,
         "contributors": 11,
         "commits_30d": null,
@@ -399,7 +399,7 @@
       "contributors": 0,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-04-03",
+      "last_update": "2026-04-13",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-04-01",
+      "last_update": "2026-04-07",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-04-06",
+      "last_update": "2026-04-13",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 24,
         "commits_30d": null,
-        "issues_open": 7,
+        "issues_open": 5,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-04-06",
+      "last_update": "2026-04-13",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 6,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-04-06",
+      "last_update": "2026-04-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -625,7 +625,7 @@
         "forks": 0,
         "contributors": 6,
         "commits_30d": null,
-        "issues_open": 15,
+        "issues_open": 16,
         "traffic_views": 0
       }
     },
@@ -659,7 +659,7 @@
       "contributors": 8,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-04-01",
+      "last_update": "2026-04-09",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-03-30",
+      "last_update": "2026-04-06",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
