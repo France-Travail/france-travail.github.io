@@ -1,10 +1,10 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-05-11T09:00:15.302691+00:00",
+  "collected_at": "2026-05-18T09:42:41.668015+00:00",
   "summary": {
     "total_repositories": 40,
-    "active_repositories": 26,
-    "total_stars": 220,
+    "active_repositories": 27,
+    "total_stars": 221,
     "total_forks": 44,
     "total_contributors": 173,
     "total_commits_last_30_days": 0,
@@ -399,7 +399,7 @@
       "contributors": 0,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-05-06",
+      "last_update": "2026-05-18",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-05-06",
+      "last_update": "2026-05-18",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 11,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-05-11",
+      "last_update": "2026-05-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-05-11",
+      "last_update": "2026-05-18",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 24,
         "commits_30d": null,
-        "issues_open": 9,
+        "issues_open": 10,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-05-11",
+      "last_update": "2026-05-18",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 6,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-05-09",
+      "last_update": "2026-05-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -625,7 +625,7 @@
         "forks": 0,
         "contributors": 6,
         "commits_30d": null,
-        "issues_open": 21,
+        "issues_open": 22,
         "traffic_views": 0
       }
     },
@@ -659,7 +659,7 @@
       "contributors": 8,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-05-06",
+      "last_update": "2026-05-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-05-04",
+      "last_update": "2026-05-11",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -889,7 +889,7 @@
       "name": "grist-logs-manager",
       "url": "https://github.com/France-Travail/grist-logs-manager",
       "description": null,
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "contributors": 1,
       "license": "MIT",
@@ -898,7 +898,7 @@
       "topics": [],
       "pages_url": "https://france-travail.github.io/grist-logs-manager",
       "metrics": {
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
         "contributors": 1,
         "commits_30d": null,
