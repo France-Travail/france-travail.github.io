@@ -1,11 +1,11 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-06-08T10:19:38.408995+00:00",
+  "collected_at": "2026-06-15T11:48:50.299095+00:00",
   "summary": {
     "total_repositories": 41,
-    "active_repositories": 27,
-    "total_stars": 220,
-    "total_forks": 44,
+    "active_repositories": 28,
+    "total_stars": 222,
+    "total_forks": 45,
     "total_contributors": 175,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
@@ -252,8 +252,8 @@
       "name": "happy_vllm",
       "url": "https://github.com/France-Travail/happy_vllm",
       "description": "A REST API for vLLM, production ready",
-      "stars": 27,
-      "forks": 3,
+      "stars": 28,
+      "forks": 4,
       "contributors": 3,
       "license": "AGPL-3.0",
       "language": "Python",
@@ -267,8 +267,8 @@
       ],
       "pages_url": "https://france-travail.github.io/happy_vllm",
       "metrics": {
-        "stars": 27,
-        "forks": 3,
+        "stars": 28,
+        "forks": 4,
         "contributors": 3,
         "commits_30d": null,
         "issues_open": 5,
@@ -357,7 +357,7 @@
       "contributors": 3,
       "license": "CC0-1.0",
       "language": null,
-      "last_update": "2025-06-27",
+      "last_update": "2026-06-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -399,7 +399,7 @@
       "contributors": 0,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-06-03",
+      "last_update": "2026-06-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-06-08",
+      "last_update": "2026-06-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 11,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-06-04",
+      "last_update": "2026-06-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-08",
+      "last_update": "2026-06-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 24,
         "commits_30d": null,
-        "issues_open": 10,
+        "issues_open": 13,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-08",
+      "last_update": "2026-06-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -604,7 +604,7 @@
         "forks": 0,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 7,
+        "issues_open": 6,
         "traffic_views": 0
       }
     },
@@ -617,7 +617,7 @@
       "contributors": 7,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-05",
+      "last_update": "2026-06-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -625,7 +625,7 @@
         "forks": 0,
         "contributors": 7,
         "commits_30d": null,
-        "issues_open": 23,
+        "issues_open": 20,
         "traffic_views": 0
       }
     },
@@ -659,7 +659,7 @@
       "contributors": 8,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-05-27",
+      "last_update": "2026-06-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-06-01",
+      "last_update": "2026-06-08",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -852,7 +852,7 @@
       "contributors": 2,
       "license": null,
       "language": "Java",
-      "last_update": "2026-03-06",
+      "last_update": "2026-06-12",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -910,7 +910,7 @@
       "name": "webco-design-system",
       "url": "https://github.com/France-Travail/webco-design-system",
       "description": "Source des webcomposants du DSFT",
-      "stars": 0,
+      "stars": 1,
       "forks": 0,
       "contributors": 1,
       "license": "MIT",
@@ -919,7 +919,7 @@
       "topics": [],
       "pages_url": null,
       "metrics": {
-        "stars": 0,
+        "stars": 1,
         "forks": 0,
         "contributors": 1,
         "commits_30d": null,
