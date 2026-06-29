@@ -1,10 +1,10 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-06-22T11:37:24.018198+00:00",
+  "collected_at": "2026-06-29T10:25:05.387071+00:00",
   "summary": {
     "total_repositories": 41,
     "active_repositories": 28,
-    "total_stars": 223,
+    "total_stars": 224,
     "total_forks": 45,
     "total_contributors": 175,
     "total_commits_last_30_days": 0,
@@ -16,7 +16,7 @@
       "url": "https://github.com/France-Travail/gabarit",
       "description": "Gabarit : kickstart your data science project from scratch ",
       "stars": 64,
-      "forks": 13,
+      "forks": 12,
       "contributors": 11,
       "license": "AGPL-3.0",
       "language": "Python",
@@ -30,7 +30,7 @@
       "pages_url": "https://france-travail.github.io/gabarit",
       "metrics": {
         "stars": 64,
-        "forks": 13,
+        "forks": 12,
         "contributors": 11,
         "commits_30d": null,
         "issues_open": 50,
@@ -252,8 +252,8 @@
       "name": "happy_vllm",
       "url": "https://github.com/France-Travail/happy_vllm",
       "description": "A REST API for vLLM, production ready",
-      "stars": 28,
-      "forks": 4,
+      "stars": 29,
+      "forks": 5,
       "contributors": 3,
       "license": "AGPL-3.0",
       "language": "Python",
@@ -267,8 +267,8 @@
       ],
       "pages_url": "https://france-travail.github.io/happy_vllm",
       "metrics": {
-        "stars": 28,
-        "forks": 4,
+        "stars": 29,
+        "forks": 5,
         "contributors": 3,
         "commits_30d": null,
         "issues_open": 5,
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-06-22",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -554,7 +554,7 @@
       "contributors": 11,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-06-19",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-22",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 24,
         "commits_30d": null,
-        "issues_open": 13,
+        "issues_open": 14,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-22",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 7,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-22",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -659,7 +659,7 @@
       "contributors": 8,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-06-19",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -667,7 +667,7 @@
         "forks": 0,
         "contributors": 8,
         "commits_30d": null,
-        "issues_open": 0,
+        "issues_open": 2,
         "traffic_views": 0
       }
     },
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-06-15",
+      "last_update": "2026-06-22",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -852,7 +852,7 @@
       "contributors": 2,
       "license": null,
       "language": "Java",
-      "last_update": "2026-06-12",
+      "last_update": "2026-06-26",
       "topics": [],
       "pages_url": null,
       "metrics": {
