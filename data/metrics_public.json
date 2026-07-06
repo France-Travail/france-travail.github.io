@@ -1,10 +1,10 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-06-29T10:25:05.387071+00:00",
+  "collected_at": "2026-07-06T09:58:40.657225+00:00",
   "summary": {
     "total_repositories": 41,
     "active_repositories": 28,
-    "total_stars": 224,
+    "total_stars": 225,
     "total_forks": 45,
     "total_contributors": 175,
     "total_commits_last_30_days": 0,
@@ -399,7 +399,7 @@
       "contributors": 0,
       "license": "Apache-2.0",
       "language": "Python",
-      "last_update": "2026-06-15",
+      "last_update": "2026-07-01",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -483,7 +483,7 @@
       "contributors": 0,
       "license": "NOASSERTION",
       "language": "Python",
-      "last_update": "2026-06-29",
+      "last_update": "2026-07-06",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -549,16 +549,16 @@
       "name": "pass_emploi_app",
       "url": "https://github.com/France-Travail/pass_emploi_app",
       "description": null,
-      "stars": 1,
+      "stars": 2,
       "forks": 0,
       "contributors": 11,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-06-29",
+      "last_update": "2026-07-02",
       "topics": [],
       "pages_url": null,
       "metrics": {
-        "stars": 1,
+        "stars": 2,
         "forks": 0,
         "contributors": 11,
         "commits_30d": null,
@@ -575,7 +575,7 @@
       "contributors": 24,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-29",
+      "last_update": "2026-07-03",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-06-29",
+      "last_update": "2026-07-06",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -659,7 +659,7 @@
       "contributors": 8,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-06-29",
+      "last_update": "2026-07-02",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -667,7 +667,7 @@
         "forks": 0,
         "contributors": 8,
         "commits_30d": null,
-        "issues_open": 2,
+        "issues_open": 3,
         "traffic_views": 0
       }
     },
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-06-22",
+      "last_update": "2026-06-29",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
