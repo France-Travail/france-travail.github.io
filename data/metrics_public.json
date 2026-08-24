@@ -1,6 +1,6 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-08-17T06:35:45.370868+00:00",
+  "collected_at": "2026-08-24T06:38:50.064710+00:00",
   "summary": {
     "total_repositories": 42,
     "active_repositories": 29,
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-08-13",
+      "last_update": "2026-08-21",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-08-17",
+      "last_update": "2026-08-24",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 16,
+        "issues_open": 14,
         "traffic_views": 0
       }
     },
@@ -617,7 +617,7 @@
       "contributors": 7,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-08-17",
+      "last_update": "2026-08-24",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -659,7 +659,7 @@
       "contributors": 9,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-08-12",
+      "last_update": "2026-08-17",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-08-10",
+      "last_update": "2026-08-17",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
