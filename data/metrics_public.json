@@ -1,12 +1,12 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-08-24T06:38:50.064710+00:00",
+  "collected_at": "2026-08-31T12:14:05.905093+00:00",
   "summary": {
-    "total_repositories": 42,
+    "total_repositories": 44,
     "active_repositories": 29,
     "total_stars": 232,
     "total_forks": 46,
-    "total_contributors": 181,
+    "total_contributors": 183,
     "total_commits_last_30_days": 0,
     "total_pageviews_30d": 0
   },
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-08-21",
+      "last_update": "2026-08-31",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -562,7 +562,7 @@
         "forks": 0,
         "contributors": 12,
         "commits_30d": null,
-        "issues_open": 2,
+        "issues_open": 3,
         "traffic_views": 0
       }
     },
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-08-24",
+      "last_update": "2026-08-31",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 14,
+        "issues_open": 19,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-08-10",
+      "last_update": "2026-08-31",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 7,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-08-24",
+      "last_update": "2026-08-31",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -625,7 +625,7 @@
         "forks": 0,
         "contributors": 7,
         "commits_30d": null,
-        "issues_open": 18,
+        "issues_open": 17,
         "traffic_views": 0
       }
     },
@@ -659,7 +659,7 @@
       "contributors": 9,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-08-17",
+      "last_update": "2026-08-31",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -667,7 +667,7 @@
         "forks": 0,
         "contributors": 9,
         "commits_30d": null,
-        "issues_open": 1,
+        "issues_open": 2,
         "traffic_views": 0
       }
     },
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-08-17",
+      "last_update": "2026-08-24",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -936,13 +936,55 @@
       "contributors": 2,
       "license": null,
       "language": "Python",
-      "last_update": "2026-08-11",
+      "last_update": "2026-08-26",
       "topics": [],
       "pages_url": null,
       "metrics": {
         "stars": 6,
         "forks": 1,
         "contributors": 2,
+        "commits_30d": null,
+        "issues_open": 0,
+        "traffic_views": 0
+      }
+    },
+    {
+      "name": "elastic-agent-buildpack",
+      "url": "https://github.com/France-Travail/elastic-agent-buildpack",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "contributors": 1,
+      "license": null,
+      "language": "Shell",
+      "last_update": "2026-08-27",
+      "topics": [],
+      "pages_url": null,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "contributors": 1,
+        "commits_30d": null,
+        "issues_open": 0,
+        "traffic_views": 0
+      }
+    },
+    {
+      "name": "logstash-buildpack",
+      "url": "https://github.com/France-Travail/logstash-buildpack",
+      "description": null,
+      "stars": 0,
+      "forks": 0,
+      "contributors": 1,
+      "license": null,
+      "language": "Shell",
+      "last_update": "2026-08-26",
+      "topics": [],
+      "pages_url": null,
+      "metrics": {
+        "stars": 0,
+        "forks": 0,
+        "contributors": 1,
         "commits_30d": null,
         "issues_open": 0,
         "traffic_views": 0
