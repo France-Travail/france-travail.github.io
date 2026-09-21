@@ -1,6 +1,6 @@
 {
   "organization": "France-Travail",
-  "collected_at": "2026-09-14T11:19:08.287464+00:00",
+  "collected_at": "2026-09-21T11:31:41.476270+00:00",
   "summary": {
     "total_repositories": 44,
     "active_repositories": 29,
@@ -554,7 +554,7 @@
       "contributors": 12,
       "license": "MIT",
       "language": "Dart",
-      "last_update": "2026-09-10",
+      "last_update": "2026-09-21",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -562,7 +562,7 @@
         "forks": 0,
         "contributors": 12,
         "commits_30d": null,
-        "issues_open": 2,
+        "issues_open": 1,
         "traffic_views": 0
       }
     },
@@ -575,7 +575,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-09-14",
+      "last_update": "2026-09-21",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -583,7 +583,7 @@
         "forks": 1,
         "contributors": 25,
         "commits_30d": null,
-        "issues_open": 23,
+        "issues_open": 27,
         "traffic_views": 0
       }
     },
@@ -596,7 +596,7 @@
       "contributors": 25,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-09-11",
+      "last_update": "2026-09-21",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -617,7 +617,7 @@
       "contributors": 7,
       "license": "MIT",
       "language": "TypeScript",
-      "last_update": "2026-09-11",
+      "last_update": "2026-09-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -659,7 +659,7 @@
       "contributors": 9,
       "license": "MIT",
       "language": "HTML",
-      "last_update": "2026-09-11",
+      "last_update": "2026-09-19",
       "topics": [],
       "pages_url": null,
       "metrics": {
@@ -667,7 +667,7 @@
         "forks": 0,
         "contributors": 9,
         "commits_30d": null,
-        "issues_open": 3,
+        "issues_open": 2,
         "traffic_views": 0
       }
     },
@@ -701,7 +701,7 @@
       "contributors": 1,
       "license": "MIT",
       "language": "JavaScript",
-      "last_update": "2026-09-09",
+      "last_update": "2026-09-16",
       "topics": [],
       "pages_url": "https://france-travail.github.io/grist-widget-import-excel",
       "metrics": {
@@ -743,7 +743,7 @@
       "contributors": 2,
       "license": null,
       "language": "CSS",
-      "last_update": "2026-09-07",
+      "last_update": "2026-09-14",
       "topics": [],
       "pages_url": "https://france-travail.github.io/france-travail.github.io",
       "metrics": {
@@ -852,7 +852,7 @@
       "contributors": 2,
       "license": null,
       "language": "Java",
-      "last_update": "2026-07-09",
+      "last_update": "2026-09-15",
       "topics": [],
       "pages_url": null,
       "metrics": {
