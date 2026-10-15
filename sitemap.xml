@@ -5,7 +5,7 @@
   <!-- Page d'accueil -->
   <url>
     <loc>https://france-travail.github.io/</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/" />
@@ -16,7 +16,7 @@
   <!-- Page tous les projets -->
   <url>
     <loc>https://france-travail.github.io/projets.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/projets.html" />
@@ -27,7 +27,7 @@
   <!-- Thème Accessibilité & Inclusion -->
   <url>
     <loc>https://france-travail.github.io/themes/accessibilite-inclusion.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/accessibilite-inclusion.html" />
@@ -35,10 +35,10 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/accessibilite-inclusion.html" />
   </url>
   
-  <!-- Thème Éco-conception -->
+  <!-- Domaine Numérique responsable -->
   <url>
     <loc>https://france-travail.github.io/themes/eco.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/eco.html" />
@@ -46,37 +46,43 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/eco.html" />
   </url>
   
-  <!-- Thème Architecture -->
+  <!-- Domaine Services aux usagers -->
   <url>
-    <loc>https://france-travail.github.io/themes/architecture.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://france-travail.github.io/themes/services-usagers.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/architecture.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://france-travail.github.io/themes/architecture.html?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/architecture.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/services-usagers.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://france-travail.github.io/themes/services-usagers.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/services-usagers.html" />
   </url>
   
-  <!-- Thème SI Plateforme -->
+  <!-- Domaine Outils et pratiques pour les équipes -->
   <url>
-    <loc>https://france-travail.github.io/themes/si-plateforme.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <loc>https://france-travail.github.io/themes/outils-equipes.html</loc>
+    <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/si-plateforme.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://france-travail.github.io/themes/si-plateforme.html?lang=en" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/si-plateforme.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/outils-equipes.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://france-travail.github.io/themes/outils-equipes.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/outils-equipes.html" />
   </url>
   
   <!-- Thème Intelligence Artificielle -->
   <url>
     <loc>https://france-travail.github.io/themes/ia.html</loc>
-    <lastmod>2025-01-27</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/ia.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://france-travail.github.io/themes/ia.html?lang=en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/ia.html" />
   </url>
-  
+  <url>
+    <loc>https://france-travail.github.io/mentions.html</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>

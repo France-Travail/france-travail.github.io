@@ -1,37 +1,37 @@
 [
   {
     "slug": "accessibilite-inclusion",
-    "title": "Accessibility & Inclusion",
-    "shortDescription": "Digital tools designed for everyone, ensuring fair access to employment and training.",
-    "longDescription": "This theme brings together projects that promote digital inclusion and the accessibility of public services. The tools developed aim to remove linguistic, technical or cognitive barriers, ensuring that everyone can benefit from the same opportunities to access employment, training and information.",
+    "title": "Accessibility & inclusion",
+    "shortDescription": "Accessible interface components and live translation between advisers and users.",
+    "longDescription": "Projects that make digital services usable by people with disabilities or who do not speak French: interface components and the reading assistance centre of the Design System, used on francetravail.org among others, and live translation during an interview.",
     "icon": "/img/icon-accessibilite.png"
   },
   {
     "slug": "eco",
-    "title": "Eco-design",
-    "shortDescription": "Towards a more sustainable, responsible and energy-efficient digital world.",
-    "longDescription": "Projects in this theme advocate for the responsible design of digital services. They raise awareness among teams about the environmental and social impact of technology, and provide guidelines, tools, and best practices to reduce the carbon footprint while improving the long-term durability of digital products.",
+    "title": "Responsible digital",
+    "shortDescription": "A reference framework, kits and training to design more sober digital services.",
+    "longDescription": "An eco-design best practice framework, an awareness path adapted to each role (developers, designers, PM/PO) and a one-day training on responsible AI.",
     "icon": "/img/icon-eco.png"
   },
   {
-    "slug": "architecture",
-    "title": "Architecture",
-    "shortDescription": "Shared practices for a structured, resilient and sustainable information system.",
-    "longDescription": "This theme highlights initiatives shaping the transformation of France Travail’s information system. It emphasizes continuous architecture, living documentation, and collaboration between architects, developers, and business stakeholders.",
-    "icon": "/img/icon-architecture.png"
+    "slug": "ia",
+    "title": "AI & data",
+    "shortDescription": "Prepare data, serve language models, measure their performance and their biases.",
+    "longDescription": "Building blocks from France Travail data teams: a data science project template, text preprocessing, embedding comparison, an API to serve language models, a performance benchmark and fairness measurement. Several projects are no longer maintained: their status is shown on each card.",
+    "icon": "/img/icon-ia.png"
   },
   {
-    "slug": "si-plateforme",
-    "title": "Platform Information System",
-    "shortDescription": "Building an agile, secure and high-performing information system for users.",
-    "longDescription": "This category gathers projects that enhance mutualization, security, and interoperability across France Travail’s information system. The goal is to create a modular, open, and reusable ecosystem of services to foster innovation and improve the quality of public digital services.",
+    "slug": "services-usagers",
+    "title": "Services for users",
+    "shortDescription": "The code of applications used by job seekers, young people and advisers.",
+    "longDescription": "France Travail business applications: support for young people in the Youth Engagement Contract, for advisers and young people alike, and the collection of verified trainee reviews of training courses.",
     "icon": "/img/icon-si.png"
   },
   {
-    "slug": "ia",
-    "title": "Artificial Intelligence",
-    "shortDescription": "Ethical, transparent and human-centered AI tools and models.",
-    "longDescription": "This theme features AI-related projects developed or supported by France Travail: frameworks, APIs and data processing tools. All projects share the same goal: to make AI accessible, explainable, and aligned with human needs.",
-    "icon": "/img/icon-ia.png"
+    "slug": "outils-equipes",
+    "title": "Tools and practices for teams",
+    "shortDescription": "Guides, practices and tools for teams building with or for France Travail.",
+    "longDescription": "The guide to consuming France Travail APIs, architecture practices (Domain-Driven Design, ADR, Wardley Maps, Team Topologies) and everyday tools, such as an Excel import widget for Grist.",
+    "icon": "/img/icon-architecture.png"
   }
 ]

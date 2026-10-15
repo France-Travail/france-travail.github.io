@@ -1,0 +1,195 @@
+{
+  "collected_at": "2026-10-15T09:01:41.555Z",
+  "summary": {
+    "repositories": 15,
+    "repositories_with_issues": 13,
+    "open_issues": 68,
+    "good_first_issues": 7,
+    "repositories_with_guide": 7
+  },
+  "repositories": {
+    "france-travail/trademploi": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 11,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": "https://github.com/France-Travail/TradEmploi/blob/master/CONTRIBUTING.md",
+      "code_of_conduct_url": null
+    },
+    "france-travail/sensibilisation-conception-responsable": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": null
+    },
+    "france-travail/gabarit": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 49,
+      "good_first_issues": 6,
+      "good_first_label": "good first issue",
+      "issue_templates": false,
+      "discussions": true,
+      "contributing_url": "https://github.com/France-Travail/gabarit/blob/main/CONTRIBUTING.md",
+      "code_of_conduct_url": "https://github.com/France-Travail/gabarit/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "france-travail/architecture": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": null
+    },
+    "france-travail/words_n_fun": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 5,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": "https://github.com/France-Travail/words_n_fun/blob/main/CONTRIBUTING.md",
+      "code_of_conduct_url": "https://github.com/France-Travail/words_n_fun/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "france-travail/happy_vllm": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": "https://github.com/France-Travail/happy_vllm/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "france-travail/embcompare": {
+      "available": true,
+      "archived": true,
+      "issues_enabled": false,
+      "open_issues": 1,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": "https://github.com/France-Travail/embcompare/blob/main/CONTRIBUTING.md",
+      "code_of_conduct_url": "https://github.com/France-Travail/embcompare/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "france-travail/benchmark_llm_serving": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": "https://github.com/France-Travail/benchmark_llm_serving/blob/main/CODE_OF_CONDUCT.md"
+    },
+    "france-travail/fairlens_pe": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": false,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": null
+    },
+    "startupsfrancetravail/anotea": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 1,
+      "good_first_issues": 1,
+      "good_first_label": "good-first-issue",
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": null
+    },
+    "france-travail/referentiel-ecoconception": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 1,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": "https://github.com/France-Travail/referentiel-ecoconception/blob/master/CONTRIBUTING.md",
+      "code_of_conduct_url": "https://github.com/France-Travail/referentiel-ecoconception/blob/master/CODE_OF_CONDUCT.md"
+    },
+    "france-travail/si_plateforme": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": null
+    },
+    "france-travail/webco-design-system": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": "https://github.com/France-Travail/webco-design-system/blob/main/CONTRIBUTING.md",
+      "code_of_conduct_url": null
+    },
+    "france-travail/cej": {
+      "available": false
+    },
+    "france-travail/grist-widget-import-excel": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": null,
+      "code_of_conduct_url": null
+    },
+    "france-travail/concevoir-developper-et-mettre-en-place-une-ia-responsable": {
+      "available": true,
+      "archived": false,
+      "issues_enabled": true,
+      "open_issues": 0,
+      "good_first_issues": 0,
+      "good_first_label": null,
+      "issue_templates": false,
+      "discussions": false,
+      "contributing_url": "https://github.com/France-Travail/concevoir-developper-et-mettre-en-place-une-IA-responsable/blob/main/CONTRIBUTING.md",
+      "code_of_conduct_url": null
+    }
+  }
+}

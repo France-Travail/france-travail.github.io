@@ -78,6 +78,13 @@ def update_projects_file(projects_path: Path, metrics_mapping: Dict[str, str]) -
             if repo_name:
                 last_update = metrics_mapping.get(repo_name.lower())
         
+        # Fiche regroupée : la date retenue est la plus récente de ses déclinaisons
+        for variant in project.get('variants', []):
+            variant_url = normalize_repo_url(variant.get('repo', ''))
+            variant_update = metrics_mapping.get(variant_url) or metrics_mapping.get((extract_repo_name(variant.get('repo', '')) or '').lower())
+            if variant_update and (not last_update or variant_update > last_update):
+                last_update = variant_update
+
         # Mettre à jour si on a trouvé une date et qu'elle est différente
         if last_update and project.get('lastUpdate') != last_update:
             project['lastUpdate'] = last_update

@@ -48,3 +48,6 @@ Desktop.ini
 .github/deploy.log
 
 /todo
+
+# Maquettes de travail locales — ne pas publier avec GitHub Pages
+/maquettes/

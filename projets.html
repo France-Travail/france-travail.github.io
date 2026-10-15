@@ -1,118 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
-    <title>Tous les projets open source | France Travail</title>
-    <meta
-      name="description"
-      content="Découvrez tous les projets open source de France Travail : TradEmploi, Gabarit, Anotéa, Happy_vllm et plus. Innovation numérique pour les services publics."
-    />
-    <meta
-      name="keywords"
-      content="projets open source, France Travail, TradEmploi, Gabarit, Anotéa, Happy_vllm, développement, innovation, services publics"
-    />
+    <title>Catalogue des projets open source | France Travail</title>
+    <meta name="description" content="Recherchez et filtrez les logiciels, ressources, formations et composants open source publiés par France Travail." />
     <meta name="author" content="France Travail" />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://france-travail.github.io/projets.html"
-    />
-
-    <!-- Open Graph / Facebook -->
+    <meta name="theme-color" content="#283276" />
+    <link rel="canonical" href="https://france-travail.github.io/projets.html" />
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://france-travail.github.io/projets.html"
-    />
-    <meta
-      property="og:title"
-      content="Tous les projets open source | France Travail"
-    />
-    <meta
-      property="og:description"
-      content="Découvrez tous les projets open source de France Travail : TradEmploi, Gabarit, Anotéa, Happy_vllm et plus. Innovation numérique pour les services publics."
-    />
-    <meta
-      property="og:image"
-      content="https://france-travail.github.io/img/logo-ft.png"
-    />
-    <meta property="og:site_name" content="France Travail Open Source" />
-    <meta property="og:locale" content="fr_FR" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Tous les projets open source | France Travail"
-    />
-    <meta
-      name="twitter:description"
-      content="Découvrez tous les projets open source de France Travail : TradEmploi, Gabarit, Anotéa, Happy_vllm et plus. Innovation numérique pour les services publics."
-    />
-    <meta
-      name="twitter:image"
-      content="https://france-travail.github.io/img/logo-ft.png"
-    />
-
-    <!-- Hreflang for bilingual support -->
-    <link
-      rel="alternate"
-      hreflang="fr"
-      href="https://france-travail.github.io/projets.html"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://france-travail.github.io/projets.html?lang=en"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://france-travail.github.io/projets.html"
-    />
-
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="../manifest.json" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
-    <link rel="apple-touch-icon" href="../img/logo-ft.png" />
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="./css/style.css" as="style" />
-
-    <!-- France Travail Design System -->
+    <meta property="og:url" content="https://france-travail.github.io/projets.html" />
+    <meta property="og:title" content="Catalogue open source | France Travail" />
+    <meta property="og:description" content="Logiciels, référentiels et formations open source publiés par France Travail, avec leur licence et leur état." />
+    <meta property="og:image" content="https://france-travail.github.io/img/logos/logo-ft.png" />
+    <link rel="alternate" hreflang="fr" href="https://france-travail.github.io/projets.html" />
+    <link rel="alternate" hreflang="en" href="https://france-travail.github.io/projets.html?lang=en" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
+    <link rel="preload" href="./fonts/Marianne-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
     <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
-
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- JS -->
-    <script src="./js/customHeader.js" defer></script>
-    <script src="./js/customFooter.js" defer></script>
-    <script src="./js/i18n.js" defer></script>
-    <script src="./js/renderAllProjects.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css?v=2.4.0" />
+    <script src="./js/customHeader.js?v=2.4.0" defer></script>
+    <script src="./js/customFooter.js?v=2.4.0" defer></script>
+    <script src="./js/i18n.js?v=2.4.0" defer></script>
+    <script src="./js/projectLifecycle.js?v=2.4.0" defer></script>
+    <script src="./js/contribution.js?v=2.4.0" defer></script>
+    <script src="./js/renderAllProjects.js?v=2.4.0" defer></script>
+    <script src="./js/motion.js?v=2.4.0" defer></script>
   </head>
-
   <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header id="custom-header"></header>
 
-    <main class="container">
-      <section style="margin-bottom: 2rem">
-        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
-          <img src="./img/logos/logo-ft-only.png" alt="France Travail" style="height: 70px; vertical-align: middle;" />
-          <h1 data-i18n="all_projects_title" style="margin: 0;">Tous les projets open source</h1>
+    <main id="main-content">
+      <section class="catalogue-hero">
+        <div class="shell">
+          <nav class="breadcrumbs" aria-label="Fil d’Ariane">
+            <a href="./index.html" data-i18n="home">Accueil</a><span aria-hidden="true">/</span><span data-i18n="catalogue">Catalogue</span>
+          </nav>
+          <div class="catalogue-hero-grid">
+            <div class="catalogue-hero-copy">
+              <p class="eyebrow" data-i18n="catalogue_eyebrow">Catalogue</p>
+              <h1 data-i18n="catalogue_title">Les projets open source de France Travail</h1>
+              <p data-i18n="catalogue_description">Logiciels, référentiels et formations publiés par les équipes de France Travail. Chaque fiche indique la licence, la documentation, l’état du projet et comment y contribuer.</p>
+            </div>
+            <div class="catalogue-total" aria-live="polite">
+              <strong id="catalogue-total">20</strong>
+              <span data-i18n="documented_projects">projets publiés</span>
+            </div>
+          </div>
         </div>
-        <p data-i18n="all_projects_description">
-          Découvrez l'ensemble des projets Open Source portés ou soutenus par
-          France Travail.
-        </p>
       </section>
 
-      <div id="projects-container" class="project-grid"></div>
+      <section class="shell catalogue-main" aria-label="Liste des projets">
+        <aside class="catalogue-reading-guide" aria-labelledby="reading-guide-title">
+          <div class="reading-guide-copy">
+            <p class="eyebrow" data-i18n="reading_guide_eyebrow">Avant de réutiliser un projet</p>
+            <h2 id="reading-guide-title" data-i18n="reading_guide_title">Comment lire l’état d’un projet</h2>
+            <p data-i18n="reading_guide_text">L’état dépend de la dernière mise à jour du dépôt : actif à moins d’un an, maintenu entre un et deux ans, archivé au-delà. L’OSPO le corrige quand il en sait plus, comme pour Gabarit ou TradOpen. Il ne garantit pas de support.</p>
+            <p class="reading-guide-date"><span data-i18n="data_updated">Données actualisées le</span> <time id="catalogue-freshness">—</time>.</p>
+          </div>
+          <div class="lifecycle-legend">
+            <div><span class="lifecycle-dot lifecycle-active"></span><strong data-i18n="lifecycle_active">Actif</strong><p data-i18n="lifecycle_active_text">Mis à jour il y a moins d’un an.</p></div>
+            <div><span class="lifecycle-dot lifecycle-maintained"></span><strong data-i18n="lifecycle_maintained">Maintenu</strong><p data-i18n="lifecycle_maintained_text">Dernière mise à jour il y a un à deux ans.</p></div>
+            <div><span class="lifecycle-dot lifecycle-archived"></span><strong data-i18n="lifecycle_archived">Archivé</strong><p data-i18n="lifecycle_archived_text">Pas de mise à jour depuis plus de deux ans, ou arrêt connu de l’OSPO.</p></div>
+          </div>
+        </aside>
+
+        <div class="catalogue-tools">
+          <div class="search-field">
+            <label for="project-search" data-i18n="search_label">Rechercher dans le catalogue</label>
+            <div class="search-input-wrap">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+              <input id="project-search" type="search" autocomplete="off" placeholder="Nom, usage, technologie…" data-i18n-placeholder="search_placeholder" />
+            </div>
+          </div>
+          <div class="sort-field">
+            <label for="project-sort" data-i18n="sort_label">Trier par</label>
+            <select id="project-sort">
+              <option value="recent" data-i18n="sort_recent">Mise à jour récente</option>
+              <option value="name" data-i18n="sort_name">Nom de A à Z</option>
+              <option value="category" data-i18n="sort_category">Domaine</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-chips" role="group" aria-label="Filtrer par domaine">
+            <button class="filter-chip" type="button" data-category="all" aria-pressed="true" data-i18n="filter_all">Tous</button>
+            <button class="filter-chip" type="button" data-category="accessibilite&inclusion" aria-pressed="false" data-i18n="filter_accessibility">Accessibilité &amp; inclusion</button>
+            <button class="filter-chip" type="button" data-category="eco" aria-pressed="false" data-i18n="filter_eco">Numérique responsable</button>
+            <button class="filter-chip" type="button" data-category="ia" aria-pressed="false" data-i18n="filter_ai">IA &amp; données</button>
+            <button class="filter-chip" type="button" data-category="services-usagers" aria-pressed="false" data-i18n="filter_services">Services aux usagers</button>
+            <button class="filter-chip" type="button" data-category="outils-equipes" aria-pressed="false" data-i18n="filter_tools">Outils et pratiques pour les équipes</button>
+          </div>
+          <p class="results-count" id="results-count" aria-live="polite"></p>
+        </div>
+
+        <div id="projects-container" class="project-grid" aria-live="polite"></div>
+
+        <aside class="catalogue-cta">
+          <div><h2 data-i18n="missing_project_title">Vous ne trouvez pas ce que vous cherchez ?</h2><p data-i18n="missing_project_text">Une question, une idée de coopération ou un projet à signaler : échangez avec l’OSPO.</p></div>
+          <a class="button button-primary" href="mailto:sioss.00006@francetravail.fr"><span data-i18n="contact_ospo">Contacter l’OSPO</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+        </aside>
+      </section>
     </main>
 
     <footer id="custom-footer"></footer>

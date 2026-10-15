@@ -1,88 +1,48 @@
-async function loadThemeHeader() {
-  const main = document.querySelector("main");
-  const container = document.querySelector("#projects-container");
+const THEME_PAGE_META = {
+  "accessibilite&inclusion": { slug: "accessibilite-inclusion", color: "#008ecf" },
+  eco: { slug: "eco", color: "#fddc0b" },
+  ia: { slug: "ia", color: "#e10211" },
+  "services-usagers": { slug: "services-usagers", color: "#f29fc5" },
+  "outils-equipes": { slug: "outils-equipes", color: "#283276" },
+};
 
-  if (!main || !container) return;
+async function loadThemeHeader() {
+  const host = document.getElementById("theme-header");
+  const container = document.querySelector("#projects-container[data-category]");
+  if (!host || !container) return;
 
   const category = container.dataset.category;
-  if (!category) return;
+  const meta = THEME_PAGE_META[category] || { slug: category, color: "#008ecf" };
+  const lang = window.getCurrentLanguage?.() || localStorage.getItem("lang") || "fr";
 
   try {
-    // Supprimer les anciens en-têtes de thème s'ils existent
-    const existingHeaders = main.querySelectorAll('.theme-header-h1, .theme-header-p');
-    existingHeaders.forEach(header => header.remove());
-
-    // Déterminer la langue actuelle
-    const currentLang = localStorage.getItem("lang") || "fr";
-    const themesFile = currentLang === "en" ? "../data/themes-en.json" : "../data/themes.json";
-    
-    const res = await fetch(themesFile);
-    const themes = await res.json();
-
-    // Mapping des catégories vers les slugs
-    const categoryToSlug = {
-      "accessibilite&inclusion": "accessibilite-inclusion",
-      "eco": "eco",
-      "architecture": "architecture", 
-      "si-plateforme": "si-plateforme",
-      "ia": "ia"
-    };
-    
-    const slug = categoryToSlug[category] || category;
-    const theme = themes.find((t) => t.slug === slug);
+    const response = await fetch(withAssetVersion(lang === "en" ? "../data/themes-en.json" : "../data/themes.json"));
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const themes = await response.json();
+    const theme = themes.find((item) => item.slug === meta.slug);
     if (!theme) return;
 
-    // Création du H1 avec bulle colorée
-    const h1 = document.createElement("h1");
-    h1.className = "theme-header-h1"; // Classe pour identifier les éléments à supprimer
-    h1.style.display = "flex";
-    h1.style.alignItems = "center";
-    h1.style.gap = "0.75rem";
-
-    // Créer une bulle colorée au lieu de l'image
-    const bubble = document.createElement("div");
-    bubble.style.cssText = `
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: ${getThemeColor(category)};
-      box-shadow: 0 2px 8px rgba(0, 83, 164, 0.15);
-      flex-shrink: 0;
-    `;
-    h1.appendChild(bubble);
-
-    const span = document.createElement("span");
-    span.textContent = theme.title;
-    h1.appendChild(span);
-
-    // Paragraphe description
-    const p = document.createElement("p");
-    p.className = "theme-header-p"; // Classe pour identifier les éléments à supprimer
-    p.textContent = theme.longDescription;
-
-    // Injecter dans le DOM
-    main.insertBefore(h1, container);
-    main.insertBefore(p, container);
-  } catch (e) {
-    console.error("Erreur de chargement des thèmes :", e);
+    host.className = "theme-page-header";
+    host.style.setProperty("--theme-color", meta.color);
+    host.innerHTML = `
+      <nav class="breadcrumbs" aria-label="${lang === "en" ? "Breadcrumb" : "Fil d’Ariane"}">
+        <a href="../index.html">${lang === "en" ? "Home" : "Accueil"}</a><span aria-hidden="true">/</span>
+        <a href="../projets.html">${lang === "en" ? "Catalogue" : "Catalogue"}</a><span aria-hidden="true">/</span>
+        <span>${escapeThemeText(theme.title)}</span>
+      </nav>
+      <p class="eyebrow">${lang === "en" ? "Area" : "Domaine"}</p>
+      <h1>${escapeThemeText(theme.title)}</h1>
+      <p>${escapeThemeText(theme.longDescription)}</p>`;
+  } catch (error) {
+    console.error("Erreur de chargement du thème", error);
   }
 }
 
-// Fonction pour obtenir la couleur correspondante à chaque thème
-function getThemeColor(category) {
-  const themeColors = {
-    "accessibilite&inclusion": "#008ece",  // Bleu clair pour accessibilité
-    "eco": "#ffe000",                      // Jaune pour éco-conception
-    "ia": "#e1010e",                       // Rouge pour IA
-    "architecture": "#283276",            // Bleu foncé pour architecture
-    "si-plateforme": "#f29fc4"           // Rose pour SI plateforme
-  };
-  
-  return themeColors[category] || "#0053a4"; // Couleur par défaut
+function escapeThemeText(value) {
+  const node = document.createElement("span");
+  node.textContent = value ?? "";
+  return node.innerHTML;
 }
 
-// Rendre la fonction globale
 window.loadThemeHeader = loadThemeHeader;
-window.getThemeColor = getThemeColor;
-
 document.addEventListener("DOMContentLoaded", loadThemeHeader);

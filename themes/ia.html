@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO Meta Tags -->
-    <title>Intelligence Artificielle | Projets IA France Travail</title>
-    <meta name="description" content="Découvrez les projets d'intelligence artificielle de France Travail : Gabarit, Happy_vllm, Embcompare, Words n Fun. IA éthique et responsable pour les services publics." />
-    <meta name="keywords" content="intelligence artificielle, IA, machine learning, France Travail, Gabarit, Happy_vllm, Embcompare, NLP, LLM, éthique, services publics" />
+    <title>IA &amp; données | France Travail Open Source</title>
+    <meta name="description" content="Préparer des données, servir des modèles de langage, mesurer leurs performances et leurs biais." />
+    <meta name="keywords" content="intelligence artificielle, données, data science, NLP, LLM, vLLM, équité, France Travail, open source" />
     <meta name="author" content="France Travail" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://france-travail.github.io/themes/ia.html" />
@@ -15,17 +15,17 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://france-travail.github.io/themes/ia.html" />
-    <meta property="og:title" content="Intelligence Artificielle | Projets IA France Travail" />
-    <meta property="og:description" content="Découvrez les projets d'intelligence artificielle de France Travail : Gabarit, Happy_vllm, Embcompare, Words n Fun. IA éthique et responsable pour les services publics." />
-    <meta property="og:image" content="https://france-travail.github.io/img/icon-ia.png" />
+    <meta property="og:title" content="IA &amp; données | France Travail Open Source" />
+    <meta property="og:description" content="Préparer des données, servir des modèles de langage, mesurer leurs performances et leurs biais." />
+    <meta property="og:image" content="https://france-travail.github.io/img/logos/logo-ft.png" />
     <meta property="og:site_name" content="France Travail Open Source" />
     <meta property="og:locale" content="fr_FR" />
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Intelligence Artificielle | Projets IA France Travail" />
-    <meta name="twitter:description" content="Découvrez les projets d'intelligence artificielle de France Travail : Gabarit, Happy_vllm, Embcompare, Words n Fun. IA éthique et responsable pour les services publics." />
-    <meta name="twitter:image" content="https://france-travail.github.io/img/icon-ia.png" />
+    <meta name="twitter:title" content="IA &amp; données | France Travail Open Source" />
+    <meta name="twitter:description" content="Préparer des données, servir des modèles de langage, mesurer leurs performances et leurs biais." />
+    <meta name="twitter:image" content="https://france-travail.github.io/img/logos/logo-ft.png" />
     
     <!-- Hreflang for bilingual support -->
     <link rel="alternate" hreflang="fr" href="https://france-travail.github.io/themes/ia.html" />
@@ -33,31 +33,35 @@
     <link rel="alternate" hreflang="x-default" href="https://france-travail.github.io/themes/ia.html" />
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="../../manifest.json" />
+    <link rel="manifest" href="../manifest.json" />
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="../img/favicon.png" />
-    <link rel="apple-touch-icon" href="../img/logo-ft.png" />
+    <link rel="icon" type="image/png" href="../img/icons/favicon.png" />
+    <link rel="apple-touch-icon" href="../img/logos/logo-ft.png" />
     
     <!-- Preload critical resources -->
-    <link rel="preload" href="../css/style.css" as="style" />
+    <link rel="preload" href="../css/style.css?v=2.4.0" as="style" />
 
     <!-- France Travail Design System -->
     <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
     <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
 
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css?v=2.4.0" />
 
-    <script src="../js/customHeader.js" defer></script>
-    <script src="../js/customFooter.js" defer></script>
-    <script src="../js/i18n.js" defer></script>
-    <script src="../js/renderProjects.js" defer></script>
-    <script src="../js/renderThemeHeader.js" defer></script>
+    <script src="../js/customHeader.js?v=2.4.0" defer></script>
+    <script src="../js/customFooter.js?v=2.4.0" defer></script>
+    <script src="../js/i18n.js?v=2.4.0" defer></script>
+    <script src="../js/projectLifecycle.js?v=2.4.0" defer></script>
+    <script src="../js/contribution.js?v=2.4.0" defer></script>
+    <script src="../js/renderProjects.js?v=2.4.0" defer></script>
+    <script src="../js/renderThemeHeader.js?v=2.4.0" defer></script>
+    <script src="../js/motion.js?v=2.4.0" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header id="custom-header"></header>
 
-    <main class="container">
+    <main class="container" id="main-content">
       <div id="theme-header"></div>
       <div
         id="projects-container"

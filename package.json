@@ -1,12 +1,14 @@
 {
   "name": "france-travail.github.io",
-  "version": "2.0.0",
+  "version": "2.4.0",
   "description": "Site vitrine des projets open source de France Travail, organisés par thématique (accessibilité, inclusion, éco-conception, IA, SI plateforme, etc.).",
   "main": "index.js",
   "scripts": {
+    "build:ftorg-mock": "node scripts/build-ftorg-mock.mjs",
     "dev": "live-server",
-    "build": "echo 'Static site – no build step required'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'Static site, no build step required'",
+    "validate": "node scripts/validate-site.mjs",
+    "test": "npm run validate"
   },
   "keywords": [
     "open source",
@@ -16,6 +18,6 @@
     "inclusion",
     "opensource"
   ],
-  "author": "YanMesb - France Travail – OSPO",
+  "author": "YanMesb, France Travail OSPO",
   "license": "MIT"
 }

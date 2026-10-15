@@ -17,20 +17,35 @@
     "external": false
   },
   {
-    "name": "EcoConception",
+    "name": "Awareness on responsible digital service design",
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
-    "description": "Awareness platform about the environmental impacts of digital technology. Offers eco-design best practices, frugality approaches and practical guides to reduce the ecological footprint of digital services.",
+    "description": "Awareness path on the environmental impact of digital services: a shared platform and three role-based kits (developers, designers, PM/PO), with practical exercises, method sheets and a maturity radar.",
     "tags": [
       "eco-design",
       "sobriety",
+      "training",
       "responsible digital"
     ],
     "logo": "",
     "maintainers": [],
     "lastUpdate": "2025-12-23",
     "status": "maintained",
-    "external": false
+    "external": false,
+    "variants": [
+      {
+        "label": "Developers",
+        "repo": "https://github.com/France-Travail/formation-ecoconception-dev"
+      },
+      {
+        "label": "UX/UI",
+        "repo": "https://github.com/France-Travail/starter-kit-ecoconception"
+      },
+      {
+        "label": "PM/PO",
+        "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM"
+      }
+    ]
   },
   {
     "name": "Gabarit",
@@ -52,7 +67,7 @@
   {
     "name": "Architecture",
     "repo": "https://github.com/France-Travail/Architecture",
-    "category": "architecture",
+    "category": "outils-equipes",
     "description": "Collaborative space for DSI architects sharing tools, templates and continuous architecture best practices. Offers guides on Domain-Driven Design, Team Topologies, Wardley Maps, ADR and methods to build an evolutionary, resilient and eco-responsible platform IS using a lean approach.",
     "tags": [
       "architecture",
@@ -154,8 +169,8 @@
   },
   {
     "name": "Anotéa",
-    "repo": "https://github.com/StartupsPoleEmploi/anotea",
-    "category": "accessibilite&inclusion",
+    "repo": "https://github.com/StartupsFranceTravail/anotea",
+    "category": "services-usagers",
     "description": "Platform for collecting and publishing authenticated reviews on professional training courses. Only trainees who have actually completed a training can give their feedback via post-training questionnaire. Anonymized reviews are accessible via API and widget to ensure transparency and reliability of training information.",
     "tags": [
       "reviews",
@@ -170,7 +185,7 @@
     "external": false
   },
   {
-    "name": "Awareness on Responsible Digital Service Design - Generic",
+    "name": "Eco-design reference framework",
     "repo": "https://github.com/France-Travail/referentiel-ecoconception",
     "category": "eco",
     "description": "France Travail’s digital eco-design reference framework, providing criteria, tools and concrete examples to reduce the environmental footprint of digital services. It complements the awareness platform for responsible design and supports sustainability in public digital services.",
@@ -187,9 +202,9 @@
     "external": false
   },
   {
-    "name": "Platform IS – Onboarding Guide",
+    "name": "Platform IS: Onboarding Guide",
     "repo": "https://github.com/France-Travail/si_plateforme",
-    "category": "si-plateforme",
+    "category": "outils-equipes",
     "description": "Entry point for onboarding onto the France Travail Platform IS. Step-by-step implementation walkthrough, ready-to-use Postman collections and starter kits for API consumers and partners. LPE pathway as the documented reference.",
     "tags": [
       "onboarding",
@@ -207,8 +222,8 @@
   },
   {
     "name": "France Travail Design System",
-    "repo": "https://github.com/France-Travail/design-system",
-    "category": "si-plateforme",
+    "repo": "https://github.com/France-Travail/webco-design-system",
+    "category": "accessibilite&inclusion",
     "description": "France Travail Design System web components: library of web components, tokens and resources to standardize digital interfaces.",
     "tags": [
       "design system",
@@ -218,32 +233,15 @@
     ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-16",
-    "status": "in the process of being open sourced",
-    "external": false,
-    "inProgress": true
-  },
-  {
-    "name": "France-Travail.github.io",
-    "repo": "https://github.com/France-Travail/francetravail.github.io",
-    "category": "si-plateforme",
-    "description": "Showcase website listing France Travail's open source projects.",
-    "tags": [
-      "open source",
-      "documentation",
-      "showcase site"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-10-16",
-    "status": "maintained",
+    "lastUpdate": "2026-06-04",
+    "status": "active",
     "external": false,
     "inProgress": false
   },
   {
-    "name": "CEJ – Youth Engagement Contract",
+    "name": "CEJ: Youth Engagement Contract",
     "repo": "https://github.com/France-Travail/cej",
-    "category": "si-plateforme",
+    "category": "services-usagers",
     "description": "Monitoring and support app for young people within the CEJ program. Includes both agent and user interfaces.",
     "tags": [
       "cej",
@@ -259,9 +257,9 @@
     "inProgress": true
   },
   {
-    "name": "Grist Widget – Excel Import",
-    "repo": "https://github.com/France-Travail/widget-import-excel",
-    "category": "si-plateforme",
+    "name": "Grist Widget: Excel Import",
+    "repo": "https://github.com/France-Travail/grist-widget-import-excel",
+    "category": "outils-equipes",
     "description": "Dynamic Excel import widget for Grist, with column mapping and per-column and per-row update strategies.",
     "tags": [
       "grist",
@@ -271,59 +269,8 @@
     ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-16",
+    "lastUpdate": "2026-09-16",
     "status": "maintained",
-    "external": false,
-    "inProgress": false
-  },
-  {
-    "name": "Awareness on Responsible Digital Service Design - Developers",
-    "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
-    "category": "eco",
-    "description": "Eco-design training module for developers, testers, architects and project managers. Explains the environmental impacts of code, offers practical exercises and methodological guides to develop more sober and responsible applications.",
-    "tags": [
-      "eco-design",
-      "framework",
-      "sustainability",
-      "responsibility"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-11-26",
-    "status": "maintained",
-    "external": false
-  },
-  {
-    "name": "Awareness on Responsible Digital Service Design – UX/UI",
-    "repo": "http://github.com/France-Travail/starter-kit-ecoconception",
-    "category": "eco",
-    "description": "Eco-design starter kit for designers and integrators. Presents fundamentals, responsible design practices and tools to create sober digital interfaces without sacrificing user experience.",
-    "tags": [
-      "eco-design",
-      "digital sobriety",
-      "responsible digital"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-11-05",
-    "status": "active",
-    "external": false,
-    "inProgress": false
-  },
-  {
-    "name": "Awareness on Responsible Digital Service Design – PM/PO",
-    "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM",
-    "category": "eco",
-    "description": "Interactive self-training kit for Product Managers and Product Owners. Contains practical exercises and maturity radar to evaluate and improve eco-design practices from the product phase.",
-    "tags": [
-      "eco-design",
-      "digital sobriety",
-      "responsible digital"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-11-12",
-    "status": "active",
     "external": false,
     "inProgress": false
   },

@@ -18,13 +18,14 @@
     "inProgress": false
   },
   {
-    "name": "Sensibilisation à la Conception Responsable de Service Numérique (Générique)",
+    "name": "Sensibilisation à la conception responsable de service numérique",
     "repo": "https://github.com/France-Travail/sensibilisation-conception-responsable",
     "category": "eco",
-    "description": "Plateforme de sensibilisation aux impacts environnementaux du numérique. Propose bonnes pratiques d'écoconception, démarches de frugalité et fiches pratiques pour réduire l'empreinte écologique des services numériques.",
+    "description": "Parcours de sensibilisation aux impacts environnementaux du numérique : une plateforme commune et trois kits par métier (développeurs, designers, PM/PO), avec exercices pratiques, fiches méthodologiques et radar de maturité.",
     "tags": [
       "écoconception",
       "sobriété",
+      "formation",
       "numérique responsable"
     ],
     "logo": "",
@@ -32,7 +33,21 @@
     "lastUpdate": "2025-12-23",
     "status": "actif",
     "external": false,
-    "inProgress": false
+    "inProgress": false,
+    "variants": [
+      {
+        "label": "Développeurs",
+        "repo": "https://github.com/France-Travail/formation-ecoconception-dev"
+      },
+      {
+        "label": "UX/UI",
+        "repo": "https://github.com/France-Travail/starter-kit-ecoconception"
+      },
+      {
+        "label": "PM/PO",
+        "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM"
+      }
+    ]
   },
   {
     "name": "Gabarit",
@@ -55,7 +70,7 @@
   {
     "name": "Outils et Pratiques d'Architecture",
     "repo": "https://github.com/France-Travail/Architecture",
-    "category": "architecture",
+    "category": "outils-equipes",
     "description": "Espace collaboratif des architectes DSI partageant outils, templates et bonnes pratiques d'architecture continue. Propose guides sur Domain-Driven Design, Team Topologies, Wardley Maps, ADR et méthodes pour construire un SI plateforme évolutif, résilient et écoresponsable dans une démarche lean.",
     "tags": [
       "architecture",
@@ -163,8 +178,8 @@
   },
   {
     "name": "Anotéa",
-    "repo": "https://github.com/StartupsPoleEmploi/anotea",
-    "category": "accessibilite&inclusion",
+    "repo": "https://github.com/StartupsFranceTravail/anotea",
+    "category": "services-usagers",
     "description": "Plateforme de collecte et publication d'avis authentifiés sur les formations professionnelles. Seuls les stagiaires ayant réellement suivi une formation peuvent donner leur avis via questionnaire post-formation. Les retours anonymisés sont accessibles via API et widget pour garantir transparence et fiabilité des informations formation.",
     "tags": [
       "avis",
@@ -180,7 +195,7 @@
     "inProgress": false
   },
   {
-    "name": "Referentiel Ecoconception",
+    "name": "Référentiel d’écoconception",
     "repo": "https://github.com/France-Travail/referentiel-ecoconception",
     "category": "eco",
     "description": "Référentiel des bonnes pratiques d’écoconception numérique. Complète la plateforme de sensibilisation FT.",
@@ -198,9 +213,9 @@
     "inProgress": false
   },
   {
-    "name": "SI Plateforme – Guide d'onboarding",
+    "name": "SI Plateforme : Guide d'onboarding",
     "repo": "https://github.com/France-Travail/si_plateforme",
-    "category": "si-plateforme",
+    "category": "outils-equipes",
     "description": "Point d'entrée pour la prise en main du SI Plateforme France Travail. Cinématique d'implémentation pas à pas, collections Postman et kits d'appropriation pour consommateurs d'API et partenaires. Parcours LPE comme référence documentée.",
     "tags": [
       "onboarding",
@@ -218,8 +233,8 @@
   },
   {
     "name": "Design System France Travail",
-    "repo": "https://github.com/France-Travail/design-system",
-    "category": "si-plateforme",
+    "repo": "https://github.com/France-Travail/webco-design-system",
+    "category": "accessibilite&inclusion",
     "description": "Composants web du Design System France Travail : bibliothèque de web components, tokens et ressources pour homogénéiser les interfaces numériques.",
     "tags": [
       "design system",
@@ -229,32 +244,15 @@
     ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-16",
-    "status": "en cours de reversement",
-    "external": false,
-    "inProgress": true
-  },
-  {
-    "name": "France-Travail.github.io",
-    "repo": "https://github.com/France-Travail/francetravail.github.io",
-    "category": "si-plateforme",
-    "description": "Site vitrine listant les projets Open Source de France Travail.",
-    "tags": [
-      "open source",
-      "documentation",
-      "site vitrine"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-10-16",
+    "lastUpdate": "2026-06-04",
     "status": "actif",
     "external": false,
     "inProgress": false
   },
   {
-    "name": "CEJ – Contrat Engagement Jeune",
+    "name": "CEJ : Contrat Engagement Jeune",
     "repo": "https://github.com/France-Travail/cej",
-    "category": "si-plateforme",
+    "category": "services-usagers",
     "description": "Application de suivi et accompagnement des jeunes dans le cadre du CEJ. Interface agent + usager.",
     "tags": [
       "cej",
@@ -270,9 +268,9 @@
     "inProgress": true
   },
   {
-    "name": "Widget Grist – Import Excel",
-    "repo": "https://github.com/France-Travail/widget-import-excel",
-    "category": "si-plateforme",
+    "name": "Widget Grist : Import Excel",
+    "repo": "https://github.com/France-Travail/grist-widget-import-excel",
+    "category": "outils-equipes",
     "description": "Widget d'import dynamique Excel pour Grist, avec correspondance des colonnes et stratégie de mise à jour colonne par colonne et ligne par ligne.",
     "tags": [
       "grist",
@@ -282,58 +280,7 @@
     ],
     "logo": "",
     "maintainers": [],
-    "lastUpdate": "2025-10-16",
-    "status": "actif",
-    "external": false,
-    "inProgress": false
-  },
-  {
-    "name": "Sensibilisation à la Conception Responsable de Service Numérique - Développeurs",
-    "repo": "https://github.com/France-Travail/formation-ecoconception-dev",
-    "category": "eco",
-    "description": "Module de formation à l'écoconception destiné aux développeurs, testeurs, architectes et chefs de projets. Explique les impacts environnementaux du code, propose des exercices pratiques et fiches méthodologiques pour développer des applications plus sobres et responsables.",
-    "tags": [
-      "écoconception",
-      "sobriété",
-      "numérique responsable"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-11-26",
-    "status": "actif",
-    "external": false,
-    "inProgress": false
-  },
-  {
-    "name": "Sensibilisation à la Conception Responsable de Service Numérique - UX/UI",
-    "repo": "http://github.com/France-Travail/starter-kit-ecoconception",
-    "category": "eco",
-    "description": "Kit d'initiation à l'écoconception pour designers et intégrateurs. Présente les fondamentaux, pratiques de design responsable et outils pour concevoir des interfaces numériques sobres sans sacrifier l'expérience utilisateur.",
-    "tags": [
-      "écoconception",
-      "sobriété",
-      "numérique responsable"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-11-05",
-    "status": "actif",
-    "external": false,
-    "inProgress": false
-  },
-  {
-    "name": "Sensibilisation à la Conception Responsable de Service Numérique - PM/PO",
-    "repo": "https://github.com/France-Travail/kit_ecoconception_PO-PM",
-    "category": "eco",
-    "description": "Kit d'auto-formation interactif pour Product Managers et Product Owners. Contient exercices pratiques et radar de maturité pour évaluer et améliorer les pratiques d'écoconception dès la phase produit.",
-    "tags": [
-      "écoconception",
-      "sobriété",
-      "numérique responsable"
-    ],
-    "logo": "",
-    "maintainers": [],
-    "lastUpdate": "2025-11-12",
+    "lastUpdate": "2026-09-16",
     "status": "actif",
     "external": false,
     "inProgress": false

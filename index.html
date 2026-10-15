@@ -1,164 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- SEO Meta Tags -->
-    <title>France Travail – Open Source | Projets numériques publics</title>
-    <meta
-      name="description"
-      content="Découvrez les projets open source de France Travail : accessibilité, éco-conception, IA, architecture. Services publics numériques innovants et inclusifs."
-    />
-    <meta
-      name="keywords"
-      content="France Travail, open source, accessibilité, éco-conception, IA, architecture, services publics, numérique, inclusion, développement durable"
-    />
+    <title>France Travail Open Source | Des communs numériques pour l’emploi</title>
+    <meta name="description" content="Explorez les logiciels, référentiels et ressources open source développés par France Travail au service de l'emploi et du numérique public." />
     <meta name="author" content="France Travail" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#283276" />
     <link rel="canonical" href="https://france-travail.github.io/" />
-
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://france-travail.github.io/" />
-    <meta
-      property="og:title"
-      content="France Travail – Open Source | Projets numériques publics"
-    />
-    <meta
-      property="og:description"
-      content="Découvrez les projets open source de France Travail : accessibilité, éco-conception, IA, architecture. Services publics numériques innovants et inclusifs."
-    />
-    <meta
-      property="og:image"
-      content="https://france-travail.github.io/img/logos/logo-ft.png"
-    />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="France Travail Open Source" />
+    <meta property="og:title" content="France Travail Open Source" />
+    <meta property="og:description" content="Logiciels, référentiels et formations open source publiés par France Travail." />
+    <meta property="og:image" content="https://france-travail.github.io/img/logos/logo-ft.png" />
     <meta property="og:locale" content="fr_FR" />
-
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://france-travail.github.io/" />
-    <meta
-      name="twitter:title"
-      content="France Travail – Open Source | Projets numériques publics"
-    />
-    <meta
-      name="twitter:description"
-      content="Découvrez les projets open source de France Travail : accessibilité, éco-conception, IA, architecture. Services publics numériques innovants et inclusifs."
-    />
-    <meta
-      name="twitter:image"
-      content="https://france-travail.github.io/img/logos/logo-ft.png"
-    />
-
-    <!-- Hreflang for bilingual support -->
-    <link
-      rel="alternate"
-      hreflang="fr"
-      href="https://france-travail.github.io/"
-    />
-    <link
-      rel="alternate"
-      hreflang="en"
-      href="https://france-travail.github.io/?lang=en"
-    />
-    <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://france-travail.github.io/"
-    />
-
-    <!-- PWA Manifest -->
+    <link rel="alternate" hreflang="fr" href="https://france-travail.github.io/" />
+    <link rel="alternate" hreflang="en" href="https://france-travail.github.io/?lang=en" />
     <link rel="manifest" href="./manifest.json" />
-
-    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
-    <link rel="apple-touch-icon" href="./img/logos/logo-ft.png" />
-
-    <!-- Preload critical resources -->
-    <link rel="preload" href="./css/style.css" as="style" />
-    <link
-      rel="preload"
-      href="./fonts/Marianne-Regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-
-    <!-- France Travail Design System -->
+    <link rel="preload" href="./fonts/Marianne-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Marianne-Bold.woff2" as="font" type="font/woff2" crossorigin />
     <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
     <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
-
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/customHeader.js" defer></script>
-    <script src="./js/customFooter.js" defer></script>
-    <script src="./js/i18n.js" defer></script>
-    <script src="./js/renderStats.js" defer></script>
-    <script src="./js/renderThemesGrid.js" defer></script>
-    <script src="./js/renderThemeHeader.js" defer></script>
-    <script src="./js/renderInProgress.js" defer></script>
-
-    <!-- Structured Data JSON-LD -->
+    <link rel="stylesheet" href="./css/style.css?v=2.4.0" />
+    <script src="./js/customHeader.js?v=2.4.0" defer></script>
+    <script src="./js/customFooter.js?v=2.4.0" defer></script>
+    <script src="./js/i18n.js?v=2.4.0" defer></script>
+    <script src="./js/projectLifecycle.js?v=2.4.0" defer></script>
+    <script src="./js/contribution.js?v=2.4.0" defer></script>
+    <script src="./js/home.js?v=2.4.0" defer></script>
+    <script src="./js/motion.js?v=2.4.0" defer></script>
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "France Travail",
-        "url": "https://france-travail.github.io/",
-        "logo": "https://france-travail.github.io/img/logos/logo-ft.png",
-        "description": "Catalogue des projets Open Source de France Travail pour l'innovation dans les services publics numériques",
-        "foundingDate": "2024",
-        "areaServed": "France",
-        "knowsAbout": [
-          "Open Source",
-          "Accessibilité numérique",
-          "Éco-conception",
-          "Intelligence artificielle",
-          "Architecture logicielle",
-          "Services publics numériques"
-        ],
-        "sameAs": ["https://github.com/France-Travail"]
-      }
+      {"@context":"https://schema.org","@type":"CollectionPage","name":"France Travail Open Source","url":"https://france-travail.github.io/","description":"Catalogue des communs numériques open source de France Travail","isPartOf":{"@type":"Organization","name":"France Travail","url":"https://www.francetravail.fr"}}
     </script>
   </head>
-
   <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header id="custom-header"></header>
 
-    <!-- Hero Section Style Landing Page Bleue -->
-    <section class="hero-landing">
-      <div class="hero-landing-container">
-        <div class="hero-landing-left">
-          <h1 data-i18n="main_title">France Travail – Open Source</h1>
-          <p class="hero-landing-description" data-i18n="main_description">
-            L'open source est au cœur de la transformation numérique de France
-            Travail. En partageant nos solutions, nous contribuons à un
-            numérique plus accessible, durable et collaboratif, au service de
-            tous les acteurs de l'emploi et de la société.
-          </p>
-          <a href="./projets.html" class="hero-landing-cta">
-            <span data-i18n="discover_projects">Découvrir nos projets</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="hero-landing-right">
-          <div id="stats-grid" class="hero-stats-grid" aria-live="polite">
-            <!-- Les métriques seront chargées dynamiquement -->
+    <main id="main-content">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="shell hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="hero_eyebrow">Catalogue open source de France Travail</p>
+            <h1 id="hero-title" data-i18n="hero_title">Le code public qui fait avancer l’emploi.</h1>
+            <p class="hero-intro" data-i18n="hero_description">Logiciels, composants, référentiels et formations publiés par les équipes de France Travail, avec leur licence, leur documentation et leur état.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./projets.html">
+                <span data-i18n="explore_catalogue">Explorer le catalogue</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
+              </a>
+              <a class="text-link" href="#contribuer">
+                <span data-i18n="how_to_contribute">Comment contribuer</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-signal" aria-label="Ce que contient le catalogue">
+            <div class="signal-project">
+              <div>
+                <p data-i18n="catalogue_type_one">Logiciels &amp; composants</p>
+                <strong data-i18n="catalogue_type_one_title">Design System, TradOpen, happy_vllm</strong>
+                <span data-i18n="catalogue_type_one_text">Du code à intégrer ou à déployer</span>
+              </div>
+            </div>
+            <div class="signal-project">
+              <div>
+                <p data-i18n="catalogue_type_two">Référentiels &amp; méthodes</p>
+                <strong data-i18n="catalogue_type_two_title">Référentiel d’écoconception, pratiques d’architecture</strong>
+                <span data-i18n="catalogue_type_two_text">Des documents de référence à adapter</span>
+              </div>
+            </div>
+            <div class="signal-project">
+              <div>
+                <p data-i18n="catalogue_type_three">Formations &amp; kits</p>
+                <strong data-i18n="catalogue_type_three_title">Sensibilisation à l’écoconception, IA responsable</strong>
+                <span data-i18n="catalogue_type_three_text">Des supports à reprendre en équipe</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Section Thèmes avec fond blanc -->
-    <main class="themes-section">
-      <div class="container">
-        <div id="themes-grid" class="themes-grid"></div>
-      </div>
+      <section class="metrics" aria-label="Chiffres clés">
+        <div class="shell metrics-grid" id="stats-grid" aria-live="polite">
+          <div class="metric"><strong>—</strong><span>dépôts publics</span></div>
+          <div class="metric"><strong>—</strong><span>dépôts actifs</span></div>
+          <div class="metric"><strong>—</strong><span>contributrices et contributeurs</span></div>
+        </div>
+      </section>
+
+      <section class="section featured-section" aria-labelledby="featured-title">
+        <div class="shell">
+          <div class="section-heading section-heading-row">
+            <div>
+              <p class="eyebrow" data-i18n="featured_eyebrow">Par où commencer</p>
+              <h2 id="featured-title" data-i18n="featured_title">Trois projets à regarder en premier</h2>
+            </div>
+            <a class="text-link" href="./projets.html"><span id="catalogue-link-label">Voir tout le catalogue</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+          </div>
+          <div id="featured-projects" class="featured-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section themes-section" aria-labelledby="themes-title">
+        <div class="shell">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="themes_eyebrow">Domaines</p>
+            <h2 id="themes-title" data-i18n="themes_title">Les projets par domaine</h2>
+            <p data-i18n="themes_description">Accessibilité, numérique responsable, IA et données, services aux usagers, outils pour les équipes.</p>
+          </div>
+          <div id="themes-grid" class="themes-grid"></div>
+        </div>
+      </section>
+
+      <section class="section ecosystem-section" aria-labelledby="ecosystem-title">
+        <div class="shell ecosystem-layout">
+          <div class="section-heading ecosystem-heading">
+            <p class="eyebrow" data-i18n="ecosystem_eyebrow">Écosystème</p>
+            <h2 id="ecosystem-title" data-i18n="ecosystem_title">Les réseaux auxquels nous participons</h2>
+            <p data-i18n="ecosystem_intro">L’OSPO représente France Travail dans ces réseaux et y partage ses projets et ses retours d’expérience.</p>
+          </div>
+          <div class="ecosystem-grid">
+            <a class="ecosystem-card" href="https://tosit.fr/" target="_blank" rel="noopener">
+              <div><p class="ecosystem-name">TOSIT</p><h3 data-i18n="ecosystem_tosit_title">Association de grandes organisations</h3><p data-i18n="ecosystem_tosit_text">Grandes entreprises et organismes publics qui mutualisent leurs travaux sur des logiciels open source.</p></div><span aria-hidden="true">↗</span>
+            </a>
+            <a class="ecosystem-card" href="https://code.gouv.fr/fr/bluehats/" target="_blank" rel="noopener">
+              <div><p class="ecosystem-name">DINUM · BlueHats</p><h3 data-i18n="ecosystem_bluehats_title">Le réseau des agents publics du libre</h3><p data-i18n="ecosystem_bluehats_text">Animé par la DINUM, il rassemble les agents qui utilisent ou développent des logiciels libres dans l’administration.</p></div><span aria-hidden="true">↗</span>
+            </a>
+            <article class="ecosystem-card">
+              <div><p class="ecosystem-name">OSPO publics</p><h3 data-i18n="ecosystem_ospo_title">Les OSPO d’autres administrations</h3><p data-i18n="ecosystem_ospo_text">Échanges sur la publication de code, les licences et l’accompagnement des équipes.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contribution-section" id="contribuer" aria-labelledby="contribution-title">
+        <div class="shell">
+          <div class="section-heading section-heading-row contribution-heading">
+            <div>
+              <p class="eyebrow" data-i18n="contribute_eyebrow">Participer</p>
+              <h2 id="contribution-title" data-i18n="contribute_title">Comment contribuer</h2>
+            </div>
+            <p data-i18n="contribute_intro">Un bug signalé ou un retour d’usage aide déjà l’équipe qui maintient le projet.</p>
+          </div>
+          <ol class="contribution-steps">
+            <li>
+              <span>1</span>
+              <div>
+                <h3 data-i18n="step_one_title">Explorez</h3>
+                <p data-i18n="step_one_text">Trouvez le projet ou la ressource qui répond à votre besoin.</p>
+                <ul class="step-actions">
+                  <li><a href="./projets.html" data-i18n="step_one_link">Ouvrir le catalogue</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>2</span>
+              <div>
+                <h3 data-i18n="step_two_title">Testez et réutilisez</h3>
+                <p data-i18n="step_two_text">Vérifiez sa licence, sa documentation et son état avant de le reprendre.</p>
+                <ul class="step-actions">
+                  <li><a href="./projets.html#reading-guide-title" data-i18n="step_two_link">Lire l’état d’un projet</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>3</span>
+              <div>
+                <h3 data-i18n="step_three_title">Partagez vos retours</h3>
+                <p data-i18n="step_three_text">Ouvrez une issue, proposez une amélioration ou racontez votre usage.</p>
+                <ul class="step-actions">
+                  <li><a id="contribute-issues-link" href="https://github.com/search?type=issues&amp;q=org%3AFrance-Travail+is%3Aissue+is%3Aopen" target="_blank" rel="noopener">Voir les issues ouvertes</a></li>
+                  <li><a id="contribute-usage-link" href="mailto:sioss.00006@francetravail.fr?subject=Retour%20d%E2%80%99usage" data-i18n="step_three_usage">Raconter votre usage</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <span>4</span>
+              <div>
+                <h3 data-i18n="step_four_title">Construisons ensemble</h3>
+                <p data-i18n="step_four_text">Proposez du code, de la documentation ou une traduction, ou échangez avec l’équipe qui maintient le projet.</p>
+                <ul class="step-actions">
+                  <li><a id="contribute-first-link" href="https://github.com/search?type=issues&amp;q=org%3AFrance-Travail+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">Issues pour débuter</a></li>
+                  <li><a href="mailto:sioss.00006@francetravail.fr?subject=Contribuer%20%C3%A0%20un%20projet" data-i18n="step_four_contact">Échanger avec l’OSPO</a></li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section ospo-section" aria-labelledby="ospo-title">
+        <div class="shell ospo-card">
+          <div class="ospo-copy">
+            <p class="eyebrow" data-i18n="ospo_eyebrow">Open Source Program Office</p>
+            <h2 id="ospo-title" data-i18n="ospo_title">L’OSPO de France Travail</h2>
+            <p data-i18n="ospo_text">L’Open Source Program Office aide les équipes à publier leur code, suit les licences des logiciels utilisés et représente France Travail dans les réseaux open source.</p>
+          </div>
+          <div class="ospo-actions">
+            <a class="button button-primary" href="mailto:sioss.00006@francetravail.fr"><span data-i18n="contact_us">Nous contacter</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+            <a class="text-link" href="https://github.com/France-Travail" target="_blank" rel="noopener"><span data-i18n="visit_github">Voir notre GitHub</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="custom-footer"></footer>

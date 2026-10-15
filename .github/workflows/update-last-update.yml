@@ -33,6 +33,17 @@ jobs:
         run: |
           python3 scripts/update_last_update.py
 
+      - name: Configuration de Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Collecte des liens de contribution (issues, guides, discussions)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/collect-contribution.mjs
+
       - name: Vérification des changements
         id: verify-changes
         run: |
@@ -51,8 +62,8 @@ jobs:
       - name: Commit des changements
         if: steps.verify-changes.outputs.changes == 'true'
         run: |
-          git add data/projects.json data/projects-en.json
-          git commit -m "chore: mise à jour automatique des dates lastUpdate depuis metrics_public.json"
+          git add data/projects.json data/projects-en.json data/contribution.json
+          git commit -m "chore: mise à jour automatique des dates lastUpdate et des liens de contribution"
           git push
 
       - name: Message si aucune modification

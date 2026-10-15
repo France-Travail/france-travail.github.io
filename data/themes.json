@@ -1,37 +1,37 @@
 [
   {
     "slug": "accessibilite-inclusion",
-    "title": "Accessibilité & Inclusion",
-    "shortDescription": "Des outils numériques au service de tous, pour garantir l’accès équitable à l’emploi et à la formation.",
-    "longDescription": "Cette thématique regroupe les projets favorisant l’inclusion numérique et l’accessibilité des services publics. Les outils développés visent à lever les barrières linguistiques, techniques ou cognitives, afin que chacun puisse bénéficier des mêmes opportunités d’accès à l’emploi, à la formation et à l’information.",
+    "title": "Accessibilité & inclusion",
+    "shortDescription": "Composants d’interface accessibles et traduction en direct entre conseiller et usager.",
+    "longDescription": "Des projets qui rendent les services numériques utilisables par les personnes en situation de handicap ou qui ne parlent pas français : composants d’interface et centre d’aide à la lecture du Design System, utilisés notamment sur francetravail.org, et traduction en direct pendant un entretien.",
     "icon": "/img/icon-accessibilite.png"
   },
   {
     "slug": "eco",
-    "title": "Éco-conception",
-    "shortDescription": "Un numérique plus sobre, durable et responsable.",
-    "longDescription": "Les projets de cette thématique promeuvent la conception responsable des services numériques. Ils sensibilisent les équipes aux impacts environnementaux et sociaux du numérique, et proposent des référentiels, outils et bonnes pratiques pour réduire l’empreinte carbone tout en améliorant la durabilité des produits.",
+    "title": "Numérique responsable",
+    "shortDescription": "Référentiel, kits et formations pour concevoir des services numériques plus sobres.",
+    "longDescription": "Un référentiel de bonnes pratiques d’écoconception, un parcours de sensibilisation décliné par métier (développeurs, designers, PM/PO) et une formation d’une journée à l’IA responsable.",
     "icon": "/img/icon-eco.png"
   },
   {
-    "slug": "architecture",
-    "title": "Architecture",
-    "shortDescription": "Des pratiques communes pour un système d’information structuré, résilient et durable",
-    "longDescription": "Cette thématique rassemble les initiatives qui structurent la transformation du système d’information de France Travail. Elle met en avant les pratiques d’architecture continue, la documentation vivante et la collaboration entre architectes, développeurs et métiers.",
-    "icon": "/img/icon-architecture.png"
+    "slug": "ia",
+    "title": "IA & données",
+    "shortDescription": "Préparer des données, servir des modèles de langage, mesurer leurs performances et leurs biais.",
+    "longDescription": "Des briques issues des équipes data de France Travail : modèle de projet data science, prétraitement de texte, comparaison d’embeddings, API pour servir des modèles de langage, banc d’essai de performance et mesure d’équité. Plusieurs projets ne sont plus maintenus : leur état est indiqué sur chaque fiche.",
+    "icon": "/img/icon-ia.png"
   },
   {
-    "slug": "si-plateforme",
-    "title": "SI Plateforme",
-    "shortDescription": "Construire un système d’information agile, securisé et performant pour les usagers.",
-    "longDescription": "Cette catégorie regroupe les projets qui renforcent la mutualisation, la sécurité et l’interconnexion du SI France Travail. L’objectif : bâtir un écosystème de services modulaires, ouverts et réutilisables pour accélérer l’innovation et la qualité des services publics numériques.",
+    "slug": "services-usagers",
+    "title": "Services aux usagers",
+    "shortDescription": "Le code d’applications utilisées par les personnes accompagnées et les conseillers.",
+    "longDescription": "Des applications métier de France Travail : l’accompagnement des jeunes en Contrat d’engagement jeune, côté conseiller et côté jeune, et la collecte d’avis vérifiés de stagiaires sur les formations.",
     "icon": "/img/icon-si.png"
   },
   {
-    "slug": "ia",
-    "title": "Intelligence Artificielle",
-    "shortDescription": "Des modèles et outils IA éthiques, transparents et responsables.",
-    "longDescription": "Cette thématique réunit les projets d’intelligence artificielle développés ou soutenus par France Travail : frameworks, API et outils de traitement de la donnée. Tous partagent un même objectif : rendre l’IA accessible, explicable et au service de l’humain.",
-    "icon": "/img/icon-ia.png"
+    "slug": "outils-equipes",
+    "title": "Outils et pratiques pour les équipes",
+    "shortDescription": "Guides, pratiques et outils pour les équipes qui développent avec ou pour France Travail.",
+    "longDescription": "Le guide pour consommer les API de France Travail, des pratiques d’architecture (Domain-Driven Design, ADR, Wardley Maps, Team Topologies) et des outils du quotidien, comme un widget d’import Excel pour Grist.",
+    "icon": "/img/icon-architecture.png"
   }
 ]

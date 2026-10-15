@@ -1,11 +1,11 @@
 {
-  "name": "France Travail – Open Source",
+  "name": "France Travail Open Source",
   "short_name": "FT Open Source",
   "description": "Catalogue des projets open source de France Travail : accessibilité, éco-conception, IA, architecture et services publics numériques.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0053a4",
+  "theme_color": "#283276",
   "orientation": "portrait-primary",
   "lang": "fr",
   "icons": [
