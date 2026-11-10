@@ -1,11 +1,3 @@
-const HOME_THEME_META = {
-  "accessibilite-inclusion": { color: "#008ecf", category: "accessibilite&inclusion" },
-  eco: { color: "#fddc0b", category: "eco" },
-  ia: { color: "#e10211", category: "ia" },
-  "services-usagers": { color: "#f29fc5", category: "services-usagers" },
-  "outils-equipes": { color: "#283276", category: "outils-equipes" },
-};
-
 /* Sélection éditoriale de la page d'accueil : trois portes d'entrée tenues par l'OSPO.
    L'ordre du tableau est l'ordre d'affichage, `repo` est le nom du dépôt GitHub.
    Un projet dont le dépôt n'est pas encore public s'affiche sans lien. */
@@ -51,23 +43,8 @@ function homeRepoName(repoUrl) {
 }
 
 function homeCategoryLabel(category, lang = homeLanguage()) {
-  const labels = {
-    fr: {
-      "accessibilite&inclusion": "Accessibilité & inclusion",
-      eco: "Numérique responsable",
-      ia: "IA & données",
-      "services-usagers": "Services aux usagers",
-      "outils-equipes": "Outils et pratiques pour les équipes",
-    },
-    en: {
-      "accessibilite&inclusion": "Accessibility & inclusion",
-      eco: "Responsible digital",
-      ia: "AI & data",
-      "services-usagers": "Services for users",
-      "outils-equipes": "Tools and practices for teams",
-    },
-  };
-  return labels[lang]?.[category] || category;
+  const theme = window.projectTheme(category);
+  return theme[lang] || theme.fr;
 }
 
 function formatHomeDate(value, lang = homeLanguage()) {
@@ -112,6 +89,7 @@ async function loadHomeThemes() {
   const grid = document.getElementById("themes-grid");
   if (!grid) return;
   const lang = homeLanguage();
+  if (!grid.children.length) grid.innerHTML = window.ftUi.loadingState(lang);
 
   try {
     const [themeResponse, projectResponse] = await Promise.all([
@@ -122,23 +100,24 @@ async function loadHomeThemes() {
     const [themes, projects] = await Promise.all([themeResponse.json(), projectResponse.json()]);
 
     grid.innerHTML = themes.map((theme) => {
-      const meta = HOME_THEME_META[theme.slug] || { color: "#008ecf", category: theme.slug };
+      const meta = window.projectTheme(theme.slug);
       const count = projects.filter((project) => project.category === meta.category).length;
       const projectWord = lang === "en" ? (count > 1 ? "projects" : "project") : (count > 1 ? "projets" : "projet");
       return `
-        <a class="theme-card" href="./themes/${safeText(theme.slug)}.html" style="--theme-color:${meta.color}">
+        <a class="card theme-card has-accent tone-${meta.tone}" href="./themes/${safeText(theme.slug)}.html">
           <div class="theme-card-head">
+            <span class="theme-icon" aria-hidden="true"><span class="icon icon-${meta.icon}"></span></span>
             <span class="theme-count">${count} ${projectWord}</span>
           </div>
           <div class="theme-card-body">
-            <h3>${safeText(theme.title)}</h3>
+            <h3>${safeText(theme.title)}<span class="icon icon-arrow-right" aria-hidden="true"></span></h3>
             <p>${safeText(theme.shortDescription)}</p>
           </div>
         </a>`;
     }).join("");
   } catch (error) {
     console.error("Impossible de charger les thèmes", error);
-    grid.innerHTML = `<p>Impossible de charger les thèmes pour le moment.</p>`;
+    grid.innerHTML = window.ftUi.alert("error", lang === "en" ? "Areas unavailable" : "Domaines indisponibles", lang === "en" ? "Please try again in a few moments." : "Impossible de charger les domaines pour le moment.");
   }
 }
 
@@ -146,6 +125,7 @@ async function loadFeaturedProjects() {
   const grid = document.getElementById("featured-projects");
   if (!grid) return;
   const lang = homeLanguage();
+  if (!grid.children.length) grid.innerHTML = window.ftUi.loadingState(lang);
 
   try {
     const response = await fetch(withAssetVersion(lang === "en" ? "./data/projects-en.json" : "./data/projects.json"));
@@ -168,13 +148,12 @@ async function loadFeaturedProjects() {
     if (!selected.length) throw new Error("Aucun projet mis en avant n’a été trouvé dans le catalogue");
 
     const labels = lang === "en"
-      ? { updated: "Updated", openRepo: "View repository", soon: "Repository not open yet" }
-      : { updated: "Actualisé", openRepo: "Voir le dépôt", soon: "Dépôt pas encore ouvert" };
+      ? { updated: "Updated", openRepo: "View repository", soon: "Repository not open yet", newTab: "(opens a new tab)" }
+      : { updated: "Actualisé", openRepo: "Voir le dépôt", soon: "Dépôt pas encore ouvert", newTab: "(nouvel onglet)" };
 
     grid.innerHTML = selected.map((project) => {
-      const theme = Object.values(HOME_THEME_META).find((item) => item.category === project.category);
+      const theme = window.projectTheme(project.category);
       const lifecycle = window.getProjectLifecycle?.(project) || "maintained";
-      const lifecycleLabel = window.projectLifecycleLabel?.(lifecycle, lang) || lifecycle;
       // Un projet en cours d'ouverture n'a pas encore de dépôt public : pas de lien.
       const isOpening = lifecycle === "opening";
       const tag = isOpening ? "article" : "a";
@@ -183,21 +162,23 @@ async function loadFeaturedProjects() {
         : ` href="${safeText(project.repo)}" target="_blank" rel="noopener"`;
 
       return `
-        <${tag} class="featured-card${isOpening ? " featured-card-pending" : ""}"${linkAttributes} style="--theme-color:${theme?.color || "#008ecf"}">
-          <div class="featured-card-top">
-            <span class="category-label">${safeText(project.role)}</span>
-            <span class="project-status project-status-${lifecycle}">${safeText(lifecycleLabel)}</span>
+        <${tag} class="card featured-card has-accent tone-${theme.tone}${isOpening ? " featured-card-pending" : ""}"${linkAttributes}>
+          <div class="card-top">
+            ${window.projectCategoryTag(project.category, lang, project.role)}
+            ${window.projectStatusBadge(lifecycle, lang, { tooltip: false })}
           </div>
           <h3>${safeText(project.name)}</h3>
           <p>${safeText(project.pitch)}</p>
           <div class="featured-meta">
-            <span>${safeText(homeCategoryLabel(project.category, lang))} · ${labels.updated} <strong>${safeText(formatHomeDate(project.lastUpdate, lang))}</strong></span>
-            <span class="featured-cta">${isOpening ? safeText(labels.soon) : `${safeText(labels.openRepo)} <span aria-hidden="true">↗</span>`}</span>
+            <span>${safeText(homeCategoryLabel(project.category, lang))}</span>
+            <span>${labels.updated} <strong>${safeText(formatHomeDate(project.lastUpdate, lang))}</strong></span>
+            <span class="featured-cta">${isOpening ? safeText(labels.soon) : `<span class="featured-cta-label">${safeText(labels.openRepo)}</span><span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only"> ${labels.newTab}</span>`}</span>
           </div>
         </${tag}>`;
     }).join("");
   } catch (error) {
     console.error("Impossible de charger les projets mis en avant", error);
+    grid.innerHTML = window.ftUi.alert("error", lang === "en" ? "Projects unavailable" : "Projets indisponibles", lang === "en" ? "Please try again in a few moments." : "Veuillez réessayer dans quelques instants.");
   }
 }
 

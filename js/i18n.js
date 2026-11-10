@@ -1,7 +1,7 @@
 /* Version des donnees servies au navigateur. A bumper en meme temps que le ?v=
    des balises <script>/<link> et que la version de package.json : sans cela un
    visiteur deja venu garde en cache les anciens JSON apres une mise a jour. */
-const ASSET_VERSION = "2.4.0";
+const ASSET_VERSION = "2.5.0";
 function withAssetVersion(url) {
   return `${url}?v=${ASSET_VERSION}`;
 }
@@ -21,8 +21,27 @@ async function loadLocale(lang) {
   return response.json();
 }
 
+/* Fils d'Ariane statiques : <ft-breadcrumb data-crumbs='[["clé i18n", "lien", "libellé par défaut"]]'>.
+   Le composant du DS lit ses liens dans l'attribut `links` (JSON), qu'il retire
+   ensuite : on le reconstruit à chaque changement de langue. */
+function renderBreadcrumbs(dict = {}) {
+  const escape = (value) => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  document.querySelectorAll("ft-breadcrumb[data-crumbs]").forEach((element) => {
+    try {
+      const links = JSON.parse(element.dataset.crumbs).map(([key, href, fallback]) => ({
+        label: escape(dict[key] || fallback),
+        ...(href ? { href } : {}),
+      }));
+      element.setAttribute("links", JSON.stringify(links));
+    } catch (error) {
+      console.error("Fil d’Ariane invalide", error);
+    }
+  });
+}
+
 function applyTranslations(dict) {
   document.documentElement.lang = currentLang;
+  renderBreadcrumbs(dict);
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = dict[element.dataset.i18n];
     if (value) element.textContent = value;
@@ -79,5 +98,6 @@ async function initializeTranslations() {
 }
 
 window.applyTranslations = applyTranslations;
+document.addEventListener("DOMContentLoaded", () => renderBreadcrumbs());
 window.getCurrentLanguage = () => currentLang;
 document.addEventListener("DOMContentLoaded", initializeTranslations);

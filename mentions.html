@@ -7,28 +7,35 @@
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#283276" />
     <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
-    <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
-    <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
-    <link rel="stylesheet" href="./css/style.css?v=2.4.0" />
-    <script src="./js/customHeader.js?v=2.4.0" defer></script>
-    <script src="./js/customFooter.js?v=2.4.0" defer></script>
-    <script src="./js/i18n.js?v=2.4.0" defer></script>
-    <script src="./js/motion.js?v=2.4.0" defer></script>
+    <link rel="preload" href="./vendor/dsft/design-system/fonts/ft-icons.woff2?n9dtj2" as="font" type="font/woff2" crossorigin />
+    <!-- Design System France Travail, copie locale : voir vendor/dsft/manifest.json -->
+    <link rel="stylesheet" href="./vendor/dsft/design-system/css/styles.css?v=1.63.0" />
+    <link rel="stylesheet" href="./css/style.css?v=2.5.0" />
+    <script src="./js/dsft.js?v=2.5.0" defer></script>
+    <script src="./js/customHeader.js?v=2.5.0" defer></script>
+    <script src="./js/customFooter.js?v=2.5.0" defer></script>
+    <script src="./js/i18n.js?v=2.5.0" defer></script>
+    <script src="./js/motion.js?v=2.5.0" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header id="custom-header"></header>
-    <main id="main-content" class="container legal-page">
-      <nav class="breadcrumbs" aria-label="Fil d’Ariane"><a href="./index.html">Accueil</a><span aria-hidden="true">/</span><span>Mentions et licences</span></nav>
+    <main id="main-content" class="shell page-container legal-page">
+      <ft-breadcrumb data-crumbs='[["home","./index.html","Accueil"],["legal_notice",null,"Mentions et licences"]]'></ft-breadcrumb>
       <p class="eyebrow">Réutilisation</p>
       <h1>Mentions et licences</h1>
-      <p class="legal-lead">Le code de ce site est ouvert. L’identité de France Travail ne l’est pas : voici ce que cela implique pour réutiliser le projet proprement.</p>
+      <p class="lead legal-lead">Le code de ce site est ouvert. L’identité de France Travail ne l’est pas : voici ce que cela implique pour réutiliser le projet proprement.</p>
 
-      <section><h2>Code source</h2><div><p>Sauf mention contraire, le code source de ce site est mis à disposition sous <a href="./LICENSE">licence MIT</a>.</p></div></section>
+      <ft-alert version="warning" notify="false">
+        <p class="alert-title">La licence MIT ne couvre pas l’identité de France Travail</p>
+        <p class="alert-content">Marques, logotypes, typographie Marianne et éléments d’identité visuelle restent soumis à leurs propres conditions, même publiés dans un dépôt public.</p>
+      </ft-alert>
+
+      <section><h2>Code source</h2><div><p>Sauf mention contraire, le code source de ce site est mis à disposition sous <a class="text-link" href="./LICENSE">licence MIT</a>.</p></div></section>
       <section><h2>Éléments exclus de la licence MIT</h2><div><p>La licence du code ne couvre pas les marques, les noms, les logotypes et les éléments d’identité visuelle de France Travail ou de la République française. Elle ne couvre pas non plus la typographie Marianne, soumise à ses propres conditions d’utilisation, ni les identités propres aux projets référencés.</p><p>Leur présence dans un dépôt public ne leur confère pas une licence open source.</p></div></section>
       <section><h2>Vous souhaitez forker ce site ?</h2><div><ol><li>Remplacez les logotypes et éléments de marque officiels.</li><li>Remplacez Marianne par une police dont la licence autorise votre usage.</li><li>Adoptez une identité visuelle qui ne puisse pas être confondue avec un service officiel.</li><li>Vérifiez séparément la licence de chaque projet que vous réutilisez.</li></ol></div></section>
-      <section><h2>Design System France Travail</h2><div><p>Le site officiel charge des ressources depuis le CDN du Design System France Travail. Le code publié du Design System est sous licence MIT ; ses éléments de marque et ressources soumis à des conditions spécifiques restent exclus.</p></div></section>
-      <aside class="legal-contact"><h2>Une question ?</h2><p>Contactez l’Open Source Program Office de France Travail.</p><a class="button button-primary" href="mailto:sioss.00006@francetravail.fr">sioss.00006@francetravail.fr</a></aside>
+      <section><h2>Design System France Travail</h2><div><p>Le site utilise les composants web, les styles et les icônes du <a class="text-link" href="https://github.com/France-Travail/webco-design-system" target="_blank" rel="noopener">Design System France Travail<span class="sr-only"> (nouvel onglet)</span></a>, dont il embarque une copie dans le dossier <code>vendor/dsft/</code>. Le code publié du Design System est sous licence MIT ; ses éléments de marque et ressources soumis à des conditions spécifiques restent exclus.</p></div></section>
+      <aside class="legal-contact"><div><h2>Une question ?</h2><p>Contactez l’Open Source Program Office de France Travail.</p></div><a class="btn btn-primary btn-lg" href="mailto:sioss.00006@francetravail.fr"><span class="icon icon-mail" aria-hidden="true"></span><span class="btn-content">sioss.00006@francetravail.fr</span></a></aside>
     </main>
     <footer id="custom-footer"></footer>
   </body>

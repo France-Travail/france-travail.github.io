@@ -90,6 +90,35 @@ for (const htmlFile of htmlFiles) {
   }
 }
 
+// Versions : package.json, ASSET_VERSION de js/i18n.js et le ?v= des css/js du
+// site doivent avancer ensemble, sinon un visiteur garde d'anciens fichiers en cache.
+const siteVersion = readJson("package.json").version;
+const assetVersion = readFileSync(join(root, "js", "i18n.js"), "utf8").match(/ASSET_VERSION = "([^"]+)"/)?.[1];
+if (assetVersion !== siteVersion) fail(`js/i18n.js: ASSET_VERSION ${assetVersion} différente de package.json ${siteVersion}`);
+
+// Design System vendorisé : fichiers présents, même version de styles.css dans
+// les pages et dans js/dsft.js (les composants partagent l'URL de la page).
+const dsManifest = readJson("vendor/dsft/manifest.json");
+const dsVersion = dsManifest.packages?.find((pkg) => pkg.name === "design-system")?.version;
+for (const pkg of dsManifest.packages || []) {
+  for (const file of pkg.files || []) {
+    if (!existsSync(join(root, file.path))) fail(`vendor/dsft/manifest.json: fichier absent ${file.path}`);
+  }
+  if (!existsSync(join(root, "vendor", "dsft", pkg.name, "LICENCE.txt"))) fail(`vendor/dsft/${pkg.name}: LICENCE.txt manquant`);
+}
+const dsLoaderVersion = readFileSync(join(root, "js", "dsft.js"), "utf8").match(/DS_VERSION = "([^"]+)"/)?.[1];
+if (dsLoaderVersion !== dsVersion) fail(`js/dsft.js: DS_VERSION ${dsLoaderVersion} différente de vendor/dsft/manifest.json ${dsVersion}`);
+
+for (const htmlFile of htmlFiles) {
+  const html = readFileSync(htmlFile, "utf8");
+  const name = htmlFile.slice(root.length + 1);
+  for (const [, path, version] of html.matchAll(/(?:href|src)=["']([^"']*?(?:css|js)\/[^"'?]+\.(?:css|js))\?v=([^"']+)["']/g)) {
+    const expected = path.includes("vendor/dsft/") ? dsVersion : siteVersion;
+    if (version !== expected) fail(`${name}: ${path}?v=${version} (attendu ?v=${expected})`);
+  }
+  if (/cdn\.francetravail\.fr/.test(html)) fail(`${name}: ressource chargée depuis cdn.francetravail.fr au lieu de vendor/dsft/`);
+}
+
 const jsFiles = readdirSync(join(root, "js")).filter((name) => name.endsWith(".js"));
 for (const jsFile of jsFiles) {
   try {

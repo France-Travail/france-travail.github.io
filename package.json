@@ -1,10 +1,11 @@
 {
   "name": "france-travail.github.io",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "Site vitrine des projets open source de France Travail, organisés par thématique (accessibilité, inclusion, éco-conception, IA, SI plateforme, etc.).",
   "main": "index.js",
   "scripts": {
     "build:ftorg-mock": "node scripts/build-ftorg-mock.mjs",
+    "vendor:dsft": "node scripts/vendor-dsft.mjs",
     "dev": "live-server",
     "build": "echo 'Static site, no build step required'",
     "validate": "node scripts/validate-site.mjs",

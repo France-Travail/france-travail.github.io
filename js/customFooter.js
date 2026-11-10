@@ -11,11 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const onHome = path.endsWith("/") || path.endsWith("/index.html");
   const contributeHref = onHome ? "#contribuer" : `${base}/index.html#contribuer`;
 
-  host.className = "site-footer";
+  host.className = "site-footer on-inverse";
   host.innerHTML = `
     <div class="shell footer-top">
       <div class="footer-brand">
-        <img src="${base}/img/logos/logo-ft-negatif.png" alt="République française, France Travail" width="210">
+        <img src="${base}/img/logos/logo-ft-negatif.png" alt="République française, France Travail" width="200" height="66">
         <p data-i18n="footer_description">Nous partageons des logiciels, ressources et pratiques numériques pour les rendre utiles au plus grand nombre.</p>
       </div>
       <div class="footer-column">
@@ -33,16 +33,16 @@ document.addEventListener("DOMContentLoaded", () => {
         <h2 data-i18n="footer_participate">Participer</h2>
         <ul>
           <li><a href="${contributeHref}" data-i18n="contribute">Contribuer</a></li>
-          <li><a href="https://github.com/France-Travail" target="_blank" rel="noopener">GitHub France Travail ↗</a></li>
+          <li><a href="https://github.com/France-Travail" target="_blank" rel="noopener">GitHub France Travail <span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a></li>
           <li><a href="mailto:sioss.00006@francetravail.fr" data-i18n="contact_ospo">Contacter l’OSPO</a></li>
         </ul>
       </div>
       <div class="footer-column">
         <h2 data-i18n="footer_around">Autour de France Travail</h2>
         <ul>
-          <li><a href="https://www.francetravail.fr" target="_blank" rel="noopener">francetravail.fr ↗</a></li>
-          <li><a href="https://francetravail.io" target="_blank" rel="noopener">francetravail.io ↗</a></li>
-          <li><a href="https://designsystem.francetravail.io" target="_blank" rel="noopener">Design System ↗</a></li>
+          <li><a href="https://www.francetravail.fr" target="_blank" rel="noopener">francetravail.fr <span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a></li>
+          <li><a href="https://francetravail.io" target="_blank" rel="noopener">francetravail.io <span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a></li>
+          <li><a href="https://designsystem.francetravail.io" target="_blank" rel="noopener">Design System <span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a></li>
         </ul>
       </div>
     </div>
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <span>© ${year} France Travail · Open Source</span>
       <div class="footer-legal">
         <a href="${base}/mentions.html" data-i18n="legal_notice">Mentions et licences</a>
-        <a href="https://github.com/France-Travail/france-travail.github.io" target="_blank" rel="noopener" data-i18n="source_code">Code source</a>
+        <a href="https://github.com/France-Travail/france-travail.github.io" target="_blank" rel="noopener"><span data-i18n="source_code">Code source</span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a>
         <a href="mailto:sioss.00006@francetravail.fr">sioss.00006@francetravail.fr</a>
       </div>
     </div>`;

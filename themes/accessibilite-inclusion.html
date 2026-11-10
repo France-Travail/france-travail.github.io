@@ -39,29 +39,28 @@
     <link rel="icon" type="image/png" href="../img/icons/favicon.png" />
     <link rel="apple-touch-icon" href="../img/logos/logo-ft.png" />
     
-    <!-- Preload critical resources -->
-    <link rel="preload" href="../css/style.css?v=2.4.0" as="style" />
+    <link rel="preload" href="../fonts/Marianne-Bold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../vendor/dsft/design-system/fonts/ft-icons.woff2?n9dtj2" as="font" type="font/woff2" crossorigin />
 
-    <!-- France Travail Design System -->
-    <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
-    <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
+    <!-- Design System France Travail, copie locale : voir vendor/dsft/manifest.json -->
+    <link rel="stylesheet" href="../vendor/dsft/design-system/css/styles.css?v=1.63.0" />
+    <link rel="stylesheet" href="../css/style.css?v=2.5.0" />
 
-    <link rel="stylesheet" href="../css/style.css?v=2.4.0" />
-
-    <script src="../js/customHeader.js?v=2.4.0" defer></script>
-    <script src="../js/customFooter.js?v=2.4.0" defer></script>
-    <script src="../js/i18n.js?v=2.4.0" defer></script>
-    <script src="../js/projectLifecycle.js?v=2.4.0" defer></script>
-    <script src="../js/contribution.js?v=2.4.0" defer></script>
-    <script src="../js/renderProjects.js?v=2.4.0" defer></script>
-    <script src="../js/renderThemeHeader.js?v=2.4.0" defer></script>
-    <script src="../js/motion.js?v=2.4.0" defer></script>
+    <script src="../js/dsft.js?v=2.5.0" defer></script>
+    <script src="../js/customHeader.js?v=2.5.0" defer></script>
+    <script src="../js/customFooter.js?v=2.5.0" defer></script>
+    <script src="../js/i18n.js?v=2.5.0" defer></script>
+    <script src="../js/projectLifecycle.js?v=2.5.0" defer></script>
+    <script src="../js/contribution.js?v=2.5.0" defer></script>
+    <script src="../js/renderProjects.js?v=2.5.0" defer></script>
+    <script src="../js/renderThemeHeader.js?v=2.5.0" defer></script>
+    <script src="../js/motion.js?v=2.5.0" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header id="custom-header"></header>
 
-    <main class="container" id="main-content">
+    <main class="shell page-container" id="main-content">
       <div id="theme-header"></div>
       <div
         id="projects-container"

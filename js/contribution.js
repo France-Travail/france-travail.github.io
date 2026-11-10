@@ -2,14 +2,14 @@
    scripts/collect-contribution.mjs) en liens directs vers les issues, les bonnes
    premières issues, le guide de contribution et les discussions de chaque dépôt.
    Un projet archivé ou pas encore ouvert ne pousse pas à ouvrir des issues qui
-   resteraient sans réponse : il renvoie vers l'OSPO. */
+   resteraient sans réponse : il renvoie vers l'OSPO, avec une alerte du DS. */
 const CONTRIBUTION_CONTACT = "sioss.00006@francetravail.fr";
 const contributionCache = new Map();
 
 function contributionEscape(value) {
   const node = document.createElement("span");
   node.textContent = value ?? "";
-  return node.innerHTML;
+  return node.innerHTML.replace(/"/g, "&quot;");
 }
 
 function contributionKey(repoUrl) {
@@ -35,10 +35,14 @@ function contributionLabels(lang) {
         guide: "Contribution guide",
         discussions: "Discussions",
         usage: "Share how you use it",
-        archived: "No active maintenance: reuse it freely, feedback may go unanswered.",
-        opening: "The repository is not public yet. Follow its opening with the OSPO.",
-        closed: "Issues are closed on this repository: write to the OSPO.",
+        archivedTitle: "No active maintenance",
+        archived: "Reuse it freely, feedback may go unanswered.",
+        openingTitle: "Repository not public yet",
+        opening: "Follow its opening with the OSPO.",
+        closedTitle: "Issues are closed",
+        closed: "Write to the OSPO about this repository.",
         contact: "Contact the OSPO",
+        newTab: "(opens a new tab)",
       }
     : {
         title: "Contribuer",
@@ -48,10 +52,14 @@ function contributionLabels(lang) {
         guide: "Guide de contribution",
         discussions: "Discussions",
         usage: "Raconter votre usage",
-        archived: "Sans maintenance active : réutilisez-le librement, les retours peuvent rester sans réponse.",
-        opening: "Le dépôt n’est pas encore public. Suivez son ouverture avec l’OSPO.",
-        closed: "Les issues sont fermées sur ce dépôt : écrivez à l’OSPO.",
+        archivedTitle: "Sans maintenance active",
+        archived: "Réutilisez-le librement, les retours peuvent rester sans réponse.",
+        openingTitle: "Dépôt pas encore public",
+        opening: "Suivez son ouverture avec l’OSPO.",
+        closedTitle: "Issues fermées",
+        closed: "Écrivez à l’OSPO au sujet de ce dépôt.",
         contact: "Contacter l’OSPO",
+        newTab: "(nouvel onglet)",
       };
 }
 
@@ -64,9 +72,15 @@ function goodFirstUrl(repoUrl, labels) {
   return `${repoUrl}/issues?q=${encodeURIComponent(`is:issue is:open label:${list}`)}`;
 }
 
-function contributionLink(href, text, external = true) {
-  const target = external ? ' target="_blank" rel="noopener"' : "";
-  return `<li><a href="${contributionEscape(href)}"${target}>${contributionEscape(text)}</a></li>`;
+function contributionLink(href, text, newTabLabel) {
+  const target = newTabLabel ? ' target="_blank" rel="noopener"' : "";
+  const hint = newTabLabel ? `<span class="sr-only"> ${contributionEscape(newTabLabel)}</span>` : "";
+  return `<li><a class="text-link" href="${contributionEscape(href)}"${target}>${contributionEscape(text)}${hint}</a></li>`;
+}
+
+/* Alerte compacte du DS (titre obligatoire, pas d'annonce à l'affichage). */
+function contributionAlert(version, title, text) {
+  return `<ft-alert version="${version}" notify="false"><p class="alert-title">${contributionEscape(title)}</p><p class="alert-content">${contributionEscape(text)}</p></ft-alert>`;
 }
 
 function renderContribution(project, data, lang, lifecycle) {
@@ -78,30 +92,30 @@ function renderContribution(project, data, lang, lifecycle) {
   const block = (body) => `<div class="project-contribute"><p class="project-contribute-title">${labels.title}</p>${body}</div>`;
 
   if (lifecycle === "opening" || info?.available === false) {
-    return block(`<p class="project-contribute-note">${labels.opening}</p><ul>${contributionLink(contributionMailto(contactSubject), labels.contact, false)}</ul>`);
+    return block(`${contributionAlert("info", labels.openingTitle, labels.opening)}<ul>${contributionLink(contributionMailto(contactSubject), labels.contact)}</ul>`);
   }
   if (!info) return "";
 
   const links = [];
   if (lifecycle === "archived") {
-    if (info.contributing_url) links.push(contributionLink(info.contributing_url, labels.guide));
-    links.push(contributionLink(contributionMailto(usageSubject), labels.usage, false));
-    return block(`<p class="project-contribute-note">${labels.archived}</p><ul>${links.join("")}</ul>`);
+    if (info.contributing_url) links.push(contributionLink(info.contributing_url, labels.guide, labels.newTab));
+    links.push(contributionLink(contributionMailto(usageSubject), labels.usage));
+    return block(`${contributionAlert("warning", labels.archivedTitle, labels.archived)}<ul>${links.join("")}</ul>`);
   }
   if (!info.issues_enabled) {
-    links.push(contributionLink(contributionMailto(contactSubject), labels.contact, false));
-    if (info.contributing_url) links.push(contributionLink(info.contributing_url, labels.guide));
-    return block(`<p class="project-contribute-note">${labels.closed}</p><ul>${links.join("")}</ul>`);
+    links.push(contributionLink(contributionMailto(contactSubject), labels.contact));
+    if (info.contributing_url) links.push(contributionLink(info.contributing_url, labels.guide, labels.newTab));
+    return block(`${contributionAlert("info", labels.closedTitle, labels.closed)}<ul>${links.join("")}</ul>`);
   }
 
-  links.push(contributionLink(`${repoUrl}/issues/new${info.issue_templates ? "/choose" : ""}`, labels.report));
-  if (info.open_issues) links.push(contributionLink(`${repoUrl}/issues`, labels.issues(info.open_issues)));
+  links.push(contributionLink(`${repoUrl}/issues/new${info.issue_templates ? "/choose" : ""}`, labels.report, labels.newTab));
+  if (info.open_issues) links.push(contributionLink(`${repoUrl}/issues`, labels.issues(info.open_issues), labels.newTab));
   if (info.good_first_issues && info.good_first_label) {
-    links.push(contributionLink(goodFirstUrl(repoUrl, [info.good_first_label]), labels.goodFirst(info.good_first_issues)));
+    links.push(contributionLink(goodFirstUrl(repoUrl, [info.good_first_label]), labels.goodFirst(info.good_first_issues), labels.newTab));
   }
-  if (info.contributing_url) links.push(contributionLink(info.contributing_url, labels.guide));
-  if (info.discussions) links.push(contributionLink(`${repoUrl}/discussions`, labels.discussions));
-  links.push(contributionLink(contributionMailto(usageSubject), labels.usage, false));
+  if (info.contributing_url) links.push(contributionLink(info.contributing_url, labels.guide, labels.newTab));
+  if (info.discussions) links.push(contributionLink(`${repoUrl}/discussions`, labels.discussions, labels.newTab));
+  links.push(contributionLink(contributionMailto(usageSubject), labels.usage));
   return block(`<ul>${links.join("")}</ul>`);
 }
 

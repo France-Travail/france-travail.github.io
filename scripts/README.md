@@ -40,3 +40,12 @@ Le script est automatiquement exécuté par le workflow GitHub Actions `.github/
 - Le script préserve le formatage JSON avec une indentation de 2 espaces
 - Les modifications sont automatiquement commitées et poussées sur la branche principale si des changements sont détectés
 
+## vendor-dsft.mjs
+
+Copie dans `vendor/dsft/` les fichiers du Design System France Travail utilisés par le site : la feuille de style et la police d'icônes du DS, les webcomposants `ft-alert`, `ft-breadcrumb`, `ft-spinner` et les directives `ft-collapse-directive`, `ft-tooltip-directive`, `ft-dropdown-directive`. Les builds viennent du CDN public du DS, les licences du dépôt public `France-Travail/webco-design-system`. Le script écrit `vendor/dsft/manifest.json` (versions, sources, empreintes SHA-256, correctifs appliqués).
+
+```bash
+npm run vendor:dsft
+# derrière un proxy HTTP :
+NODE_USE_ENV_PROXY=1 npm run vendor:dsft
+```

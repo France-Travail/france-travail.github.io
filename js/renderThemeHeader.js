@@ -1,19 +1,13 @@
-const THEME_PAGE_META = {
-  "accessibilite&inclusion": { slug: "accessibilite-inclusion", color: "#008ecf" },
-  eco: { slug: "eco", color: "#fddc0b" },
-  ia: { slug: "ia", color: "#e10211" },
-  "services-usagers": { slug: "services-usagers", color: "#f29fc5" },
-  "outils-equipes": { slug: "outils-equipes", color: "#283276" },
-};
-
+/* En-tête des pages de domaine : fil d'Ariane du DS (<ft-breadcrumb>), titre et
+   description du domaine lus dans data/themes.json. */
 async function loadThemeHeader() {
   const host = document.getElementById("theme-header");
   const container = document.querySelector("#projects-container[data-category]");
   if (!host || !container) return;
 
-  const category = container.dataset.category;
-  const meta = THEME_PAGE_META[category] || { slug: category, color: "#008ecf" };
+  const meta = window.projectTheme(container.dataset.category);
   const lang = window.getCurrentLanguage?.() || localStorage.getItem("lang") || "fr";
+  const escape = window.ftUi.escape;
 
   try {
     const response = await fetch(withAssetVersion(lang === "en" ? "../data/themes-en.json" : "../data/themes.json"));
@@ -22,26 +16,24 @@ async function loadThemeHeader() {
     const theme = themes.find((item) => item.slug === meta.slug);
     if (!theme) return;
 
-    host.className = "theme-page-header";
-    host.style.setProperty("--theme-color", meta.color);
+    const crumbs = [
+      { label: lang === "en" ? "Home" : "Accueil", href: "../index.html" },
+      { label: "Catalogue", href: "../projets.html" },
+      { label: theme.title },
+    ].map((crumb) => ({ ...crumb, label: escape(crumb.label) }));
+
+    host.className = `theme-page-header tone-${meta.tone}`;
     host.innerHTML = `
-      <nav class="breadcrumbs" aria-label="${lang === "en" ? "Breadcrumb" : "Fil d’Ariane"}">
-        <a href="../index.html">${lang === "en" ? "Home" : "Accueil"}</a><span aria-hidden="true">/</span>
-        <a href="../projets.html">${lang === "en" ? "Catalogue" : "Catalogue"}</a><span aria-hidden="true">/</span>
-        <span>${escapeThemeText(theme.title)}</span>
-      </nav>
+      <ft-breadcrumb links="${escape(JSON.stringify(crumbs))}"></ft-breadcrumb>
       <p class="eyebrow">${lang === "en" ? "Area" : "Domaine"}</p>
-      <h1>${escapeThemeText(theme.title)}</h1>
-      <p>${escapeThemeText(theme.longDescription)}</p>`;
+      <div class="theme-page-title">
+        <span class="theme-icon" aria-hidden="true"><span class="icon icon-${meta.icon}"></span></span>
+        <h1>${escape(theme.title)}</h1>
+      </div>
+      <p>${escape(theme.longDescription)}</p>`;
   } catch (error) {
     console.error("Erreur de chargement du thème", error);
   }
-}
-
-function escapeThemeText(value) {
-  const node = document.createElement("span");
-  node.textContent = value ?? "";
-  return node.innerHTML;
 }
 
 window.loadThemeHeader = loadThemeHeader;

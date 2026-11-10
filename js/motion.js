@@ -11,7 +11,7 @@
     ".ecosystem-card",
     ".contribution-steps > li",
     ".ospo-card",
-    ".catalogue-reading-guide",
+    ".reading-guide",
     ".project-card",
     ".catalogue-cta",
     ".legal-page > section",
@@ -108,8 +108,8 @@
   function createBackToTop() {
     const button = document.createElement("button");
     button.type = "button";
-    button.className = "back-to-top";
-    button.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></svg><span class="visually-hidden" data-i18n="back_to_top">Revenir en haut</span>';
+    button.className = "btn btn-primary btn-lg btn-ratio-square back-to-top";
+    button.innerHTML = '<span class="icon icon-chevron-u" aria-hidden="true"></span><span class="sr-only" data-i18n="back_to_top">Revenir en haut</span>';
     button.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
       document.querySelector(".skip-link")?.focus({ preventScroll: true });

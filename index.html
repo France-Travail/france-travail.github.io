@@ -20,18 +20,19 @@
     <link rel="alternate" hreflang="en" href="https://france-travail.github.io/?lang=en" />
     <link rel="manifest" href="./manifest.json" />
     <link rel="icon" type="image/png" href="./img/icons/favicon.png" />
-    <link rel="preload" href="./fonts/Marianne-Regular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="./fonts/Marianne-Bold.woff2" as="font" type="font/woff2" crossorigin />
-    <link href="https://cdn.francetravail.fr/studio/design-system/css/styles.css" rel="stylesheet" />
-    <script src="https://cdn.francetravail.fr/webco/v1/ft-autoloader.js"></script>
-    <link rel="stylesheet" href="./css/style.css?v=2.4.0" />
-    <script src="./js/customHeader.js?v=2.4.0" defer></script>
-    <script src="./js/customFooter.js?v=2.4.0" defer></script>
-    <script src="./js/i18n.js?v=2.4.0" defer></script>
-    <script src="./js/projectLifecycle.js?v=2.4.0" defer></script>
-    <script src="./js/contribution.js?v=2.4.0" defer></script>
-    <script src="./js/home.js?v=2.4.0" defer></script>
-    <script src="./js/motion.js?v=2.4.0" defer></script>
+    <link rel="preload" href="./vendor/dsft/design-system/fonts/ft-icons.woff2?n9dtj2" as="font" type="font/woff2" crossorigin />
+    <!-- Design System France Travail, copie locale : voir vendor/dsft/manifest.json -->
+    <link rel="stylesheet" href="./vendor/dsft/design-system/css/styles.css?v=1.63.0" />
+    <link rel="stylesheet" href="./css/style.css?v=2.5.0" />
+    <script src="./js/dsft.js?v=2.5.0" defer></script>
+    <script src="./js/customHeader.js?v=2.5.0" defer></script>
+    <script src="./js/customFooter.js?v=2.5.0" defer></script>
+    <script src="./js/i18n.js?v=2.5.0" defer></script>
+    <script src="./js/projectLifecycle.js?v=2.5.0" defer></script>
+    <script src="./js/contribution.js?v=2.5.0" defer></script>
+    <script src="./js/home.js?v=2.5.0" defer></script>
+    <script src="./js/motion.js?v=2.5.0" defer></script>
     <script type="application/ld+json">
       {"@context":"https://schema.org","@type":"CollectionPage","name":"France Travail Open Source","url":"https://france-travail.github.io/","description":"Catalogue des communs numériques open source de France Travail","isPartOf":{"@type":"Organization","name":"France Travail","url":"https://www.francetravail.fr"}}
     </script>
@@ -48,44 +49,47 @@
             <h1 id="hero-title" data-i18n="hero_title">Le code public qui fait avancer l’emploi.</h1>
             <p class="hero-intro" data-i18n="hero_description">Logiciels, composants, référentiels et formations publiés par les équipes de France Travail, avec leur licence, leur documentation et leur état.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="./projets.html">
-                <span data-i18n="explore_catalogue">Explorer le catalogue</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6" /></svg>
+              <a class="btn btn-primary btn-lg" href="./projets.html">
+                <span class="btn-content" data-i18n="explore_catalogue">Explorer le catalogue</span>
+                <span class="icon icon-arrow-right" aria-hidden="true"></span>
               </a>
-              <a class="text-link" href="#contribuer">
-                <span data-i18n="how_to_contribute">Comment contribuer</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg>
+              <a class="btn btn-secondary btn-lg" href="#contribuer">
+                <span class="btn-content" data-i18n="how_to_contribute">Comment contribuer</span>
+                <span class="icon icon-arrow-down" aria-hidden="true"></span>
               </a>
             </div>
           </div>
 
-          <div class="hero-signal" aria-label="Ce que contient le catalogue">
-            <div class="signal-project">
+          <ul class="hero-signal" aria-label="Ce que contient le catalogue">
+            <li class="signal-project">
+              <span class="signal-icon" aria-hidden="true"><span class="icon icon-code-sign"></span></span>
               <div>
                 <p data-i18n="catalogue_type_one">Logiciels &amp; composants</p>
                 <strong data-i18n="catalogue_type_one_title">Design System, TradOpen, happy_vllm</strong>
                 <span data-i18n="catalogue_type_one_text">Du code à intégrer ou à déployer</span>
               </div>
-            </div>
-            <div class="signal-project">
+            </li>
+            <li class="signal-project">
+              <span class="signal-icon" aria-hidden="true"><span class="icon icon-book-open"></span></span>
               <div>
                 <p data-i18n="catalogue_type_two">Référentiels &amp; méthodes</p>
                 <strong data-i18n="catalogue_type_two_title">Référentiel d’écoconception, pratiques d’architecture</strong>
                 <span data-i18n="catalogue_type_two_text">Des documents de référence à adapter</span>
               </div>
-            </div>
-            <div class="signal-project">
+            </li>
+            <li class="signal-project">
+              <span class="signal-icon" aria-hidden="true"><span class="icon icon-graduation"></span></span>
               <div>
                 <p data-i18n="catalogue_type_three">Formations &amp; kits</p>
                 <strong data-i18n="catalogue_type_three_title">Sensibilisation à l’écoconception, IA responsable</strong>
                 <span data-i18n="catalogue_type_three_text">Des supports à reprendre en équipe</span>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
 
-      <section class="metrics" aria-label="Chiffres clés">
+      <section class="metrics on-inverse" aria-label="Chiffres clés">
         <div class="shell metrics-grid" id="stats-grid" aria-live="polite">
           <div class="metric"><strong>—</strong><span>dépôts publics</span></div>
           <div class="metric"><strong>—</strong><span>dépôts actifs</span></div>
@@ -100,13 +104,13 @@
               <p class="eyebrow" data-i18n="featured_eyebrow">Par où commencer</p>
               <h2 id="featured-title" data-i18n="featured_title">Trois projets à regarder en premier</h2>
             </div>
-            <a class="text-link" href="./projets.html"><span id="catalogue-link-label">Voir tout le catalogue</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
+            <a class="text-link" href="./projets.html"><span id="catalogue-link-label">Voir tout le catalogue</span><span class="icon icon-arrow-right" aria-hidden="true"></span></a>
           </div>
           <div id="featured-projects" class="featured-grid" aria-live="polite"></div>
         </div>
       </section>
 
-      <section class="section themes-section" aria-labelledby="themes-title">
+      <section class="section section-alt themes-section" aria-labelledby="themes-title">
         <div class="shell">
           <div class="section-heading">
             <p class="eyebrow" data-i18n="themes_eyebrow">Domaines</p>
@@ -125,20 +129,20 @@
             <p data-i18n="ecosystem_intro">L’OSPO représente France Travail dans ces réseaux et y partage ses projets et ses retours d’expérience.</p>
           </div>
           <div class="ecosystem-grid">
-            <a class="ecosystem-card" href="https://tosit.fr/" target="_blank" rel="noopener">
-              <div><p class="ecosystem-name">TOSIT</p><h3 data-i18n="ecosystem_tosit_title">Association de grandes organisations</h3><p data-i18n="ecosystem_tosit_text">Grandes entreprises et organismes publics qui mutualisent leurs travaux sur des logiciels open source.</p></div><span aria-hidden="true">↗</span>
+            <a class="card ecosystem-card" href="https://tosit.fr/" target="_blank" rel="noopener">
+              <div><p class="ecosystem-name">TOSIT</p><h3 data-i18n="ecosystem_tosit_title">Association de grandes organisations</h3><p data-i18n="ecosystem_tosit_text">Grandes entreprises et organismes publics qui mutualisent leurs travaux sur des logiciels open source.</p></div><span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span>
             </a>
-            <a class="ecosystem-card" href="https://code.gouv.fr/fr/bluehats/" target="_blank" rel="noopener">
-              <div><p class="ecosystem-name">DINUM · BlueHats</p><h3 data-i18n="ecosystem_bluehats_title">Le réseau des agents publics du libre</h3><p data-i18n="ecosystem_bluehats_text">Animé par la DINUM, il rassemble les agents qui utilisent ou développent des logiciels libres dans l’administration.</p></div><span aria-hidden="true">↗</span>
+            <a class="card ecosystem-card" href="https://code.gouv.fr/fr/bluehats/" target="_blank" rel="noopener">
+              <div><p class="ecosystem-name">DINUM · BlueHats</p><h3 data-i18n="ecosystem_bluehats_title">Le réseau des agents publics du libre</h3><p data-i18n="ecosystem_bluehats_text">Animé par la DINUM, il rassemble les agents qui utilisent ou développent des logiciels libres dans l’administration.</p></div><span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span>
             </a>
-            <article class="ecosystem-card">
+            <article class="card ecosystem-card">
               <div><p class="ecosystem-name">OSPO publics</p><h3 data-i18n="ecosystem_ospo_title">Les OSPO d’autres administrations</h3><p data-i18n="ecosystem_ospo_text">Échanges sur la publication de code, les licences et l’accompagnement des équipes.</p></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section contribution-section" id="contribuer" aria-labelledby="contribution-title">
+      <section class="section section-alt contribution-section" id="contribuer" aria-labelledby="contribution-title">
         <div class="shell">
           <div class="section-heading section-heading-row contribution-heading">
             <div>
@@ -148,45 +152,45 @@
             <p data-i18n="contribute_intro">Un bug signalé ou un retour d’usage aide déjà l’équipe qui maintient le projet.</p>
           </div>
           <ol class="contribution-steps">
-            <li>
-              <span>1</span>
+            <li class="card">
+              <span class="step-number" aria-hidden="true">1</span>
               <div>
                 <h3 data-i18n="step_one_title">Explorez</h3>
                 <p data-i18n="step_one_text">Trouvez le projet ou la ressource qui répond à votre besoin.</p>
                 <ul class="step-actions">
-                  <li><a href="./projets.html" data-i18n="step_one_link">Ouvrir le catalogue</a></li>
+                  <li><a class="text-link" href="./projets.html"><span data-i18n="step_one_link">Ouvrir le catalogue</span><span class="icon icon-arrow-right" aria-hidden="true"></span></a></li>
                 </ul>
               </div>
             </li>
-            <li>
-              <span>2</span>
+            <li class="card">
+              <span class="step-number" aria-hidden="true">2</span>
               <div>
                 <h3 data-i18n="step_two_title">Testez et réutilisez</h3>
                 <p data-i18n="step_two_text">Vérifiez sa licence, sa documentation et son état avant de le reprendre.</p>
                 <ul class="step-actions">
-                  <li><a href="./projets.html#reading-guide-title" data-i18n="step_two_link">Lire l’état d’un projet</a></li>
+                  <li><a class="text-link" href="./projets.html#reading-guide-title"><span data-i18n="step_two_link">Lire l’état d’un projet</span><span class="icon icon-arrow-right" aria-hidden="true"></span></a></li>
                 </ul>
               </div>
             </li>
-            <li>
-              <span>3</span>
+            <li class="card">
+              <span class="step-number" aria-hidden="true">3</span>
               <div>
                 <h3 data-i18n="step_three_title">Partagez vos retours</h3>
                 <p data-i18n="step_three_text">Ouvrez une issue, proposez une amélioration ou racontez votre usage.</p>
                 <ul class="step-actions">
-                  <li><a id="contribute-issues-link" href="https://github.com/search?type=issues&amp;q=org%3AFrance-Travail+is%3Aissue+is%3Aopen" target="_blank" rel="noopener">Voir les issues ouvertes</a></li>
-                  <li><a id="contribute-usage-link" href="mailto:sioss.00006@francetravail.fr?subject=Retour%20d%E2%80%99usage" data-i18n="step_three_usage">Raconter votre usage</a></li>
+                  <li><a class="text-link" id="contribute-issues-link" href="https://github.com/search?type=issues&amp;q=org%3AFrance-Travail+is%3Aissue+is%3Aopen" target="_blank" rel="noopener">Voir les issues ouvertes</a></li>
+                  <li><a class="text-link" id="contribute-usage-link" href="mailto:sioss.00006@francetravail.fr?subject=Retour%20d%E2%80%99usage"><span data-i18n="step_three_usage">Raconter votre usage</span><span class="icon icon-mail" aria-hidden="true"></span></a></li>
                 </ul>
               </div>
             </li>
-            <li>
-              <span>4</span>
+            <li class="card">
+              <span class="step-number" aria-hidden="true">4</span>
               <div>
                 <h3 data-i18n="step_four_title">Construisons ensemble</h3>
                 <p data-i18n="step_four_text">Proposez du code, de la documentation ou une traduction, ou échangez avec l’équipe qui maintient le projet.</p>
                 <ul class="step-actions">
-                  <li><a id="contribute-first-link" href="https://github.com/search?type=issues&amp;q=org%3AFrance-Travail+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">Issues pour débuter</a></li>
-                  <li><a href="mailto:sioss.00006@francetravail.fr?subject=Contribuer%20%C3%A0%20un%20projet" data-i18n="step_four_contact">Échanger avec l’OSPO</a></li>
+                  <li><a class="text-link" id="contribute-first-link" href="https://github.com/search?type=issues&amp;q=org%3AFrance-Travail+is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" target="_blank" rel="noopener">Issues pour débuter</a></li>
+                  <li><a class="text-link" href="mailto:sioss.00006@francetravail.fr?subject=Contribuer%20%C3%A0%20un%20projet"><span data-i18n="step_four_contact">Échanger avec l’OSPO</span><span class="icon icon-mail" aria-hidden="true"></span></a></li>
                 </ul>
               </div>
             </li>
@@ -195,15 +199,17 @@
       </section>
 
       <section class="section ospo-section" aria-labelledby="ospo-title">
-        <div class="shell ospo-card">
-          <div class="ospo-copy">
-            <p class="eyebrow" data-i18n="ospo_eyebrow">Open Source Program Office</p>
-            <h2 id="ospo-title" data-i18n="ospo_title">L’OSPO de France Travail</h2>
-            <p data-i18n="ospo_text">L’Open Source Program Office aide les équipes à publier leur code, suit les licences des logiciels utilisés et représente France Travail dans les réseaux open source.</p>
-          </div>
-          <div class="ospo-actions">
-            <a class="button button-primary" href="mailto:sioss.00006@francetravail.fr"><span data-i18n="contact_us">Nous contacter</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5" /></svg></a>
-            <a class="text-link" href="https://github.com/France-Travail" target="_blank" rel="noopener"><span data-i18n="visit_github">Voir notre GitHub</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></svg></a>
+        <div class="shell">
+          <div class="ospo-card">
+            <div class="ospo-copy">
+              <p class="eyebrow" data-i18n="ospo_eyebrow">Open Source Program Office</p>
+              <h2 id="ospo-title" data-i18n="ospo_title">L’OSPO de France Travail</h2>
+              <p data-i18n="ospo_text">L’Open Source Program Office aide les équipes à publier leur code, suit les licences des logiciels utilisés et représente France Travail dans les réseaux open source.</p>
+            </div>
+            <div class="ospo-actions">
+              <a class="btn btn-primary btn-lg" href="mailto:sioss.00006@francetravail.fr"><span class="icon icon-mail" aria-hidden="true"></span><span class="btn-content" data-i18n="contact_us">Nous contacter</span></a>
+              <a class="btn btn-secondary btn-lg" href="https://github.com/France-Travail" target="_blank" rel="noopener"><span class="btn-content" data-i18n="visit_github">Voir notre GitHub</span><span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a>
+            </div>
           </div>
         </div>
       </section>
