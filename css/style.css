@@ -186,6 +186,14 @@ a:not(.text-link):not(.btn):visited {
   flex: 0 0 auto;
 }
 
+/* Le DS pose une marge basse de 4px et une marge gauche de 8px aux icônes placées
+   dans un lien (a:not(.btn,.dropdown-item,.nav-link) .icon) : l'icône remonte de
+   2px par rapport au texte. Même sélecteur, placé ici pour que les règles des
+   composants ci-dessous, de même poids, puissent encore poser leur propre marge. */
+a:not(.btn, .dropdown-item, .nav-link) .icon {
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute !important;
   width: 1px;
@@ -643,7 +651,8 @@ a:not(.text-link):not(.btn):visited {
   line-height: 1.3;
 }
 
-.signal-project span {
+/* Seule la ligne d'explication : la pastille et son icône gardent leur centrage. */
+.signal-project span:not(.signal-icon, .icon) {
   display: block;
   color: var(--c-text-weak);
   font-size: var(--fs-small);
@@ -669,7 +678,7 @@ a:not(.text-link):not(.btn):visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: var(--sp-xxs);
+  gap: var(--sp-xs2);
   padding: var(--sp-l1) clamp(var(--sp-m2), 3vw, var(--sp-l2));
 }
 
@@ -1682,6 +1691,8 @@ select.form-control {
   right: clamp(var(--sp-s2), 3vw, var(--sp-l1));
   bottom: clamp(var(--sp-s2), 3vw, var(--sp-l1));
   z-index: 900;
+  /* Filet clair : reste visible quand le bouton passe au-dessus du pied de page marine. */
+  border: 1px solid rgba(255, 255, 255, 0.45);
   box-shadow: var(--shadow-raised);
   opacity: 0;
   pointer-events: none;
