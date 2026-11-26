@@ -1,7 +1,7 @@
 /* Version des donnees servies au navigateur. A bumper en meme temps que le ?v=
    des balises <script>/<link> et que la version de package.json : sans cela un
    visiteur deja venu garde en cache les anciens JSON apres une mise a jour. */
-const ASSET_VERSION = "2.5.0";
+const ASSET_VERSION = "2.5.1";
 function withAssetVersion(url) {
   return `${url}?v=${ASSET_VERSION}`;
 }

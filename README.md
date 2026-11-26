@@ -48,7 +48,7 @@ Après une montée de version du DS, reporter la version de `styles.css` (`?v=` 
 
 ## 💬 Contact
 
-Pour toute question ou suggestion, vous pouvez ouvrir une issue ou nous contacter via [sioss.00006@francetravail.fr](mailto:sioss.00006@francetravail.fr).
+Pour toute question ou suggestion, vous pouvez ouvrir une issue ou nous contacter via [_ldr_tech_daeu_ospo@francetravail.fr](mailto:_ldr_tech_daeu_ospo@francetravail.fr).
 
 ## Licence et identité visuelle
 

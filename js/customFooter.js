@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <ul>
           <li><a href="${contributeHref}" data-i18n="contribute">Contribuer</a></li>
           <li><a href="https://github.com/France-Travail" target="_blank" rel="noopener">GitHub France Travail <span class="icon icon-launch" aria-hidden="true"></span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a></li>
-          <li><a href="mailto:sioss.00006@francetravail.fr" data-i18n="contact_ospo">Contacter l’OSPO</a></li>
+          <li><a href="mailto:_ldr_tech_daeu_ospo@francetravail.fr" data-i18n="contact_ospo">Contacter l’OSPO</a></li>
         </ul>
       </div>
       <div class="footer-column">
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="footer-legal">
         <a href="${base}/mentions.html" data-i18n="legal_notice">Mentions et licences</a>
         <a href="https://github.com/France-Travail/france-travail.github.io" target="_blank" rel="noopener"><span data-i18n="source_code">Code source</span><span class="sr-only" data-i18n="new_tab">(nouvel onglet)</span></a>
-        <a href="mailto:sioss.00006@francetravail.fr">sioss.00006@francetravail.fr</a>
+        <a href="mailto:_ldr_tech_daeu_ospo@francetravail.fr">_ldr_tech_daeu_ospo@francetravail.fr</a>
       </div>
     </div>`;
 });

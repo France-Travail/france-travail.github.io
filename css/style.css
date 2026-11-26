@@ -1098,11 +1098,13 @@ ft-breadcrumb {
 }
 
 .catalogue-total {
-  min-width: 11rem;
-  padding: var(--sp-m1) var(--sp-m2);
+  align-self: center;
+  min-width: 15rem;
+  padding: var(--sp-l1) var(--sp-l2);
   border-radius: var(--radius);
-  background: var(--c-surface);
+  background: var(--c-primary);
   box-shadow: var(--shadow-panel);
+  text-align: center;
 }
 
 .catalogue-total strong,
@@ -1110,16 +1112,21 @@ ft-breadcrumb {
   display: block;
 }
 
+/* Retour Hafid 26/11 : le nombre de projets doit se voir autant que les chiffres clés. */
 .catalogue-total strong {
-  color: var(--c-primary);
+  color: #fff;
   font-family: var(--font-title);
-  font-size: var(--ft-font-size-display-1, 2.5rem);
+  font-size: clamp(4rem, 7vw, 5.5rem);
+  font-weight: 800;
   line-height: 1;
 }
 
 .catalogue-total span {
-  color: var(--c-text-weak);
-  font-size: var(--fs-small);
+  margin-top: var(--sp-s2, 0.5rem);
+  color: #fff;
+  font-family: var(--font-title);
+  font-size: var(--fs-lead, 1.25rem);
+  font-weight: 700;
 }
 
 .catalogue-main {

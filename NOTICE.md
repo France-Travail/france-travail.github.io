@@ -68,4 +68,4 @@ conditions spécifiques (logotypes, Marianne, illustrations) restent exclus de
 la licence MIT, comme indiqué plus haut.
 
 Pour toute question relative à la réutilisation de ce site ou à l'open source
-chez France Travail : `sioss.00006@francetravail.fr`.
+chez France Travail : `_ldr_tech_daeu_ospo@francetravail.fr`.

@@ -213,7 +213,7 @@ const main = `<main class="main article" id="contents" role="main">
       </div>
 
       <h2 class="t20 t-blue-light t-bold intertitre">Contacter l’équipe open source</h2>
-      <p>Vous souhaitez réutiliser un projet, contribuer ou échanger avec l’OSPO ? Écrivez-nous à <a href="mailto:sioss.00006@francetravail.fr">sioss.00006@francetravail.fr</a>.</p>
+      <p>Vous souhaitez réutiliser un projet, contribuer ou échanger avec l’OSPO ? Écrivez-nous à <a href="mailto:_ldr_tech_daeu_ospo@francetravail.fr">_ldr_tech_daeu_ospo@francetravail.fr</a>.</p>
     </div>
 
     <div class="container">

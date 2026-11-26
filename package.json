@@ -1,6 +1,6 @@
 {
   "name": "france-travail.github.io",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Site vitrine des projets open source de France Travail, organisés par thématique (accessibilité, inclusion, éco-conception, IA, SI plateforme, etc.).",
   "main": "index.js",
   "scripts": {

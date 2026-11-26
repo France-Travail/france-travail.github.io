@@ -3,7 +3,7 @@
    premières issues, le guide de contribution et les discussions de chaque dépôt.
    Un projet archivé ou pas encore ouvert ne pousse pas à ouvrir des issues qui
    resteraient sans réponse : il renvoie vers l'OSPO, avec une alerte du DS. */
-const CONTRIBUTION_CONTACT = "sioss.00006@francetravail.fr";
+const CONTRIBUTION_CONTACT = "_ldr_tech_daeu_ospo@francetravail.fr";
 const contributionCache = new Map();
 
 function contributionEscape(value) {
